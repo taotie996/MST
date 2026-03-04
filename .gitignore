@@ -455,3 +455,6 @@ myenv/
 
 assets/config/
 config/
+
+assets/resource/base/model/*
+
