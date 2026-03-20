@@ -1,17 +1,12 @@
 {
     "$__mpe_config_新建Pipeline3": {
         "$__mpe_code": {
-            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\startup.json",
+            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\启动游戏.json",
             "filename": "新建Pipeline3",
             "isModifiedExternally": false,
-            "lastSyncTime": 1772629793916,
+            "lastSyncTime": 1772856827642,
             "prefix": "",
-            "savedViewport": {
-                "x": 850,
-                "y": 12,
-                "zoom": 1
-            },
-            "version": "v1.2.1"
+            "version": "v1.2.2"
         }
     },
     "$__mpe_external_位于主界面1_新建Pipeline3": {

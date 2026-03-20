@@ -170,36 +170,7 @@
         },
         {
             "name": "种植",
-            "entry": "家园",
-            "pipeline_override": {
-                "override_位于主界面": {
-                    "next": [
-                        "进入家园"
-                    ]
-                },
-                "返回主界面_fast": {
-                    "next": [
-                        "[JumpBack]加载中",
-                        "[JumpBack]加载中1",
-                        "[JumpBack]点击空白区域",
-                        "[JumpBack]关闭悬浮窗",
-                        "[JumpBack]点击返回按钮",
-                        "[JumpBack]其他特殊退出"
-                    ]
-                },
-                "override_位于家园": {
-                    "next": [
-                        "种植"
-                    ]
-                },
-                "override_位于总览": {
-                    "next": [
-                        "收菜完毕",
-                        "[JumpBack]点击空白区域",
-                        "[JumpBack]收菜"
-                    ]
-                }
-            }
+            "entry": "种植"
         },
         {
             "name": "事务派遣",

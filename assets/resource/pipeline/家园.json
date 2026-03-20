@@ -1,0 +1,1718 @@
+{
+    "$__mpe_anchor_a_种植_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3473,
+                "y": 1404
+            }
+        }
+    },
+    "$__mpe_config_新建Pipeline3": {
+        "$__mpe_code": {
+            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\家园.json",
+            "filename": "新建Pipeline3",
+            "isModifiedExternally": false,
+            "lastSyncTime": 1773017194493,
+            "prefix": "",
+            "version": "v1.2.3"
+        }
+    },
+    "$__mpe_external_override_位于主界面_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4442,
+                "y": 2066
+            }
+        }
+    },
+    "$__mpe_external_ui_进入总览_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 865,
+                "y": 743
+            }
+        }
+    },
+    "$__mpe_external_关闭悬浮窗_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4417,
+                "y": 2932
+            }
+        }
+    },
+    "$__mpe_external_加载中1_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5170,
+                "y": 5416
+            }
+        }
+    },
+    "$__mpe_external_点击空白区域_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 1960
+            }
+        }
+    },
+    "$__mpe_external_点击返回按钮_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4442,
+                "y": 2603
+            }
+        }
+    },
+    "$__mpe_external_返回主界面_fast_新建Pipeline3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4442,
+                "y": 2463
+            }
+        }
+    },
+    "override_位于家园": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4075,
+                "y": 2244
+            }
+        },
+        "recognition": {
+            "param": {
+                "expected": "家园",
+                "only_rec": true,
+                "roi": [
+                    212,
+                    25,
+                    62,
+                    33
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "override_位于总览": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1612,
+                "y": 152
+            }
+        },
+        "recognition": {
+            "param": {
+                "expected": "总览",
+                "only_rec": true,
+                "roi": [
+                    211,
+                    25,
+                    62,
+                    34
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "override_位于捕鱼工具选择界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4442,
+                "y": 298
+            }
+        },
+        "recognition": {
+            "param": {
+                "expected": "请选择捕鱼工具",
+                "only_rec": true,
+                "roi": [
+                    558,
+                    153,
+                    167,
+                    31
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "override_无自动捕鱼奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 92
+            }
+        },
+        "inverse": true,
+        "next": [
+            "override_位于捕鱼工具选择界面",
+            "[JumpBack]进入捕鱼工具选择界面"
+        ],
+        "recognition": {
+            "param": {
+                "lower": [
+                    230,
+                    40,
+                    40
+                ],
+                "method": 4,
+                "roi": [
+                    1198,
+                    263,
+                    22,
+                    21
+                ],
+                "upper": [
+                    250,
+                    50,
+                    50
+                ]
+            },
+            "type": "ColorMatch"
+        }
+    },
+    "pre_检测箱子": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 4824
+            }
+        },
+        "next": [
+            "拾取箱子",
+            "拜访下一好友"
+        ],
+        "post_delay": 3000,
+        "recognition": {
+            "param": {
+                "expected": "拜访",
+                "only_rec": true,
+                "roi": [
+                    42,
+                    251,
+                    45,
+                    25
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "一键派遣": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 3134
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": "派遣",
+                "only_rec": true,
+                "roi": [
+                    428,
+                    673,
+                    103,
+                    34
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "不在家园": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 2041
+            }
+        },
+        "home_doc": "尝试返回主页面后再进入家园",
+        "next": [
+            "override_位于主界面",
+            "[JumpBack]返回主界面_fast"
+        ]
+    },
+    "事务派遣": {
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 12
+            }
+        },
+        "next": [
+            "进入总览"
+        ]
+    },
+    "位于事务派遣": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3218,
+                "y": 2982
+            }
+        },
+        "next": [
+            "无可刷新材料",
+            "免费次数用尽",
+            "[JumpBack]有可刷新委托"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "事务中心",
+                "only_rec": true,
+                "roi": [
+                    213,
+                    26,
+                    115,
+                    33
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "位于家园": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4610,
+                "y": 3975
+            }
+        },
+        "recognition": {
+            "param": {
+                "expected": "家园",
+                "only_rec": true,
+                "roi": [
+                    212,
+                    25,
+                    62,
+                    33
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "位于总览": {
+        "$__mpe_code": {
+            "position": {
+                "x": -18,
+                "y": 7
+            }
+        },
+        "recognition": {
+            "param": {
+                "expected": "总览",
+                "only_rec": true,
+                "roi": [
+                    211,
+                    25,
+                    62,
+                    34
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "位于拜访列表": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2374,
+                "y": 3045
+            }
+        },
+        "next": [
+            "拜访列表次数用尽",
+            "有好友",
+            "无好友"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "拜访",
+                "only_rec": true,
+                "roi": [
+                    635,
+                    102,
+                    48,
+                    24
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "位于拜访页面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3772,
+                "y": 5470
+            }
+        },
+        "next": [
+            "拾箱次数用尽",
+            "无可拜访好友",
+            "[JumpBack]点击空白区域",
+            "[JumpBack]加载中1",
+            "[JumpBack]pre_检测箱子"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "拜访下一好友",
+                "only_rec": true,
+                "roi": [
+                    37,
+                    680,
+                    130,
+                    31
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "位于捕鱼工具选择界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3132,
+                "y": 301
+            }
+        },
+        "next": [
+            "捕鱼100次完成",
+            "[JumpBack]点击空白区域",
+            "[JumpBack]捕鱼100次",
+            "[JumpBack]override_无自动捕鱼奖励"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "请选择捕鱼工具",
+                "only_rec": true,
+                "roi": [
+                    558,
+                    153,
+                    167,
+                    31
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "位于捕鱼界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2492,
+                "y": 1864
+            }
+        },
+        "next": [
+            "无自动捕鱼奖励",
+            "[JumpBack]收取自动捕鱼奖励"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "钓鱼",
+                "only_rec": true,
+                "roi": [
+                    213,
+                    26,
+                    58,
+                    32
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "位于种植": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2009,
+                "y": 1227
+            }
+        },
+        "home_doc": "种植界面",
+        "next": [
+            "种植完毕",
+            "[JumpBack]点击种植",
+            "[JumpBack]选择种子"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "种子",
+                "only_rec": true,
+                "roi": [
+                    114,
+                    673,
+                    74,
+                    25
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "免费次数用尽": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3772,
+                "y": 3080
+            }
+        },
+        "inverse": true,
+        "next": [
+            "派遣完毕",
+            "[JumpBack]一键派遣"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "免费",
+                "only_rec": true,
+                "roi": [
+                    97,
+                    560,
+                    1095,
+                    27
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "凝练石收取完毕": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 2510
+            }
+        },
+        "inverse": true,
+        "next": [
+            "位于家园",
+            "[JumpBack]点击返回按钮"
+        ],
+        "on_error": [
+            "返回主界面_fast"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "领取",
+                "only_rec": true,
+                "roi": [
+                    540,
+                    204,
+                    43,
+                    24
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "刷新当前委托任务": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 3420
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": "刷新",
+                "only_rec": true,
+                "roi": "有可刷新委托",
+                "roi_offset": [
+                    -3,
+                    277,
+                    20,
+                    2
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "回家": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4442,
+                "y": 5825
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": "回家",
+                "only_rec": true,
+                "roi": [
+                    43,
+                    314,
+                    40,
+                    23
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "家园": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3256,
+                "y": 2195
+            }
+        },
+        "next": [
+            "override_位于家园",
+            "[JumpBack]点击返回按钮",
+            "[JumpBack]关闭悬浮窗",
+            "[JumpBack]不在家园"
+        ]
+    },
+    "拜访下一好友": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4442,
+                "y": 4596
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": "拜访下一好友",
+                "only_rec": true,
+                "roi": [
+                    37,
+                    680,
+                    130,
+                    31
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "拜访列表次数用尽": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2957,
+                "y": 3047
+            }
+        },
+        "next": [
+            "位于家园",
+            "[JumpBack]关闭悬浮窗"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "拜访",
+                "only_rec": true,
+                "roi": [
+                    970,
+                    647,
+                    36,
+                    23
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "拜访好友": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1708,
+                "y": 3034
+            }
+        },
+        "next": [
+            "进入拜访列表"
+        ]
+    },
+    "拾取箱子": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4442,
+                "y": 4882
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "pre_delay": 0,
+        "recognition": {
+            "param": {
+                "template": [
+                    "./Home/box.png",
+                    "./Home/box2.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "拾箱次数用尽": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 5504
+            }
+        },
+        "next": [
+            "位于家园",
+            "[JumpBack]回家",
+            "[JumpBack]加载中1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "0/",
+                "only_rec": true,
+                "roi": [
+                    1216,
+                    180,
+                    34,
+                    20
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "捕鱼": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1716,
+                "y": 2312
+            }
+        },
+        "next": [
+            "进入捕鱼界面",
+            "未开启捕鱼"
+        ]
+    },
+    "捕鱼100次": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3452,
+                "y": 581
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": "100",
+                "only_rec": true,
+                "roi": [
+                    914,
+                    629,
+                    137,
+                    31
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "捕鱼100次完成": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3452,
+                "y": 265
+            }
+        },
+        "next": [
+            "捕鱼10次完成",
+            "[JumpBack]点击空白区域",
+            "[JumpBack]捕鱼10次",
+            "[JumpBack]override_无自动捕鱼奖励"
+        ],
+        "recognition": {
+            "param": {
+                "lower": [
+                    220,
+                    90,
+                    95
+                ],
+                "method": 4,
+                "roi": [
+                    862,
+                    628,
+                    284,
+                    92
+                ],
+                "upper": [
+                    240,
+                    105,
+                    105
+                ]
+            },
+            "type": "ColorMatch"
+        }
+    },
+    "捕鱼10次": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3772,
+                "y": 256
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": "10",
+                "only_rec": true,
+                "roi": [
+                    578,
+                    627,
+                    127,
+                    33
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "捕鱼10次完成": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3772,
+                "y": 542
+            }
+        },
+        "next": [
+            "捕鱼完成",
+            "[JumpBack]点击空白区域",
+            "[JumpBack]捕鱼1次",
+            "[JumpBack]override_无自动捕鱼奖励"
+        ],
+        "recognition": {
+            "param": {
+                "lower": [
+                    220,
+                    90,
+                    95
+                ],
+                "method": 4,
+                "roi": [
+                    529,
+                    628,
+                    269,
+                    92
+                ],
+                "upper": [
+                    240,
+                    105,
+                    105
+                ]
+            },
+            "type": "ColorMatch"
+        }
+    },
+    "捕鱼1次": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 478
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": "开始捕鱼",
+                "only_rec": true,
+                "roi": [
+                    241,
+                    628,
+                    116,
+                    31
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "捕鱼完成": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 764
+            }
+        },
+        "next": [
+            "返回主界面_fast"
+        ],
+        "recognition": {
+            "param": {
+                "lower": [
+                    220,
+                    90,
+                    95
+                ],
+                "method": 4,
+                "roi": [
+                    196,
+                    626,
+                    250,
+                    94
+                ],
+                "upper": [
+                    240,
+                    105,
+                    105
+                ]
+            },
+            "type": "ColorMatch"
+        }
+    },
+    "收取凝练石": {
+        "$__mpe_code": {
+            "position": {
+                "x": 252,
+                "y": 12
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": "领取",
+                "only_rec": true,
+                "roi": [
+                    540,
+                    204,
+                    43,
+                    24
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "收取自动捕鱼奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2812,
+                "y": 1881
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "next": [
+            "点击空白区域",
+            "收取自动捕鱼奖励"
+        ],
+        "recognition": {
+            "param": {
+                "lower": [
+                    230,
+                    40,
+                    40
+                ],
+                "method": 4,
+                "roi": [
+                    1198,
+                    263,
+                    22,
+                    21
+                ],
+                "upper": [
+                    250,
+                    50,
+                    50
+                ]
+            },
+            "type": "ColorMatch"
+        }
+    },
+    "收菜": {
+        "$__mpe_code": {
+            "position": {
+                "x": 492,
+                "y": 12
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": "领取",
+                "only_rec": true,
+                "roi": [
+                    539,
+                    395,
+                    43,
+                    28
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "收菜完成": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1222,
+                "y": 1089
+            }
+        },
+        "inverse": true,
+        "next": [
+            "位于种植",
+            "[JumpBack]进入种植"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "领取",
+                "only_rec": true,
+                "roi": [
+                    539,
+                    395,
+                    43,
+                    28
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "新建节点21": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3099,
+                "y": 1394
+            }
+        },
+        "next": [
+            "[Anchor]a_种植"
+        ],
+        "post_delay": 1800000
+    },
+    "无可刷新材料": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3772,
+                "y": 2772
+            }
+        },
+        "inverse": true,
+        "next": [
+            "派遣完毕",
+            "[JumpBack]一键派遣"
+        ],
+        "recognition": {
+            "param": {
+                "roi": [
+                    135,
+                    213,
+                    1110,
+                    169
+                ],
+                "template": [
+                    "./Home/exp.png",
+                    "./Home/exp1.png",
+                    "./Home/money.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "无可拜访好友": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 5164
+            }
+        },
+        "home_doc": "在只有一位好友时，点击“拜访下一好友”会出现",
+        "next": [
+            "位于家园",
+            "[JumpBack]回家"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "无可拜访好友",
+                "only_rec": true,
+                "roi": [
+                    580,
+                    237,
+                    123,
+                    28
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "无好友": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2773,
+                "y": 3354
+            }
+        },
+        "inverse": true,
+        "next": [
+            "位于家园",
+            "[JumpBack]关闭悬浮窗"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "拜访",
+                "only_rec": true,
+                "roi": [
+                    1023,
+                    206,
+                    48,
+                    26
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "无自动捕鱼奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2812,
+                "y": 208
+            }
+        },
+        "inverse": true,
+        "next": [
+            "位于捕鱼工具选择界面",
+            "[JumpBack]进入捕鱼工具选择界面"
+        ],
+        "recognition": {
+            "param": {
+                "lower": [
+                    230,
+                    40,
+                    40
+                ],
+                "method": 4,
+                "roi": [
+                    1198,
+                    263,
+                    22,
+                    21
+                ],
+                "upper": [
+                    250,
+                    50,
+                    50
+                ]
+            },
+            "type": "ColorMatch"
+        }
+    },
+    "有可刷新委托": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3772,
+                "y": 3420
+            }
+        },
+        "next": [
+            "刷新当前委托任务"
+        ],
+        "recognition": {
+            "param": {
+                "roi": [
+                    135,
+                    213,
+                    1110,
+                    169
+                ],
+                "template": [
+                    "./Home/exp.png",
+                    "./Home/exp1.png",
+                    "./Home/money.png"
+                ]
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "有好友": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3772,
+                "y": 5750
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "next": [
+            "有好友",
+            "进入左下房间",
+            "[JumpBack]加载中1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "拜访",
+                "only_rec": true,
+                "roi": [
+                    1023,
+                    206,
+                    48,
+                    26
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "未开启捕鱼": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2215,
+                "y": 2291
+            }
+        },
+        "inverse": true,
+        "next": [
+            "返回主界面_fast"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "钓鱼",
+                "only_rec": true,
+                "roi": [
+                    42,
+                    438,
+                    43,
+                    24
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "派遣完毕": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 2850
+            }
+        },
+        "next": [
+            "位于家园",
+            "[JumpBack]点击返回按钮"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "不",
+                "only_rec": true,
+                "roi": [
+                    549,
+                    236,
+                    181,
+                    23
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "点击种植": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2781,
+                "y": 666
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": "种植",
+                "only_rec": true,
+                "roi": [
+                    610,
+                    593,
+                    63,
+                    29
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "炼金炉": {
+        "$__mpe_code": {
+            "position": {
+                "x": 972,
+                "y": 200
+            }
+        },
+        "next": [
+            "进入总览"
+        ]
+    },
+    "种植": {
+        "$__mpe_code": {
+            "position": {
+                "x": 377,
+                "y": 1124
+            }
+        },
+        "anchor": "a_种植",
+        "next": [
+            "进入总览_副本8",
+            "[JumpBack]ui_进入总览"
+        ]
+    },
+    "种植完毕": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2763,
+                "y": 1344
+            }
+        },
+        "next": [
+            "新建节点21"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "没有空地",
+                "only_rec": true,
+                "roi": [
+                    597,
+                    235,
+                    85,
+                    25
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "进入事务派遣": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3452,
+                "y": 3392
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "roi": [
+                    122,
+                    518,
+                    138,
+                    147
+                ],
+                "template": "./Home/transaction.png"
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "进入家园": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1700,
+                "y": 3436
+            }
+        },
+        "next": [
+            "进入家园1",
+            "进入家园2",
+            "进入家园3",
+            "进入家园"
+        ]
+    },
+    "进入家园1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 4140
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "home_doc": "点击家园(spine)",
+        "next": [
+            "位于家园",
+            "[JumpBack]加载中1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "家园",
+                "only_rec": true,
+                "roi": [
+                    438,
+                    477,
+                    63,
+                    33
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "进入家园2": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4092,
+                "y": 4482
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "home_doc": "点击家园(live2d)",
+        "next": [
+            "位于家园",
+            "[JumpBack]加载中1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "家园",
+                "only_rec": true,
+                "roi": [
+                    438,
+                    366,
+                    66,
+                    36
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "进入家园3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2672,
+                "y": 4040
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "home_doc": "点击家园(誓约)",
+        "next": [
+            "位于家园",
+            "[JumpBack]加载中1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "家园",
+                "roi": [
+                    126,
+                    141,
+                    1036,
+                    347
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "进入左下房间": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3029,
+                "y": 5176
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    245,
+                    636,
+                    96,
+                    50
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "进入左下房间1",
+            "有好友",
+            "[JumpBack]加载中1"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "拜访下一好友",
+                "only_rec": true,
+                "roi": [
+                    37,
+                    680,
+                    130,
+                    31
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "进入左下房间1": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3452,
+                "y": 5660
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    245,
+                    636,
+                    96,
+                    50
+                ]
+            },
+            "type": "Click"
+        },
+        "next": [
+            "位于拜访页面",
+            "有好友",
+            "加载中1"
+        ]
+    },
+    "进入总览": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1238,
+                "y": 218
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "next": [
+            "override_位于总览",
+            "进入总览"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "总览",
+                "only_rec": true,
+                "roi": [
+                    43,
+                    251,
+                    43,
+                    26
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "进入总览_副本8": {
+        "$__mpe_code": {
+            "position": {
+                "x": 798,
+                "y": 1097
+            }
+        },
+        "next": [
+            "收菜完成"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "总览",
+                "only_rec": true,
+                "roi": [
+                    209,
+                    21,
+                    66,
+                    40
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "进入拜访列表": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2055,
+                "y": 3031
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "next": [
+            "位于拜访列表",
+            "进入拜访列表"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "拜访",
+                "only_rec": true,
+                "roi": [
+                    42,
+                    374,
+                    45,
+                    27
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "进入捕鱼工具选择界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4442,
+                "y": 12
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": "捕鱼",
+                "only_rec": true,
+                "roi": [
+                    1142,
+                    649,
+                    44,
+                    29
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "进入捕鱼界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2172,
+                "y": 1863
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "next": [
+            "位于捕鱼界面",
+            "进入捕鱼界面"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "钓鱼",
+                "only_rec": true,
+                "roi": [
+                    42,
+                    438,
+                    43,
+                    24
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "进入种植": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2049,
+                "y": 805
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "roi": [
+                    121,
+                    327,
+                    138,
+                    142
+                ],
+                "template": "./Home/plant.png"
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "选择种子": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2776,
+                "y": 958
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "home_doc": "配置项,默认选择最左边的种子",
+        "recognition": {
+            "param": {
+                "expected": "种子",
+                "roi": [
+                    65,
+                    624,
+                    979,
+                    96
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "领取事务派遣奖励": {
+        "$__mpe_code": {
+            "position": {
+                "x": 732,
+                "y": 12
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": "领取",
+                "only_rec": true,
+                "roi": [
+                    539,
+                    590,
+                    47,
+                    27
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "领取事务派遣奖励完毕": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1710,
+                "y": 2546
+            }
+        },
+        "inverse": true,
+        "next": [
+            "位于事务派遣",
+            "[JumpBack]进入事务派遣"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "领取",
+                "only_rec": true,
+                "roi": [
+                    539,
+                    590,
+                    47,
+                    27
+                ]
+            },
+            "type": "OCR"
+        }
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "$__mpe_anchor_a_测试_新建Pipeline6": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4735,
+                "y": 980
+            }
+        }
+    },
+    "$__mpe_config_新建Pipeline6": {
+        "$__mpe_code": {
+            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\测试.json",
+            "filename": "新建Pipeline6",
+            "isModifiedExternally": false,
+            "lastSyncTime": 1773200326585,
+            "prefix": "",
+            "savedViewport": {
+                "x": 992,
+                "y": 378,
+                "zoom": 0.2
+            },
+            "version": "v1.2.3"
+        }
+    },
+    "新建节点15": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3480,
+                "y": 988
+            }
+        },
+        "anchor": "a_测试",
+        "next": [
+            "新建节点3"
+        ]
+    },
+    "新建节点16": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3891,
+                "y": 958
+            }
+        },
+        "next": [
+            "新建节点17"
+        ],
+        "post_delay": 5000,
+        "pre_delay": 0
+    },
+    "新建节点17": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4368,
+                "y": 966
+            }
+        },
+        "next": [
+            "[Anchor]a_测试"
+        ]
+    },
+    "新建节点3": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3840,
+                "y": 639
+            }
+        },
+        "action": {
+            "param": {
+                "custom_action": "my_action_111",
+                "custom_action_param": ""
+            },
+            "type": "Custom"
+        },
+        "post_delay": 0,
+        "pre_delay": 0
+    }
+}
