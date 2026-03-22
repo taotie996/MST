@@ -2,16 +2,16 @@
     "$__mpe_config_新建Pipeline8": {
         "$__mpe_code": {
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\界面.json",
-            "filename": "新建Pipeline8",
+            "filename": "新建Pipeline5",
             "isModifiedExternally": false,
-            "lastSyncTime": 1772980982472,
+            "lastSyncTime": 1774183939676,
             "prefix": "",
             "savedViewport": {
-                "x": 99,
-                "y": -570,
-                "zoom": 1.5
+                "x": 836,
+                "y": -305,
+                "zoom": 0.57
             },
-            "version": "v1.2.3"
+            "version": "v1.3.0"
         }
     },
     "override_位于主界面": {
