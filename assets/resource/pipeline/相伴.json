@@ -10,14 +10,14 @@
     "$__mpe_config_新建Pipeline5": {
         "$__mpe_code": {
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\相伴.json",
-            "filename": "新建Pipeline5",
-            "isModifiedExternally": true,
-            "lastSyncTime": 1774185690048,
+            "filename": "新建Pipeline3",
+            "isModifiedExternally": false,
+            "lastSyncTime": 1774187585539,
             "prefix": "相伴",
             "savedViewport": {
-                "x": 1683,
-                "y": 2139,
-                "zoom": 1
+                "x": 1452,
+                "y": 829,
+                "zoom": 0.57
             },
             "version": "v1.3.0"
         }

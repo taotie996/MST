@@ -1,20 +1,12 @@
 {
-    "$__mpe_anchor_a_种植_新建Pipeline3": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3473,
-                "y": 1404
-            }
-        }
-    },
     "$__mpe_config_新建Pipeline3": {
         "$__mpe_code": {
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\家园.json",
             "filename": "新建Pipeline3",
             "isModifiedExternally": false,
-            "lastSyncTime": 1773017194493,
+            "lastSyncTime": 1774187585548,
             "prefix": "",
-            "version": "v1.2.3"
+            "version": "v1.3.0"
         }
     },
     "$__mpe_external_override_位于主界面_新建Pipeline3": {
@@ -960,8 +952,8 @@
     "收菜完成": {
         "$__mpe_code": {
             "position": {
-                "x": 1222,
-                "y": 1089
+                "x": 1193,
+                "y": 1062
             }
         },
         "inverse": true,
@@ -982,18 +974,6 @@
             },
             "type": "OCR"
         }
-    },
-    "新建节点21": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3099,
-                "y": 1394
-            }
-        },
-        "next": [
-            "[Anchor]a_种植"
-        ],
-        "post_delay": 1800000
     },
     "无可刷新材料": {
         "$__mpe_code": {
@@ -1110,6 +1090,18 @@
             },
             "type": "ColorMatch"
         }
+    },
+    "日常任务_种田": {
+        "$__mpe_code": {
+            "position": {
+                "x": 243,
+                "y": 1062
+            }
+        },
+        "next": [
+            "进入总览_副本8",
+            "[JumpBack]ui_进入总览"
+        ]
     },
     "有可刷新委托": {
         "$__mpe_code": {
@@ -1254,19 +1246,6 @@
             "进入总览"
         ]
     },
-    "种植": {
-        "$__mpe_code": {
-            "position": {
-                "x": 377,
-                "y": 1124
-            }
-        },
-        "anchor": "a_种植",
-        "next": [
-            "进入总览_副本8",
-            "[JumpBack]ui_进入总览"
-        ]
-    },
     "种植完毕": {
         "$__mpe_code": {
             "position": {
@@ -1274,9 +1253,6 @@
                 "y": 1344
             }
         },
-        "next": [
-            "新建节点21"
-        ],
         "recognition": {
             "param": {
                 "expected": "没有空地",
@@ -1286,6 +1262,30 @@
                     235,
                     85,
                     25
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "菜未完成": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1204,
+                "y": 735
+            }
+        },
+        "inverse": false,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "全部地块种植"
+                ],
+                "only_rec": true,
+                "roi": [
+                    376,
+                    418,
+                    96,
+                    28
                 ]
             },
             "type": "OCR"
@@ -1516,6 +1516,7 @@
             }
         },
         "next": [
+            "菜未完成",
             "收菜完成"
         ],
         "recognition": {
@@ -1618,8 +1619,8 @@
     "进入种植": {
         "$__mpe_code": {
             "position": {
-                "x": 2049,
-                "y": 805
+                "x": 1962,
+                "y": 773
             }
         },
         "action": {
