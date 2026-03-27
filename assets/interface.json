@@ -3,8 +3,8 @@
     "name": "MST",
     "controller": [
         {
-            "name": "ADB 默认方式",
-            "type": "Adb"
+            "name": "ADB",
+            "type": "Adb",
         }
     ],
     "resource": [

@@ -1,20 +1,20 @@
 {
-    "$__mpe_config_新建Pipeline3": {
+    "$__mpe_config_启动游戏": {
         "$__mpe_code": {
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\启动游戏.json",
-            "filename": "新建Pipeline5",
+            "filename": "启动游戏",
             "isModifiedExternally": false,
-            "lastSyncTime": 1774183939662,
+            "lastSyncTime": 1774616680130,
             "prefix": "",
             "savedViewport": {
-                "x": 574,
-                "y": 275,
-                "zoom": 0.87
+                "x": 710,
+                "y": -107,
+                "zoom": 1
             },
-            "version": "v1.3.0"
+            "version": "v1.3.1"
         }
     },
-    "$__mpe_external_位于主界面1_新建Pipeline3": {
+    "$__mpe_external_位于主界面1_启_启动游戏": {
         "$__mpe_code": {
             "position": {
                 "x": 1319,
@@ -22,7 +22,15 @@
             }
         }
     },
-    "$__mpe_external_位于主界面2_新建Pipeline3": {
+    "$__mpe_external_位于主界面1_启动游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_external_位于主界面2_启_启动游戏": {
         "$__mpe_code": {
             "position": {
                 "x": 1308,
@@ -30,7 +38,15 @@
             }
         }
     },
-    "$__mpe_external_位于主界面3_新建Pipeline3": {
+    "$__mpe_external_位于主界面2_启动游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_external_位于主界面3_启_启动游戏": {
         "$__mpe_code": {
             "position": {
                 "x": 1309,
@@ -38,19 +54,43 @@
             }
         }
     },
-    "$__mpe_external_关闭悬浮窗_新建Pipeline3": {
+    "$__mpe_external_位于主界面3_启动游戏": {
         "$__mpe_code": {
             "position": {
-                "x": 847,
-                "y": 516
+                "x": 0,
+                "y": 0
             }
         }
     },
-    "$__mpe_external_加载中_新建Pipeline3": {
+    "$__mpe_external_关闭悬浮窗_启_启动游戏": {
         "$__mpe_code": {
             "position": {
-                "x": 840,
-                "y": 760
+                "x": 1302,
+                "y": 253
+            }
+        }
+    },
+    "$__mpe_external_关闭悬浮窗_启动游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
+            }
+        }
+    },
+    "$__mpe_external_加载中_启_启动游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1322,
+                "y": 971
+            }
+        }
+    },
+    "$__mpe_external_加载中_启动游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": 0,
+                "y": 0
             }
         }
     },
@@ -71,8 +111,8 @@
     "启动游戏": {
         "$__mpe_code": {
             "position": {
-                "x": -305,
-                "y": 362
+                "x": -389,
+                "y": 361
             }
         },
         "next": [
@@ -174,8 +214,8 @@
     "每日代金券": {
         "$__mpe_code": {
             "position": {
-                "x": 329,
-                "y": 309
+                "x": 327,
+                "y": 196
             }
         },
         "action": {

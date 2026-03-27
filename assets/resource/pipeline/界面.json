@@ -1,15 +1,15 @@
 {
-    "$__mpe_config_新建Pipeline8": {
+    "$__mpe_config_界面": {
         "$__mpe_code": {
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\界面.json",
-            "filename": "新建Pipeline5",
+            "filename": "启动游戏",
             "isModifiedExternally": false,
-            "lastSyncTime": 1774183939676,
+            "lastSyncTime": 1774239418811,
             "prefix": "",
             "savedViewport": {
-                "x": 836,
-                "y": -305,
-                "zoom": 0.57
+                "x": 391,
+                "y": -1181,
+                "zoom": 0.76
             },
             "version": "v1.3.0"
         }
