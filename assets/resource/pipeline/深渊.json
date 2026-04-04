@@ -2,15 +2,10 @@
     "$__mpe_config_深渊": {
         "$__mpe_code": {
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\深渊.json",
-            "filename": "深渊",
+            "filename": "家园",
             "isModifiedExternally": false,
-            "lastSyncTime": 1774622563308,
+            "lastSyncTime": 1774664418897,
             "prefix": "",
-            "savedViewport": {
-                "x": 900,
-                "y": -103,
-                "zoom": 0.29
-            },
             "version": "v1.3.1"
         }
     },
@@ -32,7 +27,6 @@
     "$__mpe_group_分组_深渊": {
         "$__mpe_code": {
             "childrenLabels": [
-                "深渊_重铸刻印_副本1",
                 "sy_放弃刻印",
                 "深渊_购买刻印",
                 "深渊_选择刻印",
@@ -46,7 +40,8 @@
                 "深渊_购买_刻印_SSS",
                 "深渊_点击返回",
                 "深渊_判断是否开了自动战斗",
-                "深渊_重铸刻印"
+                "深渊_重铸刻印",
+                "深渊_重铸刻印_副本1"
             ],
             "color": "blue",
             "height": 2205,

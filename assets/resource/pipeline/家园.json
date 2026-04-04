@@ -4,14 +4,9 @@
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\家园.json",
             "filename": "家园",
             "isModifiedExternally": false,
-            "lastSyncTime": 1774277857429,
+            "lastSyncTime": 1774664486970,
             "prefix": "",
-            "savedViewport": {
-                "x": -116,
-                "y": -2404,
-                "zoom": 1
-            },
-            "version": "v1.3.0"
+            "version": "v1.3.1"
         }
     },
     "$__mpe_external_override_位于主界面_家园": {
@@ -129,7 +124,9 @@
     "$__mpe_group_种田_家园": {
         "$__mpe_code": {
             "childrenLabels": [
+                "ui_进入总览",
                 "位于种植",
+                "开始收菜",
                 "收菜完成",
                 "日常任务_种田",
                 "点击种植",
@@ -137,15 +134,13 @@
                 "菜未完成",
                 "进入总览_副本8",
                 "进入种植",
-                "选择种子",
-                "ui_进入总览",
-                "开始收菜"
+                "选择种子"
             ],
             "color": "blue",
             "height": 839,
             "position": {
-                "x": -703,
-                "y": 558
+                "x": -1483,
+                "y": 853
             },
             "width": 2622
         }

@@ -1,0 +1,1634 @@
+[
+    {
+        "entry_id": "sched_08456e21dcfe45009efa38caa74f3fa9",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T00:00:00",
+            "hour": 0,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T00:00:00"
+    },
+    {
+        "entry_id": "sched_e802804014394fa5ba748b00dffbcd27",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T00:15:00",
+            "hour": 0,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T00:15:00"
+    },
+    {
+        "entry_id": "sched_4941cb69341b4b73b57ef32c1fd4e31b",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T00:30:00",
+            "hour": 0,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T00:30:00"
+    },
+    {
+        "entry_id": "sched_935fa33533bf42aa983929d9630b6731",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T00:45:00",
+            "hour": 0,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T00:45:00"
+    },
+    {
+        "entry_id": "sched_e601c418f17d4a20bf691c9f949e6146",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T01:00:00",
+            "hour": 1,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T01:00:00"
+    },
+    {
+        "entry_id": "sched_3a7ff034bc814d67ae38fd3f9a50135f",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T01:15:00",
+            "hour": 1,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T01:15:00"
+    },
+    {
+        "entry_id": "sched_f2836dd25ec14366916466231d165324",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T01:30:00",
+            "hour": 1,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T01:30:00"
+    },
+    {
+        "entry_id": "sched_c1ddf18923f44ffcb72b93fe220cdf58",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T01:45:00",
+            "hour": 1,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T01:45:00"
+    },
+    {
+        "entry_id": "sched_105a20bae54c4dcf85f2ab93fea75737",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T02:00:00",
+            "hour": 2,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T02:00:00"
+    },
+    {
+        "entry_id": "sched_9cdeda05b500410b9bb2a1fec2aae9f4",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T02:15:00",
+            "hour": 2,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T02:15:00"
+    },
+    {
+        "entry_id": "sched_a8c23609e6fa46a88ae2fd4015764a5c",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T02:30:00",
+            "hour": 2,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T02:30:00"
+    },
+    {
+        "entry_id": "sched_e69bd7b0a8b44271ba084f4c309f7f8c",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T02:45:00",
+            "hour": 2,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T02:45:00"
+    },
+    {
+        "entry_id": "sched_a59f8f0610254d8c89f0d0c49beb5840",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T03:00:00",
+            "hour": 3,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T03:00:00"
+    },
+    {
+        "entry_id": "sched_a8ad32b76289476b887ebea055652e2c",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T03:15:00",
+            "hour": 3,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T03:15:00"
+    },
+    {
+        "entry_id": "sched_f71952822a0d4ae8aa29951184059ae3",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T03:30:00",
+            "hour": 3,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T03:30:00"
+    },
+    {
+        "entry_id": "sched_496c90f3a7f24f4a8266a9abd9ce240d",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T03:45:00",
+            "hour": 3,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T03:45:00"
+    },
+    {
+        "entry_id": "sched_e900b892c49e470cb33bf6266b43de0f",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T04:00:00",
+            "hour": 4,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T04:00:00"
+    },
+    {
+        "entry_id": "sched_f58943a1d9c242548fc64c91ffbb54bf",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T04:15:00",
+            "hour": 4,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T04:15:00"
+    },
+    {
+        "entry_id": "sched_91ba67b686f54c619155310ff3192b51",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T04:30:00",
+            "hour": 4,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T04:30:00"
+    },
+    {
+        "entry_id": "sched_457fe94def1a45928a60339aa06fe5ce",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T04:45:00",
+            "hour": 4,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T04:45:00"
+    },
+    {
+        "entry_id": "sched_b3011660669b4cbebe95585ae7b2e190",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T05:00:00",
+            "hour": 5,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T05:00:00"
+    },
+    {
+        "entry_id": "sched_84abdaeed43543958693403d2396b0dd",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T05:15:00",
+            "hour": 5,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T05:15:00"
+    },
+    {
+        "entry_id": "sched_da8ad4719b4e4388a7acb9ca0a0067bf",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T05:30:00",
+            "hour": 5,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T05:30:00"
+    },
+    {
+        "entry_id": "sched_418a8970ce7e46d88755a24efb5fb160",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T05:45:00",
+            "hour": 5,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T05:45:00"
+    },
+    {
+        "entry_id": "sched_0890cf35a42e444cb8b185c2c54f76d0",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T06:00:00",
+            "hour": 6,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T06:00:00"
+    },
+    {
+        "entry_id": "sched_7d64a302b8b84c99a5661d97b3e6ff9e",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T06:15:00",
+            "hour": 6,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T06:15:00"
+    },
+    {
+        "entry_id": "sched_abea3939b5f842e99e9ff82777a8fc49",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T06:30:00",
+            "hour": 6,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T06:30:00"
+    },
+    {
+        "entry_id": "sched_551f447eaa854113be73463b7bdc1da1",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T06:45:00",
+            "hour": 6,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T06:45:00"
+    },
+    {
+        "entry_id": "sched_90a2d172017543beac096cba5a7408a9",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T07:00:00",
+            "hour": 7,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T07:00:00"
+    },
+    {
+        "entry_id": "sched_6e2156be98974e978e07f6c4e7c463c4",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T07:15:00",
+            "hour": 7,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T07:15:00"
+    },
+    {
+        "entry_id": "sched_1691f36ea1894dccafb6cd9a2f822afe",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T07:30:00",
+            "hour": 7,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T07:30:00"
+    },
+    {
+        "entry_id": "sched_b8b705d9e85a4d31be4bf36c9d995eea",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T07:45:00",
+            "hour": 7,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T07:45:00"
+    },
+    {
+        "entry_id": "sched_af50665f4944442d88a8f44cb64fde19",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T08:00:00",
+            "hour": 8,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T08:00:00"
+    },
+    {
+        "entry_id": "sched_e2ef4087f0de48369516f500554d6fc7",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T08:15:00",
+            "hour": 8,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T08:15:00"
+    },
+    {
+        "entry_id": "sched_b324757cf0fd4208bdac5d106f33dd13",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T08:30:00",
+            "hour": 8,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T08:30:00"
+    },
+    {
+        "entry_id": "sched_72ca4791b3004c26bd06091c05375dab",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T08:45:00",
+            "hour": 8,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T08:45:00"
+    },
+    {
+        "entry_id": "sched_3dbc75f17f2c483a86a2d3ee6816cb7c",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T09:00:00",
+            "hour": 9,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T09:00:00"
+    },
+    {
+        "entry_id": "sched_5677bc7590ed4ff2afaca1e12e5f7f88",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T09:15:00",
+            "hour": 9,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T09:15:00"
+    },
+    {
+        "entry_id": "sched_66b7dd958fcc4c0fb3c1150fe10810d6",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T09:30:00",
+            "hour": 9,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T09:30:00"
+    },
+    {
+        "entry_id": "sched_c093d6a9d1e549e09648013360e22800",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T09:45:00",
+            "hour": 9,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T09:45:00"
+    },
+    {
+        "entry_id": "sched_ecd29f8c583f45a38df93bb979621842",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T10:00:00",
+            "hour": 10,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T10:00:00"
+    },
+    {
+        "entry_id": "sched_516ad07fcba4469d8b5557d2db0d8487",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T10:15:00",
+            "hour": 10,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T10:15:00"
+    },
+    {
+        "entry_id": "sched_a9cd746738f14e4789986f99a202902f",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T10:30:00",
+            "hour": 10,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T10:30:00"
+    },
+    {
+        "entry_id": "sched_c2c9767d92a9403498198d7880e974d4",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T10:45:00",
+            "hour": 10,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T10:45:00"
+    },
+    {
+        "entry_id": "sched_3fac60e4b43a4e27aaa11baea9d90431",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T11:00:00",
+            "hour": 11,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T11:00:00"
+    },
+    {
+        "entry_id": "sched_0ca48b3d7c6740ce86ff31d44f526e2e",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T11:15:00",
+            "hour": 11,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T11:15:00"
+    },
+    {
+        "entry_id": "sched_f64957979a5645c9b74a56a385e1a2f6",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T11:30:00",
+            "hour": 11,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T11:30:00"
+    },
+    {
+        "entry_id": "sched_dbedfcf4310a4dcdb3c562558714ceb3",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T11:45:00",
+            "hour": 11,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T11:45:00"
+    },
+    {
+        "entry_id": "sched_813234407e6a4fd9a6690829d06d59d9",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T12:00:00",
+            "hour": 12,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T12:00:00"
+    },
+    {
+        "entry_id": "sched_da723b120be346b4b1d64781a643490b",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T12:15:00",
+            "hour": 12,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T12:15:00"
+    },
+    {
+        "entry_id": "sched_5fe1e9d9a5ca4519b9c32f21e46072d8",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T12:30:00",
+            "hour": 12,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T12:30:00"
+    },
+    {
+        "entry_id": "sched_a28730d7c71d47c1a1065e24afd31cd6",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T12:45:00",
+            "hour": 12,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T12:45:00"
+    },
+    {
+        "entry_id": "sched_3a73f6211bcf45ceafb450704c6a07c1",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T13:00:00",
+            "hour": 13,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T13:00:00"
+    },
+    {
+        "entry_id": "sched_15489aca93c24ea2889103b4dd347224",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T13:15:00",
+            "hour": 13,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T13:15:00"
+    },
+    {
+        "entry_id": "sched_4cac47cbd0504bfab5a4376cb8589561",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T13:30:00",
+            "hour": 13,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T13:30:00"
+    },
+    {
+        "entry_id": "sched_ce7dbb2b5a0c4f06ac933cd77307333b",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T13:45:00",
+            "hour": 13,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T13:45:00"
+    },
+    {
+        "entry_id": "sched_673dfbb1fa9f42c0a3d0b8aad3db6ac1",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T14:00:00",
+            "hour": 14,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T14:00:00"
+    },
+    {
+        "entry_id": "sched_b38d08c78ce2402a81f46edb6454252e",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T14:15:00",
+            "hour": 14,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T14:15:00"
+    },
+    {
+        "entry_id": "sched_ba2c1f937c154c92bca11f5c3313c0e6",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T14:30:00",
+            "hour": 14,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T14:30:00"
+    },
+    {
+        "entry_id": "sched_c58aa874a3b44ea394c61d068d1d0f69",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T14:45:00",
+            "hour": 14,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T14:45:00"
+    },
+    {
+        "entry_id": "sched_dbda9b53cd254585bd2bd242fe4abca5",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T15:00:00",
+            "hour": 15,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T15:00:00"
+    },
+    {
+        "entry_id": "sched_ef1ca6d17db44698a53d51cefe0d8a94",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T15:15:00",
+            "hour": 15,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T15:15:00"
+    },
+    {
+        "entry_id": "sched_26b49104fa8f4f32bb6208c603d0847f",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T15:30:00",
+            "hour": 15,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T15:30:00"
+    },
+    {
+        "entry_id": "sched_ec1e8a9588a7407c8df582611e8b1e31",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T15:45:00",
+            "hour": 15,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T15:45:00"
+    },
+    {
+        "entry_id": "sched_b2218a098e0a4a04acb1e351f54c1de5",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T16:00:00",
+            "hour": 16,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T16:00:00"
+    },
+    {
+        "entry_id": "sched_23baa6cf390147c1ab21a064d425fd78",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T16:15:00",
+            "hour": 16,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T16:15:00"
+    },
+    {
+        "entry_id": "sched_86a4c7c9f9ed47b791a6c0f911130aa1",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T16:30:00",
+            "hour": 16,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T16:30:00"
+    },
+    {
+        "entry_id": "sched_bd4758d9dd2746e2b2a6f7591dfb43a6",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T16:45:00",
+            "hour": 16,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T16:45:00"
+    },
+    {
+        "entry_id": "sched_dcd245a1b1824c998efc79d7d598aae4",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T17:00:00",
+            "hour": 17,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T17:00:00"
+    },
+    {
+        "entry_id": "sched_a811e819f85e408cb5eee0690d560ee7",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T17:15:00",
+            "hour": 17,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T17:15:00"
+    },
+    {
+        "entry_id": "sched_8a0382e1e04f4c30bbae931913669ba6",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T17:30:00",
+            "hour": 17,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T17:30:00"
+    },
+    {
+        "entry_id": "sched_d4e345da7fec4647b6ea5bbf392d1a6c",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T17:45:00",
+            "hour": 17,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T17:45:00"
+    },
+    {
+        "entry_id": "sched_c02225e34f7d495ba10d177c83800184",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T18:00:00",
+            "hour": 18,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T18:00:00"
+    },
+    {
+        "entry_id": "sched_14c06c4e9ae1424bb5079764d5f8862a",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T18:15:00",
+            "hour": 18,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T18:15:00"
+    },
+    {
+        "entry_id": "sched_c605a6840db444e889206c29e8a39e34",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T18:30:00",
+            "hour": 18,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T18:30:00"
+    },
+    {
+        "entry_id": "sched_15a0983282a6417fb94c69287fb7698c",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T18:45:00",
+            "hour": 18,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T18:45:00"
+    },
+    {
+        "entry_id": "sched_846ea4e28eab4ace9ce22d25a4617af7",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T19:00:00",
+            "hour": 19,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T19:00:00"
+    },
+    {
+        "entry_id": "sched_d3694f378fd24e82877494a0e3f26ecc",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T19:15:00",
+            "hour": 19,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T19:15:00"
+    },
+    {
+        "entry_id": "sched_f57038437d3b4a2a88eb3502010ab4c0",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T19:30:00",
+            "hour": 19,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T19:30:00"
+    },
+    {
+        "entry_id": "sched_12b107e1f1bf4936917756a5b6c72f5c",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T19:45:00",
+            "hour": 19,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T19:45:00"
+    },
+    {
+        "entry_id": "sched_85128d2a59e64f73b708b175bfabb10f",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T20:00:00",
+            "hour": 20,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T20:00:00"
+    },
+    {
+        "entry_id": "sched_82a0c1ac7de941259126bf4ce34e4922",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T20:15:00",
+            "hour": 20,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T20:15:00"
+    },
+    {
+        "entry_id": "sched_e99eb37ff59243ecb0aac990896811e6",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T20:30:00",
+            "hour": 20,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T20:30:00"
+    },
+    {
+        "entry_id": "sched_517eb1be4d56495987ad6ff09ed26133",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T20:45:00",
+            "hour": 20,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T20:45:00"
+    },
+    {
+        "entry_id": "sched_acad83d472814cb4a43b30afcdc60a5d",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T21:00:00",
+            "hour": 21,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T21:00:00"
+    },
+    {
+        "entry_id": "sched_18e34b457e274bf7906a098ad6f6b673",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T21:15:00",
+            "hour": 21,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T21:15:00"
+    },
+    {
+        "entry_id": "sched_73b7091edb83469d9b36919c4b547ff5",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T21:30:00",
+            "hour": 21,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T21:30:00"
+    },
+    {
+        "entry_id": "sched_533452e8f7f94dbe8757918181e756b6",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T21:45:00",
+            "hour": 21,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T21:45:00"
+    },
+    {
+        "entry_id": "sched_cbcfccbd38dd4f9cbe4513e2606446b6",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T22:00:00",
+            "hour": 22,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T22:00:00"
+    },
+    {
+        "entry_id": "sched_3baddb2e1db54d468069f1cbb90efc90",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T22:15:00",
+            "hour": 22,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T22:15:00"
+    },
+    {
+        "entry_id": "sched_bcbe68ff0c9d42fdb5e9212002082fa5",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T22:30:00",
+            "hour": 22,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T22:30:00"
+    },
+    {
+        "entry_id": "sched_0b4b92f6cedb4e3cb6ff31811f859c9b",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T22:45:00",
+            "hour": 22,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T22:45:00"
+    },
+    {
+        "entry_id": "sched_db02a981ad034034bd5d54d584534bf4",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T23:00:00",
+            "hour": 23,
+            "minute": 0
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T23:00:00"
+    },
+    {
+        "entry_id": "sched_e16c6dd2b7ce4f49b8a9720a510ba4b5",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T23:15:00",
+            "hour": 23,
+            "minute": 15
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T23:15:00"
+    },
+    {
+        "entry_id": "sched_1845d4186dee4e5996641661a45b7a0e",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T23:30:00",
+            "hour": 23,
+            "minute": 30
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T23:30:00"
+    },
+    {
+        "entry_id": "sched_c15634d7cdeb4e09a54e4f2553e9ce7a",
+        "config_id": "c_1f266f5d9b23452bb1400a383180895a",
+        "name": "自动种田",
+        "schedule_type": "daily",
+        "params": {
+            "interval_days": 1,
+            "start_at": "2026-03-30T23:45:00",
+            "hour": 23,
+            "minute": 45
+        },
+        "force_start": true,
+        "enabled": true,
+        "created_at": "2026-03-30T00:00:00.000000",
+        "last_run": null,
+        "next_run": "2026-03-30T23:45:00"
+    }
+]

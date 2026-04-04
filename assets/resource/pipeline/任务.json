@@ -80,7 +80,6 @@
             127
         ],
         "next": [
-            "周常奖励领取完毕",
             "[JumpBack]点击空白区域",
             "[JumpBack]一键领取"
         ]
@@ -96,26 +95,6 @@
         ],
         "only_rec": true,
         "action": "Click"
-    },
-    "周常奖励领取完毕": {
-        "recognition": "OCR",
-        "expected": "领取",
-        "roi": [
-            1103,
-            184,
-            43,
-            24
-        ],
-        "only_rec": true,
-        "inverse": true,
-        "next": [
-            "位于主界面1",
-            "位于主界面2",
-            "位于主界面3",
-            "[JumpBack]一键领取",
-            "[JumpBack]点击空白区域",
-            "[JumpBack]返回主界面_fast"
-        ]
     },
     "一键领取": {
         "recognition": "ColorMatch",

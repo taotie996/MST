@@ -2,14 +2,14 @@
     "$__mpe_config_启动游戏": {
         "$__mpe_code": {
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\启动游戏.json",
-            "filename": "启动游戏",
+            "filename": "家园",
             "isModifiedExternally": false,
-            "lastSyncTime": 1774616680130,
+            "lastSyncTime": 1774664418905,
             "prefix": "",
             "savedViewport": {
-                "x": 710,
-                "y": -107,
-                "zoom": 1
+                "x": 624,
+                "y": -217,
+                "zoom": 1.15
             },
             "version": "v1.3.1"
         }
