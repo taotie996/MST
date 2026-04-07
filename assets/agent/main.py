@@ -54,9 +54,9 @@ if __name__ == "__main__":
     # ==========================================
     # 4. 执行任务
     # ==========================================
-    print("开始执行任务：日常任务_种田")
+    # print("开始执行任务：日常任务_种田")
     # 现在 Tasker 有了眼睛（Resource）和手（Controller），可以开始干活了
-    task_result = tasker.post_task("日常任务_种田").wait()
+    task_result = tasker.post_task("ui_返回主界面").wait()
     
     if task_result.succeeded:
         print("任务执行成功！")
