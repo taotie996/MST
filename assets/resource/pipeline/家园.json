@@ -3,14 +3,22 @@
         "$__mpe_code": {
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\家园.json",
             "filename": "家园",
-            "lastSyncTime": 1775565229632,
+            "lastSyncTime": 1775568819328,
             "prefix": "",
             "savedViewport": {
-                "x": 1657,
-                "y": -154,
-                "zoom": 0.61
+                "x": 3086,
+                "y": -1003,
+                "zoom": 1.39
             },
             "version": "v1.4.0"
+        }
+    },
+    "$__mpe_external_ui_进入总览_家园": {
+        "$__mpe_code": {
+            "position": {
+                "x": 381,
+                "y": 118
+            }
         }
     },
     "$__mpe_group_种田_家园": {
@@ -23,15 +31,16 @@
                 "点击种植",
                 "种植完毕",
                 "菜未完成",
-                "进入总览_副本8",
+                "开始种菜",
                 "进入种植",
-                "选择种子"
+                "选择种子",
+                "ui_进入总览"
             ],
             "color": "blue",
             "height": 839,
             "position": {
-                "x": -2034,
-                "y": 686
+                "x": -2032,
+                "y": 735
             },
             "width": 2622
         }
@@ -89,6 +98,19 @@
             "type": "OCR"
         }
     },
+    "开始种菜": {
+        "$__mpe_code": {
+            "position": {
+                "x": 524,
+                "y": 275
+            }
+        },
+        "next": [
+            "菜未完成",
+            "[JumpBack]开始收菜",
+            "收菜完成"
+        ]
+    },
     "收菜完成": {
         "$__mpe_code": {
             "position": {
@@ -118,12 +140,15 @@
     "日常任务_种田": {
         "$__mpe_code": {
             "position": {
-                "x": 153,
-                "y": 410
+                "x": 68,
+                "y": 194
             }
         },
+        "anchor": {
+            "ui_a_进入总览后": "开始种菜"
+        },
         "next": [
-            "进入总览_副本8"
+            "ui_进入总览"
         ]
     },
     "点击种植": {
@@ -191,32 +216,6 @@
                     418,
                     96,
                     28
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "进入总览_副本8": {
-        "$__mpe_code": {
-            "position": {
-                "x": 565,
-                "y": 241
-            }
-        },
-        "next": [
-            "菜未完成",
-            "[JumpBack]开始收菜",
-            "收菜完成"
-        ],
-        "recognition": {
-            "param": {
-                "expected": "总览",
-                "only_rec": true,
-                "roi": [
-                    209,
-                    21,
-                    66,
-                    40
                 ]
             },
             "type": "OCR"

@@ -2,8 +2,16 @@
     "$__mpe_anchor_ui_a_返回主界面_界面": {
         "$__mpe_code": {
             "position": {
-                "x": 402,
-                "y": 1058
+                "x": 422,
+                "y": 1263
+            }
+        }
+    },
+    "$__mpe_anchor_ui_a_进入总览后_界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1073,
+                "y": 93
             }
         }
     },
@@ -20,12 +28,12 @@
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\界面.json",
             "filename": "界面",
             "isModifiedExternally": false,
-            "lastSyncTime": 1775567139871,
+            "lastSyncTime": 1775568558756,
             "prefix": "ui",
             "savedViewport": {
-                "x": 1947,
-                "y": -2425,
-                "zoom": 0.8
+                "x": 1823,
+                "y": -1856,
+                "zoom": 0.61
             },
             "version": "v1.4.0"
         }
@@ -84,13 +92,14 @@
                 "进入家园_live2d",
                 "进入家园_spine",
                 "进入家园_誓约",
-                "进入总览"
+                "进入总览",
+                "ui_a_进入总览后"
             ],
             "color": "blue",
             "height": 1405,
             "position": {
-                "x": -1760,
-                "y": 3299
+                "x": -1645,
+                "y": 3549
             },
             "width": 1822
         }
@@ -293,11 +302,10 @@
     "ui_位于家园": {
         "$__mpe_code": {
             "position": {
-                "x": 420,
-                "y": 422
+                "x": 456,
+                "y": 605
             }
         },
-        "pre_delay": 1000,
         "recognition": {
             "param": {
                 "expected": [
@@ -317,10 +325,13 @@
     "ui_位于总览": {
         "$__mpe_code": {
             "position": {
-                "x": 480,
-                "y": 32
+                "x": 643,
+                "y": 53
             }
         },
+        "next": [
+            "[Anchor]ui_a_进入总览后"
+        ],
         "recognition": {
             "param": {
                 "expected": "总览",
@@ -729,16 +740,27 @@
     "ui_点击家园按钮": {
         "$__mpe_code": {
             "position": {
-                "x": 528,
-                "y": 795
+                "x": 431,
+                "y": 912
             }
         },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
         "next": [
-            "ui_进入家园_spine",
-            "ui_进入家园_誓约",
-            "ui_进入家园_live2d"
+            "ui_位于家园"
         ],
-        "timeout": 1000
+        "recognition": {
+            "param": {
+                "any_of": [
+                    "ui_进入家园_spine",
+                    "ui_进入家园_誓约",
+                    "ui_进入家园_live2d"
+                ]
+            },
+            "type": "Or"
+        }
     },
     "ui_点击屏幕确认": {
         "$__mpe_code": {
@@ -768,14 +790,17 @@
     "ui_点击总览": {
         "$__mpe_code": {
             "position": {
-                "x": 1203,
-                "y": 279
+                "x": 707,
+                "y": 322
             }
         },
         "action": {
             "param": {},
             "type": "Click"
         },
+        "next": [
+            "ui_位于总览"
+        ],
         "recognition": {
             "param": {
                 "expected": [
@@ -952,8 +977,8 @@
     "ui_进入家园": {
         "$__mpe_code": {
             "position": {
-                "x": 38,
-                "y": 737
+                "x": 79,
+                "y": 910
             }
         },
         "anchor": {
@@ -962,14 +987,15 @@
         },
         "next": [
             "ui_位于家园",
+            "[JumpBack]ui_点击家园按钮",
             "[Anchor][JumpBack]ui_a_返回主界面"
         ]
     },
     "ui_进入家园_live2d": {
         "$__mpe_code": {
             "position": {
-                "x": 912,
-                "y": 1045
+                "x": 1399,
+                "y": 806
             }
         },
         "action": {
@@ -994,8 +1020,8 @@
     "ui_进入家园_spine": {
         "$__mpe_code": {
             "position": {
-                "x": 894,
-                "y": 542
+                "x": 1391,
+                "y": 357
             }
         },
         "action": {
@@ -1020,8 +1046,8 @@
     "ui_进入家园_誓约": {
         "$__mpe_code": {
             "position": {
-                "x": 902,
-                "y": 784
+                "x": 1388,
+                "y": 568
             }
         },
         "action": {
@@ -1049,13 +1075,14 @@
     "ui_进入总览": {
         "$__mpe_code": {
             "position": {
-                "x": 82,
-                "y": 113
+                "x": 45,
+                "y": 174
             }
         },
         "next": [
             "ui_位于总览",
-            "[JumpBack]ui_点击总览"
+            "[JumpBack]ui_点击总览",
+            "[JumpBack]ui_进入家园"
         ]
     },
     "ui_退出主线": {
