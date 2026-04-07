@@ -4,86 +4,56 @@
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\界面.json",
             "filename": "界面",
             "isModifiedExternally": false,
-            "lastSyncTime": 1775562874728,
+            "lastSyncTime": 1775563241693,
             "prefix": "界面",
             "savedViewport": {
-                "x": 393,
-                "y": -247,
-                "zoom": 0.5
+                "x": 1520,
+                "y": -1912,
+                "zoom": 0.87
             },
-            "version": "v1.3.1"
+            "version": "v1.4.0"
         }
     },
-    "界面_override_位于主界面": {
+    "$__mpe_group_主界面类型_界面": {
         "$__mpe_code": {
+            "childrenLabels": [
+                "位于主界面1",
+                "位于主界面2",
+                "位于主界面3"
+            ],
+            "color": "blue",
+            "height": 640,
             "position": {
-                "x": 12,
-                "y": 12
-            }
-        },
-        "recognition": {
-            "param": {
-                "expected": "相伴",
-                "roi": [
-                    76,
-                    135,
-                    1099,
-                    514
-                ]
+                "x": -1207,
+                "y": 2149
             },
-            "type": "OCR"
+            "width": 997
         }
     },
-    "界面_override_点击空白区域": {
+    "$__mpe_group_对话框_界面": {
         "$__mpe_code": {
+            "childrenLabels": [
+                "关闭对话框"
+            ],
+            "color": "blue",
+            "height": 416,
             "position": {
-                "x": 732,
-                "y": 12
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "recognition": {
-            "param": {
-                "expected": "空白区域",
-                "only_rec": true,
-                "replace": [],
-                "roi": [
-                    556,
-                    484,
-                    184,
-                    44
-                ]
+                "x": -1212,
+                "y": 1631
             },
-            "type": "OCR"
+            "width": 867
         }
     },
-    "界面_override_点击空白区域1": {
+    "$__mpe_group_消息_界面": {
         "$__mpe_code": {
+            "childrenLabels": [],
+            "color": "blue",
+            "height": 407,
             "position": {
-                "x": 972,
-                "y": 12
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "recognition": {
-            "param": {
-                "expected": "空白区域",
-                "only_rec": true,
-                "replace": [],
-                "roi": [
-                    556,
-                    484,
-                    184,
-                    44
-                ]
+                "x": -1207,
+                "y": 1154
             },
-            "type": "OCR"
+            "width": 878
         }
     },
     "界面_override_购买": {
@@ -105,9 +75,6 @@
             "type": "Click"
         },
         "global_doc": "购买界面，点击购买",
-        "next": [
-            "界面_点击空白区域"
-        ],
         "recognition": {
             "param": {
                 "expected": "购买",
@@ -125,8 +92,8 @@
     "界面_override_购买1": {
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 1264
+                "x": -154,
+                "y": 1219
             }
         },
         "action": {
@@ -141,9 +108,6 @@
             "type": "Click"
         },
         "global_doc": "购买界面，点击购买",
-        "next": [
-            "界面_点击空白区域"
-        ],
         "recognition": {
             "param": {
                 "expected": "购买",
@@ -301,8 +265,7 @@
             }
         },
         "next": [
-            "界面_ui_位于主界面",
-            "[JumpBack]界面_返回主界面"
+            "界面_ui_位于主界面"
         ]
     },
     "界面_ui_进入家园": {
@@ -444,8 +407,8 @@
     "界面_位于主界面1": {
         "$__mpe_code": {
             "position": {
-                "x": 342,
-                "y": 3380
+                "x": 73,
+                "y": 133
             }
         },
         "global_doc": "位于主界面(spine)",
@@ -466,8 +429,8 @@
     "界面_位于主界面2": {
         "$__mpe_code": {
             "position": {
-                "x": 342,
-                "y": 3720
+                "x": 349,
+                "y": 137
             }
         },
         "global_doc": "位于主界面(live2d)",
@@ -488,8 +451,8 @@
     "界面_位于主界面3": {
         "$__mpe_code": {
             "position": {
-                "x": 342,
-                "y": 3072
+                "x": 617,
+                "y": 141
             }
         },
         "global_doc": "位于主界面(誓约)",
@@ -528,11 +491,11 @@
             "type": "OCR"
         }
     },
-    "界面_关闭悬浮窗": {
+    "界面_关闭对话框": {
         "$__mpe_code": {
             "position": {
-                "x": 333,
-                "y": 1608
+                "x": 578,
+                "y": 102
             }
         },
         "action": {
@@ -663,8 +626,8 @@
     "界面_加载中": {
         "$__mpe_code": {
             "position": {
-                "x": 342,
-                "y": 2732
+                "x": 347,
+                "y": 2725
             }
         },
         "global_doc": "加载中（左上）",
@@ -703,6 +666,19 @@
             },
             "type": "OCR"
         }
+    },
+    "界面_在主界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": -908,
+                "y": 2872
+            }
+        },
+        "next": [
+            "界面_位于主界面1",
+            "界面_位于主界面2",
+            "界面_位于主界面3"
+        ]
     },
     "界面_开启战斗普攻": {
         "$__mpe_code": {
@@ -875,31 +851,6 @@
             "type": "TemplateMatch"
         }
     },
-    "界面_点击主页面活动": {
-        "$__mpe_code": {
-            "position": {
-                "x": 252,
-                "y": 12
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "global_doc": "主页面中，活动按钮，教会补给之类的入口",
-        "recognition": {
-            "param": {
-                "roi": [
-                    458,
-                    37,
-                    822,
-                    115
-                ],
-                "template": "./Global/activityInMain.png"
-            },
-            "type": "TemplateMatch"
-        }
-    },
     "界面_点击屏幕确认": {
         "$__mpe_code": {
             "position": {
@@ -928,8 +879,8 @@
     "界面_点击空白区域": {
         "$__mpe_code": {
             "position": {
-                "x": 342,
-                "y": 958
+                "x": -1156,
+                "y": 1217
             }
         },
         "action": {
@@ -954,8 +905,8 @@
     "界面_点击返回按钮": {
         "$__mpe_code": {
             "position": {
-                "x": 342,
-                "y": 2422
+                "x": 1,
+                "y": 2497
             }
         },
         "action": {
@@ -1028,9 +979,6 @@
             "type": "Click"
         },
         "global_doc": "购买界面，点击购买",
-        "next": [
-            "界面_点击空白区域"
-        ],
         "recognition": {
             "param": {
                 "expected": "购买",
@@ -1048,37 +996,12 @@
     "界面_返回主界面": {
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 1871
+                "x": -1264,
+                "y": 3032
             }
         },
         "next": [
-            "界面_位于主界面",
-            "[JumpBack]界面_关闭悬浮窗",
-            "[JumpBack]界面_点击返回按钮",
-            "[JumpBack]界面_加载中",
-            "[JumpBack]界面_加载中1",
-            "[JumpBack]界面_点击空白区域",
-            "[JumpBack]界面_其他特殊退出"
-        ]
-    },
-    "界面_返回主界面_fast": {
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 2521
-            }
-        },
-        "next": [
-            "界面_位于主界面1",
-            "界面_位于主界面2",
-            "界面_位于主界面3",
-            "[JumpBack]界面_关闭悬浮窗",
-            "[JumpBack]界面_点击返回按钮",
-            "[JumpBack]界面_加载中",
-            "[JumpBack]界面_加载中1",
-            "[JumpBack]界面_点击空白区域",
-            "[JumpBack]界面_其他特殊退出"
+            "界面_在主界面"
         ]
     },
     "界面_返回登录": {
@@ -1104,31 +1027,6 @@
                 ]
             },
             "type": "OCR"
-        }
-    },
-    "界面_进入活动(主页面)": {
-        "$__mpe_code": {
-            "position": {
-                "x": 492,
-                "y": 12
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "global_doc": "主页面中，进入上方活动",
-        "recognition": {
-            "param": {
-                "roi": [
-                    1003,
-                    31,
-                    143,
-                    133
-                ],
-                "template": "./activity/activity.png"
-            },
-            "type": "TemplateMatch"
         }
     },
     "界面_退出主线": {

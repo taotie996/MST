@@ -9,7 +9,10 @@
     },
     "$__mpe_config_相伴": {
         "$__mpe_code": {
+            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\相伴.json",
             "filename": "相伴",
+            "isModifiedExternally": false,
+            "lastSyncTime": 1775563061905,
             "prefix": "相伴",
             "savedViewport": {
                 "x": 1751,
