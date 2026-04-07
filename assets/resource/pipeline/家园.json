@@ -1,0 +1,274 @@
+{
+    "$__mpe_config_家园": {
+        "$__mpe_code": {
+            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\家园.json",
+            "filename": "家园",
+            "lastSyncTime": 1775565229632,
+            "prefix": "",
+            "savedViewport": {
+                "x": 1657,
+                "y": -154,
+                "zoom": 0.61
+            },
+            "version": "v1.4.0"
+        }
+    },
+    "$__mpe_group_种田_家园": {
+        "$__mpe_code": {
+            "childrenLabels": [
+                "位于种植",
+                "开始收菜",
+                "收菜完成",
+                "日常任务_种田",
+                "点击种植",
+                "种植完毕",
+                "菜未完成",
+                "进入总览_副本8",
+                "进入种植",
+                "选择种子"
+            ],
+            "color": "blue",
+            "height": 839,
+            "position": {
+                "x": -2034,
+                "y": 686
+            },
+            "width": 2622
+        }
+    },
+    "位于种植": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1609,
+                "y": 58
+            }
+        },
+        "home_doc": "种植界面",
+        "next": [
+            "种植完毕",
+            "[JumpBack]点击种植",
+            "[JumpBack]选择种子"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "种子",
+                "only_rec": true,
+                "roi": [
+                    114,
+                    673,
+                    74,
+                    25
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "开始收菜": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1020,
+                "y": 326
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "inverse": false,
+        "recognition": {
+            "param": {
+                "expected": "领取",
+                "only_rec": true,
+                "roi": [
+                    539,
+                    395,
+                    43,
+                    28
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "收菜完成": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1021,
+                "y": 600
+            }
+        },
+        "inverse": true,
+        "next": [
+            "位于种植",
+            "[JumpBack]进入种植"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "领取",
+                "only_rec": true,
+                "roi": [
+                    539,
+                    395,
+                    43,
+                    28
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "日常任务_种田": {
+        "$__mpe_code": {
+            "position": {
+                "x": 153,
+                "y": 410
+            }
+        },
+        "next": [
+            "进入总览_副本8"
+        ]
+    },
+    "点击种植": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2234,
+                "y": 567
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": "种植",
+                "only_rec": true,
+                "roi": [
+                    610,
+                    593,
+                    63,
+                    29
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "种植完毕": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2278,
+                "y": 37
+            }
+        },
+        "recognition": {
+            "param": {
+                "expected": "没有空地",
+                "only_rec": true,
+                "roi": [
+                    597,
+                    235,
+                    85,
+                    25
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "菜未完成": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1027,
+                "y": 40
+            }
+        },
+        "inverse": false,
+        "recognition": {
+            "param": {
+                "expected": [
+                    "全部地块种植"
+                ],
+                "only_rec": true,
+                "roi": [
+                    376,
+                    418,
+                    96,
+                    28
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "进入总览_副本8": {
+        "$__mpe_code": {
+            "position": {
+                "x": 565,
+                "y": 241
+            }
+        },
+        "next": [
+            "菜未完成",
+            "[JumpBack]开始收菜",
+            "收菜完成"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "总览",
+                "only_rec": true,
+                "roi": [
+                    209,
+                    21,
+                    66,
+                    40
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "进入种植": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1591,
+                "y": 508
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "roi": [
+                    121,
+                    327,
+                    138,
+                    142
+                ],
+                "template": "./Home/plant.png"
+            },
+            "type": "TemplateMatch"
+        }
+    },
+    "选择种子": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2264,
+                "y": 266
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "home_doc": "配置项,默认选择最左边的种子",
+        "recognition": {
+            "param": {
+                "expected": "种子",
+                "roi": [
+                    65,
+                    624,
+                    979,
+                    96
+                ]
+            },
+            "type": "OCR"
+        }
+    }
+}
