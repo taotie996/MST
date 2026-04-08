@@ -1,0 +1,185 @@
+{
+    "$__mpe_config_相伴": {
+        "$__mpe_code": {
+            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\相伴.json",
+            "filename": "相伴",
+            "isModifiedExternally": false,
+            "lastSyncTime": 1775624159172,
+            "prefix": "相伴",
+            "savedViewport": {
+                "x": 1631,
+                "y": 780,
+                "zoom": 0.4
+            },
+            "version": "v1.4.0"
+        }
+    },
+    "$__mpe_external_ui_进入相伴_相伴": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1116,
+                "y": -809
+            }
+        }
+    },
+    "相伴_强制赠送": {
+        "$__mpe_code": {
+            "position": {
+                "x": -29,
+                "y": -1885
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "赠送礼物"
+                ],
+                "only_rec": true,
+                "replace": [],
+                "roi": [
+                    690,
+                    434,
+                    98,
+                    30
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "相伴_新建节点5": {
+        "$__mpe_code": {
+            "position": {
+                "x": -24,
+                "y": -1552
+            }
+        }
+    },
+    "相伴_日常任务-点击摸头": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1595,
+                "y": -898
+            }
+        },
+        "anchor": {
+            "相伴_anchor_task": "相伴_点击摸头"
+        },
+        "next": [
+            "ui_进入相伴"
+        ]
+    },
+    "相伴_日常任务-送礼物": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1602,
+                "y": -594
+            }
+        },
+        "anchor": {
+            "相伴_anchor_task": "相伴_送礼物"
+        },
+        "next": [
+            "ui_进入相伴"
+        ]
+    },
+    "相伴_点击摸头": {
+        "$__mpe_code": {
+            "position": {
+                "x": -752,
+                "y": -718
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    625,
+                    173,
+                    32,
+                    29
+                ]
+            },
+            "type": "Click"
+        },
+        "repeat": 10,
+        "repeat_delay": 500
+    },
+    "相伴_点击礼物": {
+        "$__mpe_code": {
+            "position": {
+                "x": -539,
+                "y": -1369
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "recognition": {
+            "param": {
+                "expected": [
+                    "礼物"
+                ],
+                "only_rec": true,
+                "replace": [],
+                "roi": [
+                    904,
+                    679,
+                    53,
+                    26
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "相伴_赠送对话框": {
+        "$__mpe_code": {
+            "position": {
+                "x": -544,
+                "y": -1745
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "next": [
+            "相伴_强制赠送"
+        ],
+        "on_error": [
+            "相伴_新建节点5"
+        ],
+        "recognition": {
+            "param": {
+                "expected": [
+                    "赠送"
+                ],
+                "only_rec": true,
+                "replace": [],
+                "roi": [
+                    962,
+                    624,
+                    67,
+                    33
+                ]
+            },
+            "type": "OCR"
+        },
+        "timeout": 2000
+    },
+    "相伴_送礼物": {
+        "$__mpe_code": {
+            "position": {
+                "x": -969,
+                "y": -1453
+            }
+        },
+        "next": [
+            "相伴_赠送对话框",
+            "[JumpBack]相伴_点击礼物"
+        ]
+    }
+}
