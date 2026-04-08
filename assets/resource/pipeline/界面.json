@@ -2,8 +2,8 @@
     "$__mpe_anchor_ui_a_返回主界面_界面": {
         "$__mpe_code": {
             "position": {
-                "x": 422,
-                "y": 1263
+                "x": 590,
+                "y": 1274
             }
         }
     },
@@ -18,8 +18,8 @@
     "$__mpe_anchor_ui_a_进入界面_界面": {
         "$__mpe_code": {
             "position": {
-                "x": -27,
-                "y": 2903
+                "x": -672,
+                "y": 3033
             }
         }
     },
@@ -28,30 +28,30 @@
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\界面.json",
             "filename": "界面",
             "isModifiedExternally": false,
-            "lastSyncTime": 1775568558756,
+            "lastSyncTime": 1775620014369,
             "prefix": "ui",
             "savedViewport": {
-                "x": 1823,
-                "y": -1856,
-                "zoom": 0.61
+                "x": 2327,
+                "y": -1848,
+                "zoom": 0.66
             },
             "version": "v1.4.0"
         }
     },
-    "$__mpe_group_主界面类型_界面": {
+    "$__mpe_group_2级界面返回_界面": {
         "$__mpe_code": {
             "childrenLabels": [
-                "位于主界面1",
-                "位于主界面2",
-                "位于主界面3"
+                "位于种植",
+                "点击返回_普通界面",
+                "点击返回_种植"
             ],
             "color": "blue",
-            "height": 640,
+            "height": 995,
             "position": {
-                "x": -1207,
-                "y": 2149
+                "x": -1654,
+                "y": 3260
             },
-            "width": 997
+            "width": 702
         }
     },
     "$__mpe_group_对话框_界面": {
@@ -84,6 +84,7 @@
         "$__mpe_code": {
             "childrenLabels": [
                 "ui_a_返回主界面",
+                "ui_a_进入总览后",
                 "位于家园",
                 "位于总览",
                 "点击家园按钮",
@@ -92,16 +93,32 @@
                 "进入家园_live2d",
                 "进入家园_spine",
                 "进入家园_誓约",
-                "进入总览",
-                "ui_a_进入总览后"
+                "进入总览"
             ],
             "color": "blue",
             "height": 1405,
             "position": {
-                "x": -1645,
-                "y": 3549
+                "x": -766,
+                "y": 3955
             },
             "width": 1822
+        }
+    },
+    "$__mpe_group_界面类型_界面": {
+        "$__mpe_code": {
+            "childrenLabels": [
+                "位于主界面1",
+                "位于主界面2",
+                "位于主界面3",
+                "待机"
+            ],
+            "color": "blue",
+            "height": 833,
+            "position": {
+                "x": -1317,
+                "y": 2123
+            },
+            "width": 1010
         }
     },
     "ui_override_购买": {
@@ -228,14 +245,11 @@
     "ui_位于主界面1": {
         "$__mpe_code": {
             "position": {
-                "x": 204,
-                "y": 76
+                "x": 31,
+                "y": 54
             }
         },
         "global_doc": "位于主界面(spine)",
-        "next": [
-            "[Anchor]ui_a_进入界面"
-        ],
         "recognition": {
             "param": {
                 "expected": "相伴",
@@ -253,14 +267,11 @@
     "ui_位于主界面2": {
         "$__mpe_code": {
             "position": {
-                "x": 508,
-                "y": 96
+                "x": 335,
+                "y": 62
             }
         },
         "global_doc": "位于主界面(live2d)",
-        "next": [
-            "[Anchor]ui_a_进入界面"
-        ],
         "recognition": {
             "param": {
                 "expected": "相伴",
@@ -278,14 +289,11 @@
     "ui_位于主界面3": {
         "$__mpe_code": {
             "position": {
-                "x": 751,
-                "y": 215
+                "x": 648,
+                "y": 61
             }
         },
         "global_doc": "位于主界面(誓约)",
-        "next": [
-            "[Anchor]ui_a_进入界面"
-        ],
         "recognition": {
             "param": {
                 "expected": "相伴",
@@ -302,8 +310,8 @@
     "ui_位于家园": {
         "$__mpe_code": {
             "position": {
-                "x": 456,
-                "y": 605
+                "x": 971,
+                "y": 775
             }
         },
         "recognition": {
@@ -363,6 +371,31 @@
                     665,
                     43,
                     26
+                ]
+            },
+            "type": "OCR"
+        }
+    },
+    "ui_位于种植": {
+        "$__mpe_code": {
+            "position": {
+                "x": 66,
+                "y": 391
+            }
+        },
+        "home_doc": "种植界面",
+        "next": [
+            "ui_点击返回_种植"
+        ],
+        "recognition": {
+            "param": {
+                "expected": "种子",
+                "only_rec": true,
+                "roi": [
+                    114,
+                    673,
+                    74,
+                    25
                 ]
             },
             "type": "OCR"
@@ -547,16 +580,23 @@
     "ui_在主界面": {
         "$__mpe_code": {
             "position": {
-                "x": -1159,
-                "y": 2973
+                "x": -1568,
+                "y": 3007
             }
         },
         "next": [
-            "ui_位于主界面1",
-            "ui_位于主界面2",
-            "ui_位于主界面3",
-            "[JumpBack]ui_点击返回按钮"
-        ]
+            "[Anchor]ui_a_进入界面"
+        ],
+        "recognition": {
+            "param": {
+                "any_of": [
+                    "ui_位于主界面1",
+                    "ui_位于主界面2",
+                    "ui_位于主界面3"
+                ]
+            },
+            "type": "Or"
+        }
     },
     "ui_开启战斗普攻": {
         "$__mpe_code": {
@@ -621,8 +661,8 @@
     "ui_待机": {
         "$__mpe_code": {
             "position": {
-                "x": -1593,
-                "y": 2729
+                "x": 363,
+                "y": 381
             }
         }
     },
@@ -740,8 +780,8 @@
     "ui_点击家园按钮": {
         "$__mpe_code": {
             "position": {
-                "x": 431,
-                "y": 912
+                "x": 561,
+                "y": 941
             }
         },
         "action": {
@@ -844,11 +884,11 @@
             "type": "OCR"
         }
     },
-    "ui_点击返回按钮": {
+    "ui_点击返回_普通界面": {
         "$__mpe_code": {
             "position": {
-                "x": -728,
-                "y": 3050
+                "x": 67,
+                "y": 74
             }
         },
         "action": {
@@ -867,6 +907,25 @@
                 "template": "./Global/backButton.png"
             },
             "type": "TemplateMatch"
+        }
+    },
+    "ui_点击返回_种植": {
+        "$__mpe_code": {
+            "position": {
+                "x": 399,
+                "y": 413
+            }
+        },
+        "action": {
+            "param": {
+                "target": [
+                    325,
+                    30,
+                    62,
+                    60
+                ]
+            },
+            "type": "Click"
         }
     },
     "ui_空任务": {
@@ -938,15 +997,28 @@
     "ui_返回主界面": {
         "$__mpe_code": {
             "position": {
-                "x": -1614,
-                "y": 2957
+                "x": -2685,
+                "y": 3308
             }
         },
         "anchor": {
             "ui_a_进入界面": "ui_待机"
         },
         "next": [
-            "ui_在主界面"
+            "ui_返回主界面_切换界面"
+        ]
+    },
+    "ui_返回主界面_切换界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": -2331,
+                "y": 3327
+            }
+        },
+        "next": [
+            "ui_在主界面",
+            "[JumpBack]ui_点击返回_普通界面",
+            "[JumpBack]ui_位于种植"
         ]
     },
     "ui_返回登录": {
@@ -977,8 +1049,8 @@
     "ui_进入家园": {
         "$__mpe_code": {
             "position": {
-                "x": 79,
-                "y": 910
+                "x": 211,
+                "y": 896
             }
         },
         "anchor": {
