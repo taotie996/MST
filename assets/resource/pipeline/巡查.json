@@ -92,10 +92,30 @@
         }
     },
     "巡查_寻找事件人偶": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "巡查/patrolTask.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    2,
+                    43,
+                    0,
+                    0
+                ]
+            }
+        },
         "next": [
-            "巡查_点击事件人偶",
-            "巡查_查看右边画面",
-            "巡查_查看左边画面"
+            "巡查_完成巡查事件"
+        ],
+        "on_error": [
+            "巡查_查看右边画面"
         ],
         "$__mpe_code": {
             "position": {
@@ -130,7 +150,8 @@
         "repeat": 2,
         "post_delay": 500,
         "next": [
-            "巡查_点击事件人偶"
+            "巡查_点击事件人偶_右",
+            "巡查_查看左边画面"
         ],
         "$__mpe_code": {
             "position": {
@@ -139,42 +160,7 @@
             }
         }
     },
-    "巡查_查看左边画面": {
-        "action": {
-            "type": "Swipe",
-            "param": {
-                "begin": [
-                    1053,
-                    270,
-                    70,
-                    65
-                ],
-                "end": [
-                    [
-                        111,
-                        319,
-                        70,
-                        70
-                    ]
-                ],
-                "duration": [
-                    1000
-                ]
-            }
-        },
-        "repeat": 2,
-        "post_delay": 500,
-        "next": [
-            "巡查_点击事件人偶"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1275,
-                "y": -67
-            }
-        }
-    },
-    "巡查_点击事件人偶": {
+    "巡查_点击事件人偶_右": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -200,7 +186,72 @@
         "$__mpe_code": {
             "position": {
                 "x": -983,
-                "y": -611
+                "y": -404
+            }
+        }
+    },
+    "巡查_查看左边画面": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    111,
+                    319,
+                    70,
+                    70
+                ],
+                "end": [
+                    [
+                        1053,
+                        270,
+                        70,
+                        65
+                    ]
+                ],
+                "duration": [
+                    1000
+                ]
+            }
+        },
+        "repeat": 4,
+        "post_delay": 500,
+        "next": [
+            "巡查_点击事件人偶_左"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1275,
+                "y": -67
+            }
+        }
+    },
+    "巡查_点击事件人偶_左": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "巡查/patrolTask.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    2,
+                    43,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "巡查_完成巡查事件"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -983,
+                "y": -67
             }
         }
     }
