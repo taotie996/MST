@@ -1,17 +1,17 @@
 {
     "$__mpe_config_相伴": {
         "$__mpe_code": {
-            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\相伴.json",
-            "filename": "相伴",
-            "isModifiedExternally": false,
-            "lastSyncTime": 1775624177728,
             "prefix": "相伴",
+            "lastSyncTime": 1775624177728,
+            "isModifiedExternally": false,
+            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\相伴.json",
             "savedViewport": {
-                "x": 1631,
-                "y": 780,
-                "zoom": 0.4
+                "x": 1227,
+                "y": 1560,
+                "zoom": 0.66
             },
-            "version": "v1.4.0"
+            "filename": "相伴",
+            "version": "v1.4.1"
         }
     },
     "$__mpe_external_ui_进入相伴_相伴": {
@@ -23,77 +23,72 @@
         }
     },
     "相伴_强制赠送": {
-        "$__mpe_code": {
-            "position": {
-                "x": -29,
-                "y": -1885
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "赠送礼物"
-                ],
-                "only_rec": true,
-                "replace": [],
                 "roi": [
                     690,
                     434,
                     98,
                     30
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "相伴_新建节点5": {
+                ],
+                "expected": [
+                    "赠送礼物"
+                ],
+                "replace": [],
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "$__mpe_code": {
             "position": {
-                "x": -24,
-                "y": -1552
+                "x": -152,
+                "y": -2029
+            }
+        }
+    },
+    "相伴_未弹出对话框": {
+        "$__mpe_code": {
+            "position": {
+                "x": -106,
+                "y": -1616
             }
         }
     },
     "相伴_日常任务-点击摸头": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1595,
-                "y": -898
-            }
-        },
         "anchor": {
             "相伴_anchor_task": "相伴_点击摸头"
         },
         "next": [
             "ui_进入相伴"
-        ]
-    },
-    "相伴_日常任务-送礼物": {
+        ],
         "$__mpe_code": {
             "position": {
-                "x": -1602,
-                "y": -594
+                "x": -1595,
+                "y": -898
             }
-        },
+        }
+    },
+    "相伴_日常任务-送礼物": {
         "anchor": {
             "相伴_anchor_task": "相伴_送礼物"
         },
         "next": [
             "ui_进入相伴"
-        ]
-    },
-    "相伴_点击摸头": {
+        ],
         "$__mpe_code": {
             "position": {
-                "x": -752,
-                "y": -718
+                "x": -1602,
+                "y": -594
             }
-        },
+        }
+    },
+    "相伴_点击摸头": {
         "action": {
+            "type": "Click",
             "param": {
                 "target": [
                     625,
@@ -101,85 +96,89 @@
                     32,
                     29
                 ]
-            },
-            "type": "Click"
-        },
-        "repeat": 10,
-        "repeat_delay": 500
-    },
-    "相伴_点击礼物": {
-        "$__mpe_code": {
-            "position": {
-                "x": -539,
-                "y": -1369
             }
         },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
+        "repeat": 10,
+        "repeat_delay": 500,
+        "$__mpe_code": {
+            "position": {
+                "x": -752,
+                "y": -718
+            }
+        }
+    },
+    "相伴_点击礼物": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "礼物"
-                ],
-                "only_rec": true,
-                "replace": [],
                 "roi": [
                     904,
                     679,
                     53,
                     26
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "相伴_赠送对话框": {
-        "$__mpe_code": {
-            "position": {
-                "x": -544,
-                "y": -1745
+                ],
+                "expected": [
+                    "礼物"
+                ],
+                "replace": [],
+                "only_rec": true
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "next": [
-            "相伴_强制赠送"
-        ],
-        "on_error": [
-            "相伴_新建节点5"
-        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -539,
+                "y": -1369
+            }
+        }
+    },
+    "相伴_赠送对话框": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "赠送"
-                ],
-                "only_rec": true,
-                "replace": [],
                 "roi": [
                     962,
                     624,
                     67,
                     33
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": [
+                    "赠送"
+                ],
+                "replace": [],
+                "only_rec": true
+            }
         },
-        "timeout": 2000
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 1000,
+        "timeout": 2000,
+        "next": [
+            "相伴_强制赠送",
+            "相伴_未弹出对话框"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -544,
+                "y": -1745
+            }
+        }
     },
     "相伴_送礼物": {
+        "next": [
+            "相伴_赠送对话框",
+            "[JumpBack]相伴_点击礼物"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -969,
                 "y": -1453
             }
-        },
-        "next": [
-            "相伴_赠送对话框",
-            "[JumpBack]相伴_点击礼物"
-        ]
+        }
     }
 }

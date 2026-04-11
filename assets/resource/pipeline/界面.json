@@ -1,4 +1,19 @@
 {
+    "$__mpe_config_界面": {
+        "$__mpe_code": {
+            "prefix": "ui",
+            "lastSyncTime": 1775882039165,
+            "isModifiedExternally": false,
+            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\界面.json",
+            "savedViewport": {
+                "x": 1509,
+                "y": -890,
+                "zoom": 0.92
+            },
+            "filename": "界面",
+            "version": "v1.4.1"
+        }
+    },
     "$__mpe_anchor_ui_a_返回主界面_界面": {
         "$__mpe_code": {
             "position": {
@@ -26,44 +41,34 @@
     "$__mpe_anchor_相伴_anchor_task_界面": {
         "$__mpe_code": {
             "position": {
-                "x": 1008,
-                "y": 5309
+                "x": 462,
+                "y": 722
             }
-        }
-    },
-    "$__mpe_config_界面": {
-        "$__mpe_code": {
-            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\界面.json",
-            "filename": "界面",
-            "isModifiedExternally": false,
-            "lastSyncTime": 1775624315510,
-            "prefix": "ui",
-            "savedViewport": {
-                "x": 1260,
-                "y": -859,
-                "zoom": 0.35
-            },
-            "version": "v1.4.0"
         }
     },
     "$__mpe_group_2级界面返回_界面": {
         "$__mpe_code": {
+            "position": {
+                "x": -1654,
+                "y": 3260
+            },
+            "color": "blue",
             "childrenLabels": [
                 "位于种植",
                 "点击返回_普通界面",
                 "点击返回_种植"
             ],
-            "color": "blue",
-            "height": 995,
-            "position": {
-                "x": -1654,
-                "y": 3260
-            },
-            "width": 702
+            "width": 702,
+            "height": 995
         }
     },
     "$__mpe_group_家园界面_界面": {
         "$__mpe_code": {
+            "position": {
+                "x": -445,
+                "y": 3618
+            },
+            "color": "blue",
             "childrenLabels": [
                 "ui_a_返回主界面",
                 "ui_a_进入总览后",
@@ -77,61 +82,65 @@
                 "进入家园_誓约",
                 "进入总览"
             ],
-            "color": "blue",
-            "height": 1289,
-            "position": {
-                "x": -445,
-                "y": 3618
-            },
-            "width": 2031
+            "width": 2031,
+            "height": 1289
         }
     },
     "$__mpe_group_对话框_界面": {
         "$__mpe_code": {
-            "childrenLabels": [
-                "关闭对话框"
-            ],
-            "color": "blue",
-            "height": 416,
             "position": {
                 "x": -1212,
                 "y": 1631
             },
-            "width": 867
+            "color": "blue",
+            "childrenLabels": [
+                "关闭对话框",
+                "跳过剧情"
+            ],
+            "width": 867,
+            "height": 416
         }
     },
     "$__mpe_group_消息_界面": {
         "$__mpe_code": {
-            "childrenLabels": [],
-            "color": "blue",
-            "height": 407,
             "position": {
-                "x": -1207,
-                "y": 1154
+                "x": -1218,
+                "y": 1193
             },
-            "width": 878
+            "color": "blue",
+            "childrenLabels": [
+                "点击空白区域"
+            ],
+            "width": 878,
+            "height": 407
         }
     },
     "$__mpe_group_界面类型_界面": {
         "$__mpe_code": {
+            "position": {
+                "x": -1272,
+                "y": 2132
+            },
+            "color": "blue",
             "childrenLabels": [
                 "位于主界面1",
                 "位于主界面2",
                 "位于主界面3",
                 "待机"
             ],
-            "color": "blue",
-            "height": 833,
-            "position": {
-                "x": -1317,
-                "y": 2123
-            },
-            "width": 1010
+            "width": 1010,
+            "height": 833
         }
     },
     "$__mpe_group_相伴界面_界面": {
         "$__mpe_code": {
+            "position": {
+                "x": -489,
+                "y": 5112
+            },
+            "color": "blue",
             "childrenLabels": [
+                "相伴_anchor_task",
                 "位于相伴",
                 "点击相伴按钮",
                 "进入相伴",
@@ -139,23 +148,59 @@
                 "进入相伴_spine",
                 "进入相伴_誓约"
             ],
-            "color": "blue",
-            "height": 919,
-            "position": {
-                "x": -355,
-                "y": 5178
-            },
-            "width": 1248
+            "width": 1248,
+            "height": 919
         }
     },
     "ui_override_购买": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    601,
+                    164,
+                    77,
+                    44
+                ],
+                "expected": "购买",
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    737,
+                    498,
+                    60,
+                    31
+                ]
+            }
+        },
+        "global_doc": "购买界面，点击购买",
         "$__mpe_code": {
             "position": {
                 "x": 12,
                 "y": 890
             }
+        }
+    },
+    "ui_override_购买1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    601,
+                    164,
+                    77,
+                    44
+                ],
+                "expected": "购买",
+                "only_rec": true
+            }
         },
         "action": {
+            "type": "Click",
             "param": {
                 "target": [
                     737,
@@ -163,62 +208,36 @@
                     60,
                     31
                 ]
-            },
-            "type": "Click"
+            }
         },
         "global_doc": "购买界面，点击购买",
-        "recognition": {
-            "param": {
-                "expected": "购买",
-                "only_rec": true,
-                "roi": [
-                    601,
-                    164,
-                    77,
-                    44
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_override_购买1": {
         "$__mpe_code": {
             "position": {
                 "x": -154,
                 "y": 1219
             }
-        },
-        "action": {
-            "param": {
-                "target": [
-                    737,
-                    498,
-                    60,
-                    31
-                ]
-            },
-            "type": "Click"
-        },
-        "global_doc": "购买界面，点击购买",
-        "recognition": {
-            "param": {
-                "expected": "购买",
-                "only_rec": true,
-                "roi": [
-                    601,
-                    164,
-                    77,
-                    44
-                ]
-            },
-            "type": "OCR"
         }
     },
     "ui_pre_开启智能战斗": {
-        "$__mpe_code": {
-            "position": {
-                "x": 342,
-                "y": 1276
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    145,
+                    665,
+                    43,
+                    26
+                ],
+                "lower": [
+                    0,
+                    0,
+                    0
+                ],
+                "upper": [
+                    25,
+                    25,
+                    25
+                ]
             }
         },
         "global_doc": "战斗界面，开启智能战斗前置判断",
@@ -226,330 +245,309 @@
             "ui_开启智能战斗",
             "ui_空任务"
         ],
-        "recognition": {
-            "param": {
-                "lower": [
-                    0,
-                    0,
-                    0
-                ],
-                "roi": [
-                    145,
-                    665,
-                    43,
-                    26
-                ],
-                "upper": [
-                    25,
-                    25,
-                    25
-                ]
-            },
-            "type": "ColorMatch"
-        }
-    },
-    "ui_位于主界面": {
         "$__mpe_code": {
             "position": {
                 "x": 342,
-                "y": 650
+                "y": 1276
             }
-        },
-        "global_doc": "位于主界面(通用)",
+        }
+    },
+    "ui_位于主界面": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "相伴",
                 "roi": [
                     76,
                     135,
                     1099,
                     514
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": "相伴"
+            }
+        },
+        "global_doc": "位于主界面(通用)",
+        "$__mpe_code": {
+            "position": {
+                "x": 342,
+                "y": 650
+            }
         }
     },
     "ui_位于主界面1": {
-        "$__mpe_code": {
-            "position": {
-                "x": 31,
-                "y": 54
-            }
-        },
-        "global_doc": "位于主界面(spine)",
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "相伴",
-                "only_rec": true,
                 "roi": [
                     562,
                     333,
                     56,
                     34
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": "相伴",
+                "only_rec": true
+            }
+        },
+        "global_doc": "位于主界面(spine)",
+        "$__mpe_code": {
+            "position": {
+                "x": 31,
+                "y": 54
+            }
         }
     },
     "ui_位于主界面2": {
-        "$__mpe_code": {
-            "position": {
-                "x": 335,
-                "y": 62
-            }
-        },
-        "global_doc": "位于主界面(live2d)",
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "相伴",
-                "only_rec": true,
                 "roi": [
                     740,
                     411,
                     63,
                     35
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": "相伴",
+                "only_rec": true
+            }
+        },
+        "global_doc": "位于主界面(live2d)",
+        "$__mpe_code": {
+            "position": {
+                "x": 335,
+                "y": 62
+            }
         }
     },
     "ui_位于主界面3": {
-        "$__mpe_code": {
-            "position": {
-                "x": 648,
-                "y": 61
-            }
-        },
-        "global_doc": "位于主界面(誓约)",
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "相伴",
                 "roi": [
                     126,
                     141,
                     1036,
                     347
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": "相伴"
+            }
+        },
+        "global_doc": "位于主界面(誓约)",
+        "$__mpe_code": {
+            "position": {
+                "x": 648,
+                "y": 61
+            }
         }
     },
     "ui_位于家园": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    167,
+                    12,
+                    191,
+                    66
+                ],
+                "expected": [
+                    "家园"
+                ],
+                "only_rec": true
+            }
+        },
         "$__mpe_code": {
             "position": {
                 "x": 1148,
                 "y": 572
             }
-        },
+        }
+    },
+    "ui_位于总览": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "家园"
-                ],
-                "only_rec": true,
                 "roi": [
                     167,
                     12,
                     191,
                     66
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_位于总览": {
-        "$__mpe_code": {
-            "position": {
-                "x": 873,
-                "y": 65
+                ],
+                "expected": "总览",
+                "only_rec": true
             }
         },
         "next": [
             "[Anchor]ui_a_进入总览后"
         ],
-        "recognition": {
-            "param": {
-                "expected": "总览",
-                "only_rec": true,
-                "roi": [
-                    167,
-                    12,
-                    191,
-                    66
-                ]
-            },
-            "type": "OCR"
+        "$__mpe_code": {
+            "position": {
+                "x": 873,
+                "y": 65
+            }
         }
     },
     "ui_位于战斗界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1212,
-                "y": 12
-            }
-        },
-        "global_doc": "战斗界面",
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "普攻",
-                "only_rec": true,
                 "roi": [
                     145,
                     665,
                     43,
                     26
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": "普攻",
+                "only_rec": true
+            }
+        },
+        "global_doc": "战斗界面",
+        "$__mpe_code": {
+            "position": {
+                "x": 1212,
+                "y": 12
+            }
         }
     },
     "ui_位于相伴": {
-        "$__mpe_code": {
-            "position": {
-                "x": 653,
-                "y": 79
-            }
-        },
-        "next": [
-            "[Anchor]相伴_anchor_task"
-        ],
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "相伴"
-                ],
-                "only_rec": true,
                 "roi": [
                     167,
                     12,
                     191,
                     66
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": [
+                    "相伴"
+                ],
+                "only_rec": true
+            }
+        },
+        "next": [
+            "[Anchor]相伴_anchor_task"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 653,
+                "y": 79
+            }
         }
     },
     "ui_位于种植": {
-        "$__mpe_code": {
-            "position": {
-                "x": 66,
-                "y": 391
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    114,
+                    673,
+                    74,
+                    25
+                ],
+                "expected": "种子",
+                "only_rec": true
             }
         },
         "home_doc": "种植界面",
         "next": [
             "ui_点击返回_种植"
         ],
-        "recognition": {
-            "param": {
-                "expected": "种子",
-                "only_rec": true,
-                "roi": [
-                    114,
-                    673,
-                    74,
-                    25
-                ]
-            },
-            "type": "OCR"
+        "$__mpe_code": {
+            "position": {
+                "x": 66,
+                "y": 391
+            }
         }
     },
     "ui_关闭对话框": {
-        "$__mpe_code": {
-            "position": {
-                "x": 578,
-                "y": 102
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "template": [
                     "./Global/closeButton.png",
                     "./Global/closeButton1.png"
                 ]
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "ui_关闭战斗普攻": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2172,
-                "y": 12
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "global_doc": "战斗界面，关闭战斗普攻",
+        "$__mpe_code": {
+            "position": {
+                "x": 499,
+                "y": 116
+            }
+        }
+    },
+    "ui_关闭战斗普攻": {
         "recognition": {
+            "type": "ColorMatch",
             "param": {
-                "lower": [
-                    230,
-                    235,
-                    230
-                ],
                 "roi": [
                     127,
                     671,
                     18,
                     17
                 ],
-                "upper": [
-                    255,
-                    255,
-                    255
-                ]
-            },
-            "type": "ColorMatch"
-        }
-    },
-    "ui_关闭智能战斗": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2412,
-                "y": 12
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "global_doc": "战斗界面，关闭智能战斗",
-        "recognition": {
-            "param": {
                 "lower": [
                     230,
                     235,
                     230
                 ],
+                "upper": [
+                    255,
+                    255,
+                    255
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "global_doc": "战斗界面，关闭战斗普攻",
+        "$__mpe_code": {
+            "position": {
+                "x": 2172,
+                "y": 12
+            }
+        }
+    },
+    "ui_关闭智能战斗": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
                 "roi": [
                     225,
                     674,
                     16,
                     14
                 ],
+                "lower": [
+                    230,
+                    235,
+                    230
+                ],
                 "upper": [
                     255,
                     255,
                     255
                 ]
-            },
-            "type": "ColorMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "global_doc": "战斗界面，关闭智能战斗",
+        "$__mpe_code": {
+            "position": {
+                "x": 2412,
+                "y": 12
+            }
         }
     },
     "ui_其他特殊退出": {
-        "$__mpe_code": {
-            "position": {
-                "x": 342,
-                "y": 2178
-            }
-        },
         "global_doc": "其他特殊退出、返回主界面",
         "next": [
             "ui_点击主城",
@@ -562,153 +560,159 @@
             "ui_网络波动",
             "ui_返回登录",
             "ui_空任务"
-        ]
-    },
-    "ui_加载": {
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 1452,
-                "y": 12
+                "x": 342,
+                "y": 2178
             }
-        },
-        "global_doc": "加载（百分号）",
+        }
+    },
+    "ui_加载": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "\\d+%",
-                "only_rec": true,
                 "roi": [
                     617,
                     597,
                     47,
                     24
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": "\\d+%",
+                "only_rec": true
+            }
+        },
+        "global_doc": "加载（百分号）",
+        "$__mpe_code": {
+            "position": {
+                "x": 1452,
+                "y": 12
+            }
         }
     },
     "ui_加载中": {
-        "$__mpe_code": {
-            "position": {
-                "x": 347,
-                "y": 2725
-            }
-        },
-        "global_doc": "加载中（左上）",
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "加载",
-                "only_rec": true,
                 "roi": [
                     120,
                     260,
                     126,
                     23
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": "加载",
+                "only_rec": true
+            }
+        },
+        "global_doc": "加载中（左上）",
+        "$__mpe_code": {
+            "position": {
+                "x": 347,
+                "y": 2725
+            }
         }
     },
     "ui_加载中1": {
-        "$__mpe_code": {
-            "position": {
-                "x": 342,
-                "y": 1838
-            }
-        },
-        "global_doc": "加载中（中下）",
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "加载",
-                "only_rec": true,
                 "roi": [
                     554,
                     513,
                     158,
                     23
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": "加载",
+                "only_rec": true
+            }
+        },
+        "global_doc": "加载中（中下）",
+        "$__mpe_code": {
+            "position": {
+                "x": 342,
+                "y": 1838
+            }
         }
     },
     "ui_在主界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1568,
-                "y": 3007
-            }
-        },
-        "next": [
-            "[Anchor]ui_a_进入界面"
-        ],
         "recognition": {
+            "type": "Or",
             "param": {
                 "any_of": [
                     "ui_位于主界面1",
                     "ui_位于主界面2",
                     "ui_位于主界面3"
                 ]
-            },
-            "type": "Or"
+            }
+        },
+        "next": [
+            "[Anchor]ui_a_进入界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1568,
+                "y": 3007
+            }
         }
     },
     "ui_开启战斗普攻": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2652,
-                "y": 12
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "global_doc": "战斗界面，开启战斗普攻",
         "recognition": {
+            "type": "ColorMatch",
             "param": {
-                "lower": [
-                    0,
-                    0,
-                    0
-                ],
                 "roi": [
                     127,
                     671,
                     18,
                     17
                 ],
+                "lower": [
+                    0,
+                    0,
+                    0
+                ],
                 "upper": [
                     25,
                     25,
                     25
                 ]
-            },
-            "type": "ColorMatch"
-        }
-    },
-    "ui_开启智能战斗": {
-        "$__mpe_code": {
-            "position": {
-                "x": 662,
-                "y": 294
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "global_doc": "战斗界面，开启智能战斗",
+        "global_doc": "战斗界面，开启战斗普攻",
+        "$__mpe_code": {
+            "position": {
+                "x": 2652,
+                "y": 12
+            }
+        }
+    },
+    "ui_开启智能战斗": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "普攻",
-                "only_rec": true,
                 "roi": [
                     225,
                     674,
                     16,
                     14
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": "普攻",
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "global_doc": "战斗界面，开启智能战斗",
+        "$__mpe_code": {
+            "position": {
+                "x": 662,
+                "y": 294
+            }
         }
     },
     "ui_待机": {
@@ -720,104 +724,94 @@
         }
     },
     "ui_快速结算确定": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2892,
-                "y": 12
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "global_doc": "快速结算确认",
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "确定",
-                "only_rec": true,
                 "roi": [
                     609,
                     458,
                     64,
                     32
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": "确定",
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "global_doc": "快速结算确认",
+        "$__mpe_code": {
+            "position": {
+                "x": 2892,
+                "y": 12
+            }
         }
     },
     "ui_普攻战斗中": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1692,
-                "y": 12
-            }
-        },
-        "global_doc": "战斗界面，普攻战斗中",
         "recognition": {
+            "type": "ColorMatch",
             "param": {
-                "lower": [
-                    230,
-                    235,
-                    230
-                ],
                 "roi": [
                     127,
                     671,
                     18,
                     17
                 ],
-                "upper": [
-                    255,
-                    255,
-                    255
-                ]
-            },
-            "type": "ColorMatch"
-        }
-    },
-    "ui_智能战斗中": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1932,
-                "y": 12
-            }
-        },
-        "global_doc": "战斗界面，智能战斗中",
-        "recognition": {
-            "param": {
                 "lower": [
                     230,
                     235,
                     230
                 ],
+                "upper": [
+                    255,
+                    255,
+                    255
+                ]
+            }
+        },
+        "global_doc": "战斗界面，普攻战斗中",
+        "$__mpe_code": {
+            "position": {
+                "x": 1692,
+                "y": 12
+            }
+        }
+    },
+    "ui_智能战斗中": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
                 "roi": [
                     225,
                     674,
                     16,
                     14
                 ],
+                "lower": [
+                    230,
+                    235,
+                    230
+                ],
                 "upper": [
                     255,
                     255,
                     255
                 ]
-            },
-            "type": "ColorMatch"
+            }
+        },
+        "global_doc": "战斗界面，智能战斗中",
+        "$__mpe_code": {
+            "position": {
+                "x": 1932,
+                "y": 12
+            }
         }
     },
     "ui_点击主城": {
-        "$__mpe_code": {
-            "position": {
-                "x": 662,
-                "y": 1198
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "global_doc": "小镇界面，点击主城按钮返回主城（主页面）",
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     0,
@@ -826,155 +820,154 @@
                     176
                 ],
                 "template": "./Global/clickMainCity.png"
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "ui_点击家园按钮": {
-        "$__mpe_code": {
-            "position": {
-                "x": 844,
-                "y": 822
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "next": [
-            "ui_位于家园"
-        ],
+        "global_doc": "小镇界面，点击主城按钮返回主城（主页面）",
+        "$__mpe_code": {
+            "position": {
+                "x": 662,
+                "y": 1198
+            }
+        }
+    },
+    "ui_点击家园按钮": {
         "recognition": {
+            "type": "Or",
             "param": {
                 "any_of": [
                     "ui_进入家园_spine",
                     "ui_进入家园_誓约",
                     "ui_进入家园_live2d"
                 ]
-            },
-            "type": "Or"
-        }
-    },
-    "ui_点击屏幕确认": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1302,
-                "y": 3094
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "global_doc": "战斗完成界面，点击屏幕确认",
+        "next": [
+            "ui_位于家园"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 844,
+                "y": 822
+            }
+        }
+    },
+    "ui_点击屏幕确认": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "屏幕",
                 "roi": [
                     520,
                     620,
                     236,
                     100
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_点击总览": {
-        "$__mpe_code": {
-            "position": {
-                "x": 494,
-                "y": 220
+                ],
+                "expected": "屏幕"
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "next": [
-            "ui_位于总览"
-        ],
+        "global_doc": "战斗完成界面，点击屏幕确认",
+        "$__mpe_code": {
+            "position": {
+                "x": 1302,
+                "y": 3094
+            }
+        }
+    },
+    "ui_点击总览": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "总览"
-                ],
-                "only_rec": true,
                 "roi": [
                     44,
                     247,
                     45,
                     31
-                ]
-            },
-            "type": "OCR"
-        },
-        "timeout": 1000
-    },
-    "ui_点击相伴按钮": {
-        "$__mpe_code": {
-            "position": {
-                "x": 343,
-                "y": 320
+                ],
+                "expected": [
+                    "总览"
+                ],
+                "only_rec": true
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
+        "timeout": 1000,
         "next": [
-            "ui_位于相伴"
+            "ui_位于总览"
         ],
+        "$__mpe_code": {
+            "position": {
+                "x": 494,
+                "y": 220
+            }
+        }
+    },
+    "ui_点击相伴按钮": {
         "recognition": {
+            "type": "Or",
             "param": {
                 "any_of": [
                     "ui_进入相伴_spine",
                     "ui_进入相伴_誓约",
                     "ui_进入相伴_live2d"
                 ]
-            },
-            "type": "Or"
-        }
-    },
-    "ui_点击空白区域": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1156,
-                "y": 1217
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
+        "next": [
+            "ui_位于相伴"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 324,
+                "y": 219
+            }
+        }
+    },
+    "ui_点击空白区域": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "空白区域",
-                "only_rec": true,
-                "replace": [],
                 "roi": [
                     556,
                     484,
                     184,
                     44
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_点击返回_普通界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": 67,
-                "y": 74
+                ],
+                "expected": "空白区域",
+                "only_rec": true
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "global_doc": "通用左上方返回按钮",
+        "$__mpe_code": {
+            "position": {
+                "x": 53,
+                "y": 64
+            }
+        }
+    },
+    "ui_点击返回_普通界面": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     17,
@@ -983,18 +976,23 @@
                     109
                 ],
                 "template": "./Global/backButton.png"
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "ui_点击返回_种植": {
-        "$__mpe_code": {
-            "position": {
-                "x": 399,
-                "y": 413
             }
         },
         "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "global_doc": "通用左上方返回按钮",
+        "$__mpe_code": {
+            "position": {
+                "x": 67,
+                "y": 74
+            }
+        }
+    },
+    "ui_点击返回_种植": {
+        "action": {
+            "type": "Click",
             "param": {
                 "target": [
                     325,
@@ -1002,8 +1000,13 @@
                     62,
                     60
                 ]
-            },
-            "type": "Click"
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 399,
+                "y": 413
+            }
         }
     },
     "ui_空任务": {
@@ -1015,38 +1018,46 @@
         }
     },
     "ui_网络波动": {
-        "$__mpe_code": {
-            "position": {
-                "x": 662,
-                "y": 1508
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "重新连接",
-                "only_rec": true,
                 "roi": [
                     691,
                     403,
                     99,
                     30
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_购买": {
-        "$__mpe_code": {
-            "position": {
-                "x": 12,
-                "y": 516
+                ],
+                "expected": "重新连接",
+                "only_rec": true
             }
         },
         "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 662,
+                "y": 1508
+            }
+        }
+    },
+    "ui_购买": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    601,
+                    164,
+                    77,
+                    44
+                ],
+                "expected": "购买",
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click",
             "param": {
                 "target": [
                     737,
@@ -1054,83 +1065,69 @@
                     60,
                     31
                 ]
-            },
-            "type": "Click"
+            }
         },
         "global_doc": "购买界面，点击购买",
-        "recognition": {
-            "param": {
-                "expected": "购买",
-                "only_rec": true,
-                "roi": [
-                    601,
-                    164,
-                    77,
-                    44
-                ]
-            },
-            "type": "OCR"
+        "$__mpe_code": {
+            "position": {
+                "x": 12,
+                "y": 516
+            }
         }
     },
     "ui_返回主界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": -2685,
-                "y": 3308
-            }
-        },
         "anchor": {
             "ui_a_进入界面": "ui_待机"
         },
         "next": [
             "ui_返回主界面_切换界面"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2685,
+                "y": 3308
+            }
+        }
     },
     "ui_返回主界面_切换界面": {
+        "next": [
+            "ui_在主界面",
+            "[JumpBack]ui_点击返回_普通界面",
+            "[JumpBack]ui_位于种植"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -2320,
                 "y": 3287
             }
-        },
-        "next": [
-            "ui_在主界面",
-            "[JumpBack]ui_点击返回_普通界面",
-            "[JumpBack]ui_位于种植"
-        ]
+        }
     },
     "ui_返回登录": {
-        "$__mpe_code": {
-            "position": {
-                "x": 662,
-                "y": 2798
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "返回登录",
-                "only_rec": true,
                 "roi": [
                     586,
                     390,
                     108,
                     26
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": "返回登录",
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 662,
+                "y": 2798
+            }
         }
     },
     "ui_进入家园": {
-        "$__mpe_code": {
-            "position": {
-                "x": 487,
-                "y": 571
-            }
-        },
         "anchor": {
             "ui_a_返回主界面": "ui_返回主界面_切换界面",
             "ui_a_进入界面": "ui_点击家园按钮"
@@ -1139,72 +1136,69 @@
             "ui_位于家园",
             "[JumpBack]ui_点击家园按钮",
             "[Anchor][JumpBack]ui_a_返回主界面"
-        ]
-    },
-    "ui_进入家园_live2d": {
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 1524,
-                "y": 923
+                "x": 487,
+                "y": 571
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
+        }
+    },
+    "ui_进入家园_live2d": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "家园"
-                ],
                 "roi": [
                     433,
                     364,
                     71,
                     39
+                ],
+                "expected": [
+                    "家园"
                 ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_进入家园_spine": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1508,
-                "y": 421
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
+        "$__mpe_code": {
+            "position": {
+                "x": 1524,
+                "y": 923
+            }
+        }
+    },
+    "ui_进入家园_spine": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "家园"
-                ],
                 "roi": [
                     433,
                     472,
                     71,
                     41
+                ],
+                "expected": [
+                    "家园"
                 ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_进入家园_誓约": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1514,
-                "y": 640
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
+        "$__mpe_code": {
+            "position": {
+                "x": 1508,
+                "y": 421
+            }
+        }
+    },
+    "ui_进入家园_誓约": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     85,
@@ -1218,30 +1212,33 @@
                 "threshold": [
                     0.85
                 ]
-            },
-            "type": "TemplateMatch"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1514,
+                "y": 640
+            }
         }
     },
     "ui_进入总览": {
+        "next": [
+            "ui_位于总览",
+            "[JumpBack]ui_点击总览",
+            "[JumpBack]ui_进入家园"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 48,
                 "y": 88
             }
-        },
-        "next": [
-            "ui_位于总览",
-            "[JumpBack]ui_点击总览",
-            "[JumpBack]ui_进入家园"
-        ]
+        }
     },
     "ui_进入相伴": {
-        "$__mpe_code": {
-            "position": {
-                "x": 53,
-                "y": 115
-            }
-        },
         "anchor": {
             "ui_a_返回主界面": "ui_返回主界面_切换界面",
             "ui_a_进入界面": "ui_点击相伴按钮"
@@ -1250,155 +1247,147 @@
             "ui_位于相伴",
             "[JumpBack]ui_点击相伴按钮",
             "[Anchor][JumpBack]ui_a_返回主界面"
-        ]
-    },
-    "ui_进入相伴_live2d": {
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 958,
-                "y": 378
+                "x": 37,
+                "y": 109
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "post_delay": 2000,
+        }
+    },
+    "ui_进入相伴_live2d": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "相伴",
-                "only_rec": true,
                 "roi": [
                     740,
                     411,
                     63,
                     35
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_进入相伴_spine": {
-        "$__mpe_code": {
-            "position": {
-                "x": 949,
-                "y": 78
+                ],
+                "expected": "相伴",
+                "only_rec": true
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
         "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 958,
+                "y": 378
+            }
+        }
+    },
+    "ui_进入相伴_spine": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "相伴",
-                "only_rec": true,
                 "roi": [
                     562,
                     333,
                     56,
                     34
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_进入相伴_誓约": {
-        "$__mpe_code": {
-            "position": {
-                "x": 953,
-                "y": 696
+                ],
+                "expected": "相伴",
+                "only_rec": true
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
         "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 949,
+                "y": 78
+            }
+        }
+    },
+    "ui_进入相伴_誓约": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "相伴",
                 "roi": [
                     126,
                     141,
                     1036,
                     347
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_退出主线": {
-        "$__mpe_code": {
-            "position": {
-                "x": 662,
-                "y": 2488
+                ],
+                "expected": "相伴"
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 953,
+                "y": 696
+            }
+        }
+    },
+    "ui_退出主线": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    146,
+                    104
+                ],
+                "expected": "离开"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
         },
         "global_doc": "主线迷宫界面，离开魔女境界",
         "next": [
             "ui_退出主线确认",
             "ui_退出主线"
         ],
-        "recognition": {
-            "param": {
-                "expected": "离开",
-                "roi": [
-                    0,
-                    0,
-                    146,
-                    104
-                ]
-            },
-            "type": "OCR"
+        "$__mpe_code": {
+            "position": {
+                "x": 662,
+                "y": 2488
+            }
         }
     },
     "ui_退出主线确认": {
-        "$__mpe_code": {
-            "position": {
-                "x": 982,
-                "y": 2516
-            }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "退出",
                 "roi": [
                     420,
                     380,
                     155,
                     132
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_退出作战": {
-        "$__mpe_code": {
-            "position": {
-                "x": 662,
-                "y": 3094
+                ],
+                "expected": "退出"
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "global_doc": "战斗界面，退出作战",
-        "next": [
-            "ui_退出作战确认",
-            "ui_退出作战"
-        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 982,
+                "y": 2516
+            }
+        }
+    },
+    "ui_退出作战": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     1176,
@@ -1407,47 +1396,68 @@
                     103
                 ],
                 "template": "./Global/fightExit.png"
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "ui_退出作战确认": {
-        "$__mpe_code": {
-            "position": {
-                "x": 982,
-                "y": 3094
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
+        },
+        "global_doc": "战斗界面，退出作战",
+        "next": [
+            "ui_退出作战确认",
+            "ui_退出作战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 662,
+                "y": 3094
+            }
+        }
+    },
+    "ui_退出作战确认": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    659,
+                    340,
+                    160,
+                    127
+                ],
+                "expected": "确认"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
         },
         "global_doc": "战斗界面，退出作战确认",
         "next": [
             "ui_点击屏幕确认",
             "ui_退出作战确认"
         ],
-        "recognition": {
-            "param": {
-                "expected": "确认",
-                "roi": [
-                    659,
-                    340,
-                    160,
-                    127
-                ]
-            },
-            "type": "OCR"
+        "$__mpe_code": {
+            "position": {
+                "x": 982,
+                "y": 3094
+            }
         }
     },
     "ui_退出功能列表": {
-        "$__mpe_code": {
-            "position": {
-                "x": 662,
-                "y": 3404
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    339,
+                    167,
+                    173,
+                    125
+                ],
+                "expected": "功能列表"
             }
         },
         "action": {
+            "type": "Click",
             "param": {
                 "target": [
                     1019,
@@ -1455,30 +1465,31 @@
                     96,
                     67
                 ]
-            },
-            "type": "Click"
+            }
         },
-        "recognition": {
-            "param": {
-                "expected": "功能列表",
-                "roi": [
-                    339,
-                    167,
-                    173,
-                    125
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_退出种植": {
         "$__mpe_code": {
             "position": {
                 "x": 662,
-                "y": 636
+                "y": 3404
+            }
+        }
+    },
+    "ui_退出种植": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    114,
+                    673,
+                    74,
+                    25
+                ],
+                "expected": "种子",
+                "only_rec": true
             }
         },
         "action": {
+            "type": "Click",
             "param": {
                 "target": [
                     17,
@@ -1486,64 +1497,31 @@
                     166,
                     109
                 ]
-            },
-            "type": "Click"
+            }
         },
         "global_doc": "种植界面，退出种植",
-        "recognition": {
-            "param": {
-                "expected": "种子",
-                "only_rec": true,
-                "roi": [
-                    114,
-                    673,
-                    74,
-                    25
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_退出聊天": {
         "$__mpe_code": {
             "position": {
                 "x": 662,
-                "y": 1794
+                "y": 636
             }
-        },
-        "action": {
-            "param": {
-                "target": [
-                    543,
-                    592,
-                    59,
-                    35
-                ]
-            },
-            "type": "Click"
-        },
-        "global_doc": "聊天界面，退出聊天",
+        }
+    },
+    "ui_退出聊天": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "世界",
                 "roi": [
                     0,
                     0,
                     110,
                     103
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "ui_退出邮件": {
-        "$__mpe_code": {
-            "position": {
-                "x": 657,
-                "y": 2095
+                ],
+                "expected": "世界"
             }
         },
         "action": {
+            "type": "Click",
             "param": {
                 "target": [
                     543,
@@ -1551,21 +1529,161 @@
                     59,
                     35
                 ]
-            },
-            "type": "Click"
+            }
         },
-        "global_doc": "邮件界面，退出邮件",
+        "global_doc": "聊天界面，退出聊天",
+        "$__mpe_code": {
+            "position": {
+                "x": 662,
+                "y": 1794
+            }
+        }
+    },
+    "ui_退出邮件": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "邮件",
                 "roi": [
                     736,
                     0,
                     158,
                     99
+                ],
+                "expected": "邮件"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    543,
+                    592,
+                    59,
+                    35
                 ]
+            }
+        },
+        "global_doc": "邮件界面，退出邮件",
+        "$__mpe_code": {
+            "position": {
+                "x": 657,
+                "y": 2095
+            }
+        }
+    },
+    "$__mpe_group_主城界面_界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 872,
+                "y": 5114
             },
-            "type": "OCR"
+            "color": "blue",
+            "childrenLabels": [
+                "进入主城",
+                "点击小镇按钮",
+                "位于主城",
+                "主城_anchor_task_副本5"
+            ],
+            "width": 1248,
+            "height": 919
+        }
+    },
+    "ui_进入主城": {
+        "anchor": {
+            "ui_a_返回主界面": "ui_返回主界面_切换界面",
+            "ui_a_进入界面": "ui_点击小镇按钮"
+        },
+        "next": [
+            "ui_位于主城",
+            "[JumpBack]ui_点击小镇按钮",
+            "[Anchor][JumpBack]ui_a_返回主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 127,
+                "y": 198
+            }
+        }
+    },
+    "ui_点击小镇按钮": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    8,
+                    273,
+                    66,
+                    38
+                ],
+                "expected": [
+                    "小镇"
+                ],
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 656,
+                "y": 375
+            }
+        }
+    },
+    "ui_位于主城": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    20,
+                    371,
+                    49,
+                    30
+                ],
+                "expected": [
+                    "主城"
+                ],
+                "only_rec": true
+            }
+        },
+        "next": [
+            "[Anchor]主城_anchor_task_副本5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 658,
+                "y": 121
+            }
+        }
+    },
+    "$__mpe_anchor_主城_anchor_task_副本5_界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 919,
+                "y": 659
+            }
+        }
+    },
+    "ui_跳过剧情": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "巡查/跳过剧情.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 123,
+                "y": 115
+            }
         }
     }
 }
