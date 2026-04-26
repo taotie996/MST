@@ -1,0 +1,242 @@
+{
+    "$__mpe_config_启动游戏": {
+        "$__mpe_code": {
+            "prefix": "",
+            "lastSyncTime": 1777177229014,
+            "isModifiedExternally": false,
+            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\启动游戏.json",
+            "savedViewport": {
+                "x": 2172,
+                "y": 856,
+                "zoom": 1
+            },
+            "filename": "启动游戏",
+            "version": "v1.4.3"
+        }
+    },
+    "启动_小七": {
+        "action": {
+            "type": "StartApp",
+            "param": {
+                "package": "com.glkj.lhcx.x7sy"
+            }
+        },
+        "timeout": 60000,
+        "next": [
+            "ui_在主界面",
+            "[JumpBack]每日代金券",
+            "[JumpBack]ui_关闭对话框",
+            "[JumpBack]启动界面点击任意区域"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1176,
+                "y": -492
+            }
+        }
+    },
+    "启动界面关闭公告": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    540,
+                    555,
+                    201,
+                    43
+                ],
+                "expected": "确定"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 332,
+                "y": 1305
+            }
+        }
+    },
+    "启动界面点击任意区域": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    555,
+                    507,
+                    173,
+                    43
+                ],
+                "expected": "点击任意区域继续"
+            }
+        },
+        "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -714,
+                "y": -256
+            }
+        }
+    },
+    "启动界面等待": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1111,
+                    560,
+                    164,
+                    160
+                ],
+                "template": [
+                    "./StartUp/healer.png",
+                    "./StartUp/dps.png",
+                    "./StartUp/tank.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -134,
+                "y": 287
+            }
+        }
+    },
+    "每日代金券": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    571,
+                    312,
+                    126,
+                    38
+                ],
+                "expected": [
+                    "每日代金券"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -699,
+                "y": -426
+            }
+        }
+    },
+    "灵魂潮汐": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "./StartUp/soulTide.png",
+                    "./StartUp/heroGames.png",
+                    "./StartUp/game.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 863,
+                "y": 1189
+            }
+        }
+    },
+    "热更新判断": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    365,
+                    239,
+                    552,
+                    168
+                ],
+                "expected": "需要从服务器下载最新的资源"
+            }
+        },
+        "next": [
+            "热更新确认"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 32,
+                "y": -600
+            }
+        }
+    },
+    "热更新确认": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    529,
+                    354,
+                    223,
+                    153
+                ],
+                "expected": "确定"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 652,
+                "y": 12
+            }
+        }
+    },
+    "启动游戏": {
+        "next": [
+            "关闭_小七"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1995,
+                "y": -471
+            }
+        }
+    },
+    "关闭_小七": {
+        "action": {
+            "type": "StopApp",
+            "param": {
+                "package": "com.glkj.lhcx.x7sy"
+            }
+        },
+        "next": [
+            "启动_小七"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1591,
+                "y": -491
+            }
+        }
+    },
+    "$__mpe_external_ui_关闭对话框_启动游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": -696,
+                "y": -517
+            }
+        }
+    },
+    "$__mpe_external_ui_在主界面_启动游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": -667,
+                "y": -744
+            }
+        }
+    }
+}

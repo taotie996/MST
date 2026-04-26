@@ -1,16 +1,41 @@
 {
     "$__mpe_config_家园": {
         "$__mpe_code": {
+            "prefix": "家园",
+            "lastSyncTime": 1775881928215,
+            "isModifiedExternally": false,
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\家园.json",
-            "filename": "家园",
-            "lastSyncTime": 1775568819328,
-            "prefix": "",
             "savedViewport": {
-                "x": 3086,
-                "y": -1003,
-                "zoom": 1.39
+                "x": 1547,
+                "y": -217,
+                "zoom": 0.66
             },
-            "version": "v1.4.0"
+            "filename": "家园",
+            "version": "v1.4.1"
+        }
+    },
+    "$__mpe_group_种田_家园": {
+        "$__mpe_code": {
+            "position": {
+                "x": -2032,
+                "y": 735
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "ui_进入总览",
+                "位于种植",
+                "开始收菜",
+                "开始种菜",
+                "收菜完成",
+                "日常任务_种田",
+                "点击种植",
+                "种植完毕",
+                "菜未完成",
+                "进入种植",
+                "选择种子"
+            ],
+            "width": 2622,
+            "height": 985
         }
     },
     "$__mpe_external_ui_进入总览_家园": {
@@ -21,218 +46,185 @@
             }
         }
     },
-    "$__mpe_group_种田_家园": {
-        "$__mpe_code": {
-            "childrenLabels": [
-                "位于种植",
-                "开始收菜",
-                "收菜完成",
-                "日常任务_种田",
-                "点击种植",
-                "种植完毕",
-                "菜未完成",
-                "开始种菜",
-                "进入种植",
-                "选择种子",
-                "ui_进入总览"
-            ],
-            "color": "blue",
-            "height": 839,
-            "position": {
-                "x": -2032,
-                "y": 735
-            },
-            "width": 2622
-        }
-    },
-    "位于种植": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1609,
-                "y": 58
-            }
-        },
-        "home_doc": "种植界面",
-        "next": [
-            "种植完毕",
-            "[JumpBack]点击种植",
-            "[JumpBack]选择种子"
-        ],
+    "家园_位于种植": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "种子",
-                "only_rec": true,
                 "roi": [
                     114,
                     673,
                     74,
                     25
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": "种子",
+                "only_rec": true
+            }
+        },
+        "home_doc": "种植界面",
+        "next": [
+            "家园_种植完毕",
+            "[JumpBack]家园_点击种植",
+            "[JumpBack]家园_选择种子"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1609,
+                "y": 58
+            }
         }
     },
-    "开始收菜": {
+    "家园_开始收菜": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    539,
+                    395,
+                    43,
+                    28
+                ],
+                "expected": "领取",
+                "only_rec": true
+            }
+        },
+        "inverse": false,
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
         "$__mpe_code": {
             "position": {
                 "x": 1020,
                 "y": 326
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
-        "inverse": false,
-        "recognition": {
-            "param": {
-                "expected": "领取",
-                "only_rec": true,
-                "roi": [
-                    539,
-                    395,
-                    43,
-                    28
-                ]
-            },
-            "type": "OCR"
         }
     },
-    "开始种菜": {
+    "家园_开始种菜": {
+        "next": [
+            "家园_菜未完成",
+            "[JumpBack]家园_开始收菜",
+            "家园_收菜完成"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 524,
                 "y": 275
             }
-        },
-        "next": [
-            "菜未完成",
-            "[JumpBack]开始收菜",
-            "收菜完成"
-        ]
+        }
     },
-    "收菜完成": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1021,
-                "y": 600
-            }
-        },
-        "inverse": true,
-        "next": [
-            "位于种植",
-            "[JumpBack]进入种植"
-        ],
+    "家园_收菜完成": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "领取",
-                "only_rec": true,
                 "roi": [
                     539,
                     395,
                     43,
                     28
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "日常任务_种田": {
-        "$__mpe_code": {
-            "position": {
-                "x": 68,
-                "y": 194
+                ],
+                "expected": "领取",
+                "only_rec": true
             }
         },
+        "inverse": true,
+        "next": [
+            "家园_位于种植",
+            "[JumpBack]家园_进入种植"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1021,
+                "y": 600
+            }
+        }
+    },
+    "家园_日常任务_种田": {
         "anchor": {
             "ui_a_进入总览后": "开始种菜"
         },
         "next": [
             "ui_进入总览"
-        ]
-    },
-    "点击种植": {
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 2234,
-                "y": 567
+                "x": 68,
+                "y": 194
             }
-        },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
+        }
+    },
+    "家园_点击种植": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "种植",
-                "only_rec": true,
                 "roi": [
                     610,
                     593,
                     63,
                     29
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "种植完毕": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2278,
-                "y": 37
+                ],
+                "expected": "种植",
+                "only_rec": true
             }
         },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 2234,
+                "y": 567
+            }
+        }
+    },
+    "家园_种植完毕": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "没有空地",
-                "only_rec": true,
                 "roi": [
                     597,
                     235,
                     85,
                     25
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "菜未完成": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1027,
-                "y": 40
+                ],
+                "expected": "没有空地",
+                "only_rec": true
             }
         },
-        "inverse": false,
+        "$__mpe_code": {
+            "position": {
+                "x": 2278,
+                "y": 37
+            }
+        }
+    },
+    "家园_菜未完成": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": [
-                    "全部地块种植"
-                ],
-                "only_rec": true,
                 "roi": [
                     376,
                     418,
                     96,
                     28
-                ]
-            },
-            "type": "OCR"
-        }
-    },
-    "进入种植": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1591,
-                "y": 508
+                ],
+                "expected": [
+                    "全部地块种植"
+                ],
+                "only_rec": true
             }
         },
-        "action": {
-            "param": {},
-            "type": "Click"
-        },
+        "inverse": false,
+        "$__mpe_code": {
+            "position": {
+                "x": 1027,
+                "y": 40
+            }
+        }
+    },
+    "家园_进入种植": {
         "recognition": {
+            "type": "TemplateMatch",
             "param": {
                 "roi": [
                     121,
@@ -241,33 +233,42 @@
                     142
                 ],
                 "template": "./Home/plant.png"
-            },
-            "type": "TemplateMatch"
-        }
-    },
-    "选择种子": {
-        "$__mpe_code": {
-            "position": {
-                "x": 2264,
-                "y": 266
             }
         },
         "action": {
-            "param": {},
-            "type": "Click"
+            "type": "Click",
+            "param": {}
         },
-        "home_doc": "配置项,默认选择最左边的种子",
+        "$__mpe_code": {
+            "position": {
+                "x": 1637,
+                "y": 493
+            }
+        }
+    },
+    "家园_选择种子": {
         "recognition": {
+            "type": "OCR",
             "param": {
-                "expected": "种子",
                 "roi": [
                     65,
                     624,
                     979,
                     96
-                ]
-            },
-            "type": "OCR"
+                ],
+                "expected": "种子"
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "home_doc": "配置项,默认选择最左边的种子",
+        "$__mpe_code": {
+            "position": {
+                "x": 2264,
+                "y": 266
+            }
         }
     }
 }
