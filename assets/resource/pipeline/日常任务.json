@@ -1,0 +1,53 @@
+{
+    "$__mpe_config_日常任务": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\日常任务.json",
+            "lastSyncTime": 1777179149479,
+            "isModifiedExternally": false,
+            "savedViewport": {
+                "x": 4263,
+                "y": 243,
+                "zoom": 1.08
+            },
+            "filename": "日常任务",
+            "version": "v1.4.3"
+        }
+    },
+    "日常_种田": {
+        "anchor": {
+            "ui_a_进入总览后": "家园_开始种菜"
+        },
+        "next": [
+            "ui_进入总览"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -3080,
+                "y": 275
+            }
+        }
+    },
+    "日常_收炼金": {
+        "anchor": {
+            "ui_a_进入总览后": "家园_炼金炉领取"
+        },
+        "next": [
+            "ui_进入总览"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -3075,
+                "y": 538
+            }
+        }
+    },
+    "$__mpe_external_ui_进入总览_日常任务": {
+        "$__mpe_code": {
+            "position": {
+                "x": -2599,
+                "y": 411
+            }
+        }
+    }
+}

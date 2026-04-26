@@ -2,16 +2,16 @@
     "$__mpe_config_相伴": {
         "$__mpe_code": {
             "prefix": "相伴",
-            "lastSyncTime": 1775624177728,
+            "lastSyncTime": 1777178586181,
             "isModifiedExternally": false,
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\相伴.json",
             "savedViewport": {
-                "x": 1227,
-                "y": 1560,
-                "zoom": 0.66
+                "x": 1967,
+                "y": 1337,
+                "zoom": 0.87
             },
             "filename": "相伴",
-            "version": "v1.4.1"
+            "version": "v1.4.3"
         }
     },
     "$__mpe_external_ui_进入相伴_相伴": {
@@ -40,8 +40,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -50,15 +49,7 @@
             }
         }
     },
-    "相伴_未弹出对话框": {
-        "$__mpe_code": {
-            "position": {
-                "x": -106,
-                "y": -1616
-            }
-        }
-    },
-    "相伴_日常任务-点击摸头": {
+    "相伴_日常_点击摸头": {
         "anchor": {
             "相伴_anchor_task": "相伴_点击摸头"
         },
@@ -72,7 +63,7 @@
             }
         }
     },
-    "相伴_日常任务-送礼物": {
+    "相伴_日常_送礼物": {
         "anchor": {
             "相伴_anchor_task": "相伴_送礼物"
         },
@@ -83,6 +74,14 @@
             "position": {
                 "x": -1602,
                 "y": -594
+            }
+        }
+    },
+    "相伴_未弹出对话框": {
+        "$__mpe_code": {
+            "position": {
+                "x": -106,
+                "y": -1616
             }
         }
     },
@@ -125,8 +124,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -153,8 +151,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 1000,
         "timeout": 2000,

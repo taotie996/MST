@@ -1,0 +1,152 @@
+{
+    "$__mpe_config_签到": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\签到.json",
+            "lastSyncTime": 1777178477696,
+            "isModifiedExternally": false,
+            "savedViewport": {
+                "x": 2264,
+                "y": 1626,
+                "zoom": 0.76
+            },
+            "filename": "签到",
+            "version": "v1.4.3"
+        }
+    },
+    "点击签到_副本2_副本4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    990,
+                    597,
+                    76,
+                    56
+                ],
+                "expected": [
+                    "签到"
+                ],
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -1677,
+                "y": -1352
+            }
+        }
+    },
+    "$__mpe_external_ui_点击空白区域_签到": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1725,
+                "y": -1536
+            }
+        }
+    },
+    "签到": {
+        "next": [
+            "已签到",
+            "[JumpBack]ui_点击空白区域",
+            "[JumpBack]点击签到_副本2_副本4",
+            "[JumpBack]点击签到",
+            "[JumpBack]点击功能面板",
+            "[JumpBack]ui_返回主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2251,
+                "y": -1050
+            }
+        }
+    },
+    "$__mpe_external_ui_返回主界面_签到": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1638,
+                "y": -214
+            }
+        }
+    },
+    "点击功能面板": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    1186,
+                    46,
+                    92,
+                    85
+                ],
+                "template": [
+                    "签到/signInEntry.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -1631,
+                "y": -624
+            }
+        }
+    },
+    "点击签到": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    378,
+                    332,
+                    60,
+                    35
+                ],
+                "expected": [
+                    "签到"
+                ],
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -1626,
+                "y": -985
+            }
+        }
+    },
+    "已签到": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    990,
+                    597,
+                    76,
+                    56
+                ],
+                "expected": [
+                    "已签到"
+                ],
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -1706,
+                "y": -1789
+            }
+        }
+    }
+}
