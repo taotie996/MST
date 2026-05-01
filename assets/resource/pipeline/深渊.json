@@ -1,0 +1,807 @@
+{
+    "$__mpe_config_深渊": {
+        "$__mpe_code": {
+            "prefix": "",
+            "lastSyncTime": 1777180532521,
+            "isModifiedExternally": false,
+            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\深渊.json",
+            "savedViewport": {
+                "x": 1300,
+                "y": -386,
+                "zoom": 0.7
+            },
+            "filename": "深渊",
+            "version": "v1.4.3"
+        }
+    },
+    "$__mpe_group_boss_新建Pipeli_深渊": {
+        "$__mpe_code": {
+            "position": {
+                "x": 594,
+                "y": 254
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "深渊_巨兽裂谷boss1",
+                "深渊_巨兽裂谷boss1_副本2",
+                "深渊_巨木boss1"
+            ],
+            "width": 1311,
+            "height": 453
+        }
+    },
+    "$__mpe_group_战斗_新建Pipeli_深渊": {
+        "$__mpe_code": {
+            "position": {
+                "x": 892,
+                "y": 1165
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "新建节点7",
+                "深渊_在战斗中"
+            ],
+            "width": 1498,
+            "height": 458
+        }
+    },
+    "$__mpe_group_移动_新建Pipeli_深渊": {
+        "$__mpe_code": {
+            "position": {
+                "x": -892,
+                "y": 241
+            },
+            "color": "purple",
+            "childrenLabels": [
+                "深渊_走路1",
+                "深渊_走路_商店",
+                "深渊_走路_宝箱",
+                "深渊_走路_祭坛"
+            ],
+            "width": 1390,
+            "height": 469
+        }
+    },
+    "新建节点7": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    61,
+                    85,
+                    244,
+                    141
+                ],
+                "expected": [
+                    "战斗"
+                ],
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 875,
+                "y": 103
+            }
+        }
+    },
+    "深渊_在战斗中": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    240,
+                    668,
+                    48,
+                    25
+                ],
+                "expected": [
+                    "智能"
+                ],
+                "only_rec": true
+            }
+        },
+        "timeout": 120000,
+        "next": [
+            "新建节点7"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 315,
+                "y": 133
+            }
+        }
+    },
+    "深渊_巨兽裂谷boss1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "template": [
+                    "深渊/巨兽裂谷1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 60,
+                "y": 97
+            }
+        }
+    },
+    "深渊_巨兽裂谷boss1_副本2": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "template": [
+                    "深渊/巨兽裂谷2.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 336,
+                "y": 91
+            }
+        }
+    },
+    "深渊_走路1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "深渊/空白节点.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 25,
+                "y": 70
+            }
+        }
+    },
+    "深渊_走路_商店": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "深渊/商店.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 294,
+                "y": 71
+            }
+        }
+    },
+    "深渊_走路_宝箱": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "深渊/宝箱节点.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 559,
+                "y": 81
+            }
+        }
+    },
+    "深渊_走路_祭坛": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "深渊/祭坛.png"
+                ],
+                "green_mask": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 885,
+                "y": 84
+            }
+        }
+    },
+    "深渊_节点": {
+        "recognition": {
+            "type": "Or",
+            "param": {
+                "any_of": [
+                    "深渊_走路1",
+                    "深渊_走路_商店",
+                    "深渊_走路_宝箱",
+                    "深渊_走路_祭坛",
+                    "深渊_巨木boss1"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 2000,
+        "$__mpe_code": {
+            "position": {
+                "x": 809,
+                "y": 57
+            }
+        }
+    },
+    "深渊_巨木boss1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    769,
+                    372,
+                    196,
+                    105
+                ],
+                "template": [
+                    "深渊/巨木1.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 646,
+                "y": 102
+            }
+        }
+    },
+    "$__mpe_group_分组_新建Pipeli_深渊": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1105,
+                "y": 982
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "深渊_节点",
+                "sy_放弃刻印",
+                "sy_选择次级刻印",
+                "深渊_事件点击确定",
+                "深渊_判断是否开了自动战斗",
+                "深渊_开启快速战斗",
+                "深渊_必拿刻印",
+                "深渊_点击确定",
+                "深渊_点击返回",
+                "深渊_购买_刻印_SSS",
+                "深渊_购买刻印",
+                "深渊_选择刻印",
+                "深渊_遇到事件",
+                "深渊_重铸刻印",
+                "深渊_重铸刻印_副本1",
+                "自动深渊",
+                "深渊_开启快速战斗_副本4",
+                "深渊_自动行走"
+            ],
+            "width": 1902,
+            "height": 2205
+        }
+    },
+    "sy_放弃刻印": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    383,
+                    521,
+                    123,
+                    41
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1004,
+                "y": 1254
+            }
+        }
+    },
+    "sy_选择次级刻印": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    178,
+                    236,
+                    762,
+                    48
+                ],
+                "expected": [
+                    "运势",
+                    "燃烧",
+                    "火焰"
+                ],
+                "index": 0
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    115,
+                    19,
+                    -16,
+                    16
+                ]
+            }
+        },
+        "next": [
+            "深渊_点击确定"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 965,
+                "y": 936
+            }
+        }
+    },
+    "深渊_事件点击确定": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    596,
+                    587,
+                    92,
+                    40
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1207,
+                "y": 420
+            }
+        }
+    },
+    "深渊_判断是否开了自动战斗": {
+        "recognition": {
+            "type": "ColorMatch",
+            "param": {
+                "roi": [
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "lower": [
+                    [
+                        241,
+                        240,
+                        241
+                    ]
+                ],
+                "upper": [
+                    [
+                        241,
+                        240,
+                        241
+                    ]
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1573,
+                "y": 33
+            }
+        }
+    },
+    "深渊_开启快速战斗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    555,
+                    378,
+                    159,
+                    32
+                ],
+                "expected": [
+                    "本次探索不再提示"
+                ],
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    -29,
+                    -2,
+                    -128,
+                    -1
+                ]
+            }
+        },
+        "next": [
+            "深渊_开启快速战斗_副本4"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 442,
+                "y": 838
+            }
+        }
+    },
+    "深渊_必拿刻印": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    265,
+                    321,
+                    748,
+                    45
+                ],
+                "expected": [
+                    "黄昏遗物",
+                    "血雨狂袭",
+                    "恶魔交易",
+                    "暮夜镰刀",
+                    "奥术回流",
+                    "狂躁之血",
+                    "肢体重塑",
+                    "阿戈斯之瞳"
+                ],
+                "index": 0
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "深渊_点击确定"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 951,
+                "y": 639
+            }
+        }
+    },
+    "深渊_点击确定": {
+        "pre_delay": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    774,
+                    529,
+                    57,
+                    22
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1571,
+                "y": 852
+            }
+        }
+    },
+    "深渊_点击返回": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    54,
+                    25,
+                    94,
+                    33
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1041,
+                "y": 1776
+            }
+        }
+    },
+    "深渊_购买_刻印_SSS": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    544,
+                    270,
+                    617,
+                    284
+                ],
+                "expected": [
+                    "黄昏遗物",
+                    "血雨狂袭",
+                    "恶魔交易",
+                    "暮夜镰刀",
+                    "奥术回流",
+                    "狂躁之血",
+                    "肢体重塑",
+                    "阿戈斯之瞳"
+                ],
+                "index": 0
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    55,
+                    0,
+                    -3
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1021,
+                "y": 1461
+            }
+        }
+    },
+    "深渊_购买刻印": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    200,
+                    10,
+                    141,
+                    65
+                ],
+                "expected": [
+                    "刻印商店"
+                ],
+                "only_rec": true
+            }
+        },
+        "next": [
+            "深渊_点击返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 421,
+                "y": 1572
+            }
+        }
+    },
+    "深渊_选择刻印": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    578,
+                    155,
+                    122,
+                    34
+                ],
+                "expected": [
+                    "选择刻印"
+                ],
+                "only_rec": true
+            }
+        },
+        "next": [
+            "深渊_必拿刻印",
+            "sy_选择次级刻印",
+            "sy_放弃刻印"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 438,
+                "y": 1236
+            }
+        }
+    },
+    "深渊_遇到事件": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    225,
+                    46,
+                    101,
+                    75
+                ],
+                "template": [
+                    "深渊/事件对话框.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    332,
+                    582,
+                    127,
+                    41
+                ]
+            }
+        },
+        "next": [
+            "深渊_事件点击确定"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 504,
+                "y": 516
+            }
+        }
+    },
+    "深渊_重铸刻印": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    200,
+                    10,
+                    141,
+                    65
+                ],
+                "expected": [
+                    "重铸"
+                ],
+                "only_rec": true
+            }
+        },
+        "next": [
+            "深渊_点击返回"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 418,
+                "y": 1856
+            }
+        }
+    },
+    "深渊_重铸刻印_副本1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    557,
+                    209,
+                    157,
+                    60
+                ],
+                "expected": [
+                    "获得刻印"
+                ],
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 442,
+                "y": 2107
+            }
+        }
+    },
+    "自动深渊": {
+        "next": [
+            "[JumpBack]深渊_自动行走",
+            "[JumpBack]深渊_开启快速战斗",
+            "[JumpBack]深渊_遇到事件",
+            "[JumpBack]深渊_选择刻印",
+            "[JumpBack]深渊_购买刻印",
+            "[JumpBack]深渊_在战斗中",
+            "[JumpBack]深渊_重铸刻印",
+            "[JumpBack]深渊_重铸刻印_副本1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 36,
+                "y": 607
+            }
+        }
+    },
+    "深渊_开启快速战斗_副本4": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    724,
+                    424,
+                    126,
+                    39
+                ],
+                "expected": [
+                    "快速战斗"
+                ],
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 807,
+                "y": 831
+            }
+        }
+    },
+    "深渊_自动行走": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    33,
+                    22,
+                    89,
+                    39
+                ],
+                "expected": [
+                    "离开"
+                ],
+                "only_rec": true
+            }
+        },
+        "next": [
+            "深渊_节点"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 395,
+                "y": 150
+            }
+        }
+    }
+}
