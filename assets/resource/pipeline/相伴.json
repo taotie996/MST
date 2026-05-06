@@ -2,24 +2,16 @@
     "$__mpe_config_相伴": {
         "$__mpe_code": {
             "prefix": "相伴",
-            "lastSyncTime": 1777178586181,
+            "lastSyncTime": 1777650341737,
             "isModifiedExternally": false,
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\相伴.json",
             "savedViewport": {
-                "x": 1967,
-                "y": 1337,
-                "zoom": 0.87
+                "x": 1996,
+                "y": 1253,
+                "zoom": 0.82
             },
             "filename": "相伴",
             "version": "v1.4.3"
-        }
-    },
-    "$__mpe_external_ui_进入相伴_相伴": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1116,
-                "y": -809
-            }
         }
     },
     "相伴_强制赠送": {
@@ -49,34 +41,6 @@
             }
         }
     },
-    "相伴_日常_点击摸头": {
-        "anchor": {
-            "相伴_anchor_task": "相伴_点击摸头"
-        },
-        "next": [
-            "ui_进入相伴"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1595,
-                "y": -898
-            }
-        }
-    },
-    "相伴_日常_送礼物": {
-        "anchor": {
-            "相伴_anchor_task": "相伴_送礼物"
-        },
-        "next": [
-            "ui_进入相伴"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1602,
-                "y": -594
-            }
-        }
-    },
     "相伴_未弹出对话框": {
         "$__mpe_code": {
             "position": {
@@ -101,8 +65,8 @@
         "repeat_delay": 500,
         "$__mpe_code": {
             "position": {
-                "x": -752,
-                "y": -718
+                "x": -979,
+                "y": -985
             }
         }
     },

@@ -4,7 +4,7 @@
     "controller": [
         {
             "name": "ADB",
-            "type": "Adb",
+            "type": "Adb"
         }
     ],
     "resource": [
@@ -18,15 +18,15 @@
     "task": [
         {
             "name": "日常任务_种田",
-            "entry": "家园_日常任务_种田"
+            "entry": "日常_种田"
         },
         {
             "name": "日常任务_摸头",
-            "entry": "相伴_日常任务-点击摸头"
+            "entry": "日常_点击摸头"
         },
         {
             "name": "日常任务_送礼物",
-            "entry": "相伴_日常任务-送礼物"
+            "entry": "日常_送礼物"
         }
     ],
     "option": {}
