@@ -2,16 +2,49 @@
     "$__mpe_config_启动游戏": {
         "$__mpe_code": {
             "prefix": "",
-            "lastSyncTime": 1777177229014,
+            "lastSyncTime": 1778061183622,
             "isModifiedExternally": false,
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\启动游戏.json",
             "savedViewport": {
-                "x": 2172,
-                "y": 856,
-                "zoom": 1
+                "x": 1736,
+                "y": 721,
+                "zoom": 0.75
             },
             "filename": "启动游戏",
-            "version": "v1.4.3"
+            "version": "v1.5.2"
+        }
+    },
+    "$__mpe_external_ui_关闭对话框_启动游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": -665,
+                "y": -585
+            }
+        }
+    },
+    "$__mpe_external_ui_在主界面_启动游戏": {
+        "$__mpe_code": {
+            "position": {
+                "x": -667,
+                "y": -744
+            }
+        }
+    },
+    "关闭_小七": {
+        "action": {
+            "type": "StopApp",
+            "param": {
+                "package": "com.glkj.lhcx.x7sy"
+            }
+        },
+        "next": [
+            "启动_小七"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1622,
+                "y": -637
+            }
         }
     },
     "启动_小七": {
@@ -32,6 +65,17 @@
             "position": {
                 "x": -1176,
                 "y": -492
+            }
+        }
+    },
+    "启动游戏": {
+        "next": [
+            "关闭_小七"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2053,
+                "y": -629
             }
         }
     },
@@ -77,8 +121,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": -714,
-                "y": -256
+                "x": -690,
+                "y": -134
             }
         }
     },
@@ -192,50 +236,6 @@
             "position": {
                 "x": 652,
                 "y": 12
-            }
-        }
-    },
-    "启动游戏": {
-        "next": [
-            "关闭_小七"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1995,
-                "y": -471
-            }
-        }
-    },
-    "关闭_小七": {
-        "action": {
-            "type": "StopApp",
-            "param": {
-                "package": "com.glkj.lhcx.x7sy"
-            }
-        },
-        "next": [
-            "启动_小七"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -1591,
-                "y": -491
-            }
-        }
-    },
-    "$__mpe_external_ui_关闭对话框_启动游戏": {
-        "$__mpe_code": {
-            "position": {
-                "x": -696,
-                "y": -517
-            }
-        }
-    },
-    "$__mpe_external_ui_在主界面_启动游戏": {
-        "$__mpe_code": {
-            "position": {
-                "x": -667,
-                "y": -744
             }
         }
     }

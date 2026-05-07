@@ -2,16 +2,16 @@
     "$__mpe_config_界面": {
         "$__mpe_code": {
             "prefix": "ui",
-            "lastSyncTime": 1775883388869,
+            "lastSyncTime": 1778062139794,
             "isModifiedExternally": false,
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\界面.json",
             "savedViewport": {
-                "x": 1889,
-                "y": -2643,
-                "zoom": 1.06
+                "x": 1888,
+                "y": -1617,
+                "zoom": 0.7
             },
             "filename": "界面",
-            "version": "v1.4.1"
+            "version": "v1.5.2"
         }
     },
     "$__mpe_anchor_ui_a_返回主界面_界面": {
@@ -38,6 +38,14 @@
             }
         }
     },
+    "$__mpe_anchor_主城_anchor_task_副本5_界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 919,
+                "y": 659
+            }
+        }
+    },
     "$__mpe_anchor_相伴_anchor_task_界面": {
         "$__mpe_code": {
             "position": {
@@ -60,6 +68,23 @@
             ],
             "width": 702,
             "height": 995
+        }
+    },
+    "$__mpe_group_主城界面_界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": 872,
+                "y": 5114
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "主城_anchor_task_副本5",
+                "位于主城",
+                "点击小镇按钮",
+                "进入主城"
+            ],
+            "width": 1248,
+            "height": 919
         }
     },
     "$__mpe_group_家园界面_界面": {
@@ -115,8 +140,8 @@
     "$__mpe_group_界面类型_界面": {
         "$__mpe_code": {
             "position": {
-                "x": -1159,
-                "y": 2136
+                "x": -1154,
+                "y": 2248
             },
             "color": "blue",
             "childrenLabels": [
@@ -131,8 +156,8 @@
                 "进入相伴_spine",
                 "进入相伴_誓约"
             ],
-            "width": 1010,
-            "height": 1183
+            "width": 1338,
+            "height": 1412
         }
     },
     "$__mpe_group_相伴界面_界面": {
@@ -249,6 +274,32 @@
             "position": {
                 "x": 342,
                 "y": 1276
+            }
+        }
+    },
+    "ui_位于主城": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    20,
+                    371,
+                    49,
+                    30
+                ],
+                "expected": [
+                    "主城"
+                ],
+                "only_rec": true
+            }
+        },
+        "next": [
+            "[Anchor]主城_anchor_task_副本5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 658,
+                "y": 121
             }
         }
     },
@@ -469,13 +520,12 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
-                "x": 499,
-                "y": 116
+                "x": 327,
+                "y": 69
             }
         }
     },
@@ -502,8 +552,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "global_doc": "战斗界面，关闭战斗普攻",
         "$__mpe_code": {
@@ -536,8 +585,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "global_doc": "战斗界面，关闭智能战斗",
         "$__mpe_code": {
@@ -678,8 +726,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "global_doc": "战斗界面，开启战斗普攻",
         "$__mpe_code": {
@@ -704,8 +751,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "global_doc": "战斗界面，开启智能战斗",
         "$__mpe_code": {
@@ -738,8 +784,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "global_doc": "快速结算确认",
         "$__mpe_code": {
@@ -823,8 +868,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "global_doc": "小镇界面，点击主城按钮返回主城（主页面）",
         "$__mpe_code": {
@@ -846,8 +890,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "ui_位于家园"
@@ -856,6 +899,32 @@
             "position": {
                 "x": 844,
                 "y": 822
+            }
+        }
+    },
+    "ui_点击小镇按钮": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    8,
+                    273,
+                    66,
+                    38
+                ],
+                "expected": [
+                    "小镇"
+                ],
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 656,
+                "y": 375
             }
         }
     },
@@ -873,8 +942,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "global_doc": "战斗完成界面，点击屏幕确认",
         "$__mpe_code": {
@@ -901,8 +969,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "timeout": 1000,
         "next": [
@@ -927,8 +994,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "next": [
             "ui_位于相伴"
@@ -955,8 +1021,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -979,8 +1044,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "global_doc": "通用左上方返回按钮",
         "$__mpe_code": {
@@ -1032,8 +1096,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -1072,6 +1135,25 @@
             "position": {
                 "x": 12,
                 "y": 516
+            }
+        }
+    },
+    "ui_跳过剧情": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "巡查/跳过剧情.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 33,
+                "y": 76
             }
         }
     },
@@ -1117,13 +1199,29 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
                 "x": 662,
                 "y": 2798
+            }
+        }
+    },
+    "ui_进入主城": {
+        "anchor": {
+            "ui_a_返回主界面": "ui_返回主界面_切换界面",
+            "ui_a_进入界面": "ui_点击小镇按钮"
+        },
+        "next": [
+            "ui_位于主城",
+            "[JumpBack]ui_点击小镇按钮",
+            "[Anchor][JumpBack]ui_a_返回主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 127,
+                "y": 198
             }
         }
     },
@@ -1160,14 +1258,13 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 649,
-                "y": 556
+                "x": 697,
+                "y": 615
             }
         }
     },
@@ -1187,8 +1284,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 2000,
         "$__mpe_code": {
@@ -1214,8 +1310,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 2000,
         "$__mpe_code": {
@@ -1270,8 +1365,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 2000,
         "$__mpe_code": {
@@ -1296,8 +1390,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 2000,
         "$__mpe_code": {
@@ -1321,8 +1414,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "post_delay": 2000,
         "$__mpe_code": {
@@ -1346,8 +1438,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "global_doc": "主线迷宫界面，离开魔女境界",
         "next": [
@@ -1375,8 +1466,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "$__mpe_code": {
             "position": {
@@ -1399,8 +1489,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "global_doc": "战斗界面，退出作战",
         "next": [
@@ -1428,8 +1517,7 @@
             }
         },
         "action": {
-            "type": "Click",
-            "param": {}
+            "type": "Click"
         },
         "global_doc": "战斗界面，退出作战确认",
         "next": [
@@ -1568,121 +1656,6 @@
             "position": {
                 "x": 657,
                 "y": 2095
-            }
-        }
-    },
-    "$__mpe_group_主城界面_界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": 872,
-                "y": 5114
-            },
-            "color": "blue",
-            "childrenLabels": [
-                "进入主城",
-                "点击小镇按钮",
-                "位于主城",
-                "主城_anchor_task_副本5"
-            ],
-            "width": 1248,
-            "height": 919
-        }
-    },
-    "ui_进入主城": {
-        "anchor": {
-            "ui_a_返回主界面": "ui_返回主界面_切换界面",
-            "ui_a_进入界面": "ui_点击小镇按钮"
-        },
-        "next": [
-            "ui_位于主城",
-            "[JumpBack]ui_点击小镇按钮",
-            "[Anchor][JumpBack]ui_a_返回主界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 127,
-                "y": 198
-            }
-        }
-    },
-    "ui_点击小镇按钮": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    8,
-                    273,
-                    66,
-                    38
-                ],
-                "expected": [
-                    "小镇"
-                ],
-                "only_rec": true
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 656,
-                "y": 375
-            }
-        }
-    },
-    "ui_位于主城": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    20,
-                    371,
-                    49,
-                    30
-                ],
-                "expected": [
-                    "主城"
-                ],
-                "only_rec": true
-            }
-        },
-        "next": [
-            "[Anchor]主城_anchor_task_副本5"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 658,
-                "y": 121
-            }
-        }
-    },
-    "$__mpe_anchor_主城_anchor_task_副本5_界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": 919,
-                "y": 659
-            }
-        }
-    },
-    "ui_跳过剧情": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "巡查/跳过剧情.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {}
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 123,
-                "y": 115
             }
         }
     }
