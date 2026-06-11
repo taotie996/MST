@@ -30,7 +30,7 @@
             }
         }
     },
-    "已签到": {
+    "初始已签到": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -46,11 +46,7 @@
                 "only_rec": true
             }
         },
-        "action": {
-            "type": "Click"
-        },
         "next": [
-            "七日礼物点击",
             "[JumpBack]ui_点击空白区域"
         ],
         "$__mpe_code": {
@@ -59,6 +55,43 @@
                 "y": -2301
             }
         }
+    },
+    "等待签到成功": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    990,
+                    597,
+                    76,
+                    56
+                ],
+                "expected": [
+                    "已签到"
+                ],
+                "only_rec": true
+            }
+        },
+        "next": [
+            "七日礼物点击"
+        ]
+    },
+    "签到确认提示": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": [
+                    "确认"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "签到确认提示",
+            "等待签到成功"
+        ]
     },
     "点击功能面板": {
         "recognition": {
@@ -104,6 +137,10 @@
         "action": {
             "type": "Click"
         },
+        "next": [
+            "签到确认提示",
+            "等待签到成功"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": -2721,
@@ -168,7 +205,8 @@
             }
         },
         "next": [
-            "已签到"
+            "初始已签到",
+            "点击签到"
         ],
         "$__mpe_code": {
             "position": {
