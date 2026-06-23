@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1782217672326,
+            "lastSyncTime": 1782219901294,
             "isModifiedExternally": false,
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\事务.json",
             "savedViewport": {
-                "x": -7395,
-                "y": -4458,
-                "zoom": 1.5
+                "x": -4983,
+                "y": -3520,
+                "zoom": 1.14
             },
             "filename": "事务",
             "version": "v1.6.2"
@@ -18,8 +18,8 @@
     "$__mpe_group_1-5星_事务": {
         "$__mpe_code": {
             "position": {
-                "x": 5658,
-                "y": 3193
+                "x": 5753,
+                "y": 3173
             },
             "color": "blue",
             "childrenLabels": [
@@ -29,8 +29,8 @@
                 "事务4星",
                 "事务5星"
             ],
-            "width": 1395,
-            "height": 578
+            "width": 302,
+            "height": 2083
         }
     },
     "get事务次数": {
@@ -51,8 +51,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 4978,
-                "y": 3831
+                "x": 4181,
+                "y": 3286
             }
         }
     },
@@ -74,8 +74,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 4978,
-                "y": 3575
+                "x": 4451,
+                "y": 3286
             }
         }
     },
@@ -83,19 +83,25 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "roi": "星级槽位",
+                "roi": "[Anchor]星级槽位",
                 "template": [
                     "事务/1星.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             }
         },
         "attach": {
             "star_level": 1
         },
+        "next": [
+            "事务刷新自定义判断"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 6759,
-                "y": 3240
+                "x": 5764,
+                "y": 4693
             }
         }
     },
@@ -103,19 +109,26 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "roi": "星级槽位",
+                "roi": "[Anchor]星级槽位",
                 "template": [
                     "事务/2星.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             }
         },
         "attach": {
             "star_level": 2
         },
+        "next": [
+            "事务奖励_月萃",
+            "事务刷新自定义判断"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 6468,
-                "y": 3245
+                "x": 5776,
+                "y": 4283
             }
         }
     },
@@ -123,19 +136,26 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "roi": "星级槽位",
+                "roi": "[Anchor]星级槽位",
                 "template": [
                     "事务/3星.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             }
         },
         "attach": {
             "star_level": 3
         },
+        "next": [
+            "事务奖励_月萃",
+            "事务刷新自定义判断"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 6206,
-                "y": 3247
+                "x": 5783,
+                "y": 3911
             }
         }
     },
@@ -143,9 +163,12 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "roi": "星级槽位",
+                "roi": "[Anchor]星级槽位",
                 "template": [
                     "事务/4星.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             }
         },
@@ -154,8 +177,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 5938,
-                "y": 3240
+                "x": 5783,
+                "y": 3578
             }
         }
     },
@@ -163,9 +186,12 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "roi": "星级槽位",
+                "roi": "[Anchor]星级槽位",
                 "template": [
                     "事务/5星.png"
+                ],
+                "threshold": [
+                    0.9
                 ]
             }
         },
@@ -174,25 +200,35 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 5676,
-                "y": 3240
+                "x": 5799,
+                "y": 3216
             }
         }
     },
-    "新建节点4": {
-        "pre_delay": 0,
-        "action": {
-            "type": "Custom",
+    "星级槽位1": {
+        "recognition": {
+            "type": "DirectHit",
             "param": {
-                "custom_action": "分配事务",
-                "custom_action_param": ""
+                "roi": [
+                    77,
+                    185,
+                    180,
+                    51
+                ]
             }
         },
-        "post_delay": 0,
+        "anchor": "星级槽位",
+        "next": [
+            "事务5星",
+            "事务4星",
+            "事务3星",
+            "事务2星",
+            "事务1星"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 5330,
-                "y": 3731
+                "x": 5189,
+                "y": 3224
             }
         }
     },
@@ -214,10 +250,18 @@
                 ]
             }
         },
+        "anchor": "星级槽位",
+        "next": [
+            "事务5星",
+            "事务4星",
+            "事务3星",
+            "事务2星",
+            "事务1星"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 6905,
-                "y": 4150
+                "x": 5189,
+                "y": 3497
             }
         }
     },
@@ -239,10 +283,18 @@
                 ]
             }
         },
+        "anchor": "星级槽位",
+        "next": [
+            "事务5星",
+            "事务4星",
+            "事务3星",
+            "事务2星",
+            "事务1星"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 6640,
-                "y": 4150
+                "x": 5188,
+                "y": 3803
             }
         }
     },
@@ -264,10 +316,18 @@
                 ]
             }
         },
+        "anchor": "星级槽位",
+        "next": [
+            "事务5星",
+            "事务4星",
+            "事务3星",
+            "事务2星",
+            "事务1星"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 6348,
-                "y": 3951
+                "x": 5187,
+                "y": 4116
             }
         }
     },
@@ -289,36 +349,7 @@
                 ]
             }
         },
-        "$__mpe_code": {
-            "position": {
-                "x": 6632,
-                "y": 3959
-            }
-        }
-    },
-    "星级槽位1": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {
-                "roi": [
-                    77,
-                    185,
-                    180,
-                    51
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 6885,
-                "y": 3967
-            }
-        }
-    },
-    "新建节点10": {
-        "anchor": {
-            "星级槽位": "星级槽位2"
-        },
+        "anchor": "星级槽位",
         "next": [
             "事务5星",
             "事务4星",
@@ -328,8 +359,122 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5608,
-                "y": 3933
+                "x": 5183,
+                "y": 4415
+            }
+        }
+    },
+    "$__mpe_group_分组_事务": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5155,
+                "y": 3174
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "星级槽位1",
+                "星级槽位2",
+                "星级槽位3",
+                "星级槽位4",
+                "星级槽位5"
+            ],
+            "width": 283,
+            "height": 1546
+        }
+    },
+    "事务奖励_月萃": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": "[Anchor]星级槽位",
+                "roi_offset": [
+                    90,
+                    80,
+                    -75,
+                    15
+                ],
+                "template": [
+                    "事务/事务奖励_月萃.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6291,
+                "y": 3893
+            }
+        }
+    },
+    "事务刷新自定义判断": {
+        "pre_delay": 0,
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "事务刷新判断",
+                "custom_action_param": ""
+            }
+        },
+        "post_delay": 0,
+        "next": [
+            "点击刷新事务",
+            "事务_结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6325,
+                "y": 4391
+            }
+        }
+    },
+    "点击刷新事务": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": "[Anchor]星级槽位",
+                "roi_offset": [
+                    122,
+                    376,
+                    -125,
+                    -19
+                ],
+                "expected": [
+                    "刷新"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "新建节点21"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6701,
+                "y": 4404
+            }
+        }
+    },
+    "新建节点21": {
+        "next": [
+            "星级槽位1",
+            "星级槽位2",
+            "星级槽位3",
+            "星级槽位4",
+            "星级槽位5"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4594,
+                "y": 3768
+            }
+        }
+    },
+    "事务_结束": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6739,
+                "y": 4804
             }
         }
     }

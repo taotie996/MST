@@ -33,7 +33,7 @@ from maa.custom_recognition import CustomRecognition
 # return CustomRecognition.AnalyzeResult(
 #     box=(0, 0, 100, 100), detail="Hello World!"
 # )
-@AgentServer.custom_action("分配事务")
+@AgentServer.custom_action("事务刷新判断")
 class InitTransactionState(CustomAction):
     def run(self, context: Context, argv: CustomAction.RunArg) -> bool:
         # 1. 获取当前画面的缓存截图
@@ -66,13 +66,13 @@ class InitTransactionState(CustomAction):
         else:
             transaction_count = 0
 
-        # context.set_variable("free_refresh_count", free_refresh_count)
-        # context.set_variable("transaction_count", transaction_count)
+        context.set_variable("free_refresh_count", free_refresh_count)
+        context.set_variable("transaction_count", transaction_count)
 
-        print("刷新次数：", free_refresh_count)
-        print("事务次数：", transaction_count)
-
-        return True
+        if transaction_count > 5 and free_refresh_count <= 10:
+            return False
+        else:
+            return True
 
 
 # @AgentServer.custom_action("Update_Refresh_Count")
@@ -104,21 +104,6 @@ class InitTransactionState(CustomAction):
 #             tasks_remaining = 0
 #         print(f"接取任务成功，剩余任务: {tasks_remaining}")
 #         return True
-
-
-# def evaluate_3_star_logic(slot_num: int, ctx: Context):
-#     global remaining_refreshes, tasks_remaining
-#     print(
-#         f"槽位{slot_num} 遇到3星任务。当前剩余刷新: {remaining_refreshes}, 剩余任务: {tasks_remaining}"
-#     )
-#     # 保守策略: 剩余刷新 > 剩余任务 * 2 时才刷新3星
-#     if remaining_refreshes > tasks_remaining * 2:
-#         print("策略判定: 次数充裕，点击刷新争取4星！")
-#         ctx.override_next([f"槽位{slot_num}_刷新"])
-#     else:
-#         print("策略判定: 次数紧张，收手接取3星！")
-#         ctx.override_next([f"槽位{slot_num}_接取"])
-#     return True
 
 
 # @AgentServer.custom_action("Evaluate_3_Star_Slot1")
