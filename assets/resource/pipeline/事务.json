@@ -1,0 +1,224 @@
+{
+    "$__mpe_config_事务": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1782216580466,
+            "isModifiedExternally": false,
+            "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\事务.json",
+            "savedViewport": {
+                "x": -8230,
+                "y": -4747,
+                "zoom": 1.5
+            },
+            "filename": "事务",
+            "version": "v1.6.2"
+        }
+    },
+    "get刷新次数": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    97,
+                    561,
+                    84,
+                    30
+                ],
+                "expected": [
+                    "次"
+                ],
+                "only_rec": true
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4978,
+                "y": 3575
+            }
+        }
+    },
+    "get事务次数": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    1195,
+                    685,
+                    61,
+                    30
+                ],
+                "expected": [
+                    "/"
+                ],
+                "only_rec": true
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4978,
+                "y": 3831
+            }
+        }
+    },
+    "新建节点4": {
+        "pre_delay": 0,
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "分配事务",
+                "custom_action_param": ""
+            }
+        },
+        "post_delay": 0,
+        "$__mpe_code": {
+            "position": {
+                "x": 5330,
+                "y": 3731
+            }
+        }
+    },
+    "事务5星": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    69,
+                    175,
+                    196,
+                    67
+                ],
+                "template": [
+                    "事务/5星.png"
+                ]
+            }
+        },
+        "attach": {
+            "star_level": 5
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5676,
+                "y": 3240
+            }
+        }
+    },
+    "事务3星": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    69,
+                    175,
+                    196,
+                    67
+                ],
+                "template": [
+                    "事务/3星.png"
+                ]
+            }
+        },
+        "attach": {
+            "star_level": 5
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6206,
+                "y": 3247
+            }
+        }
+    },
+    "事务4星": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    69,
+                    175,
+                    196,
+                    67
+                ],
+                "template": [
+                    "事务/4星.png"
+                ]
+            }
+        },
+        "attach": {
+            "star_level": 5
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 5938,
+                "y": 3240
+            }
+        }
+    },
+    "事务2星": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    69,
+                    175,
+                    196,
+                    67
+                ],
+                "template": [
+                    "事务/2星.png"
+                ]
+            }
+        },
+        "attach": {
+            "star_level": 5
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6468,
+                "y": 3245
+            }
+        }
+    },
+    "事务1星": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    69,
+                    175,
+                    196,
+                    67
+                ],
+                "template": [
+                    "事务/1星.png"
+                ]
+            }
+        },
+        "attach": {
+            "star_level": 5
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6759,
+                "y": 3239
+            }
+        }
+    },
+    "$__mpe_group_1-5星_事务": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5658,
+                "y": 3193
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "事务5星",
+                "事务3星",
+                "事务4星",
+                "事务2星",
+                "事务1星"
+            ],
+            "width": 1395,
+            "height": 578
+        }
+    }
+}
