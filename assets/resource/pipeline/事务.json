@@ -3,30 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1782221817909,
+            "lastSyncTime": 1782222571166,
             "isModifiedExternally": false,
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\事务.json",
             "savedViewport": {
-                "x": -5700,
-                "y": -4698,
-                "zoom": 1.5
+                "x": -3257,
+                "y": -2441,
+                "zoom": 0.86
             },
             "filename": "事务",
             "version": "v1.6.2"
-        }
-    },
-    "新建节点26": {
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "check_free_refresh_count"
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 4543,
-                "y": 3467
-            }
         }
     },
     "$__mpe_group_1-5星_事务": {
@@ -243,11 +229,29 @@
             }
         }
     },
-    "事务_结束": {
+    "一键派遣": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    408,
+                    664,
+                    127,
+                    56
+                ],
+                "expected": [
+                    "一键派遣"
+                ],
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
         "$__mpe_code": {
             "position": {
-                "x": 7329,
-                "y": 4708
+                "x": 4233,
+                "y": 3575
             }
         }
     },
@@ -256,19 +260,18 @@
         "action": {
             "type": "Custom",
             "param": {
-                "custom_action": "事务刷新判断",
+                "custom_action": "check_free_refresh_count",
                 "custom_action_param": ""
             }
         },
         "post_delay": 0,
         "next": [
-            "点击刷新事务",
-            "[Anchor]事务下一个节点"
+            "点击刷新事务"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 6325,
-                "y": 4391
+                "y": 4393
             }
         }
     },
@@ -295,17 +298,6 @@
             "position": {
                 "x": 6291,
                 "y": 3893
-            }
-        }
-    },
-    "新建节点21": {
-        "next": [
-            "星级槽位1"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4720,
-                "y": 3196
             }
         }
     },
@@ -467,7 +459,7 @@
         },
         "anchor": {
             "星级槽位": "星级槽位5",
-            "事务下一个节点": "事务结束"
+            "事务下一个节点": "一键派遣"
         },
         "next": [
             "事务5星",
@@ -502,6 +494,9 @@
         "action": {
             "type": "Click"
         },
+        "next": [
+            "新建节点26"
+        ],
         "$__mpe_code": {
             "position": {
                 "x": 6701,
@@ -514,6 +509,23 @@
             "position": {
                 "x": 7190,
                 "y": 3339
+            }
+        }
+    },
+    "新建节点26": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "check_free_refresh_count"
+            }
+        },
+        "next": [
+            "星级槽位1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4659,
+                "y": 3221
             }
         }
     }

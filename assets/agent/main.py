@@ -36,47 +36,46 @@ from maa.custom_recognition import CustomRecognition
 @AgentServer.custom_action("check_free_refresh_count")
 class CheckFreeRefreshCount(CustomAction):
     def run(self, context: Context, argv: CustomAction.RunArg):
-        print("heelo")
-        return True
-        # # 1. 获取当前画面的缓存截图
-        # image = context.tasker.controller.cached_image
-        # if image is None:
-        #     # 如果没有缓存，主动请求一张新截图
-        #     image = context.tasker.controller.post_screencap().wait().get()
 
-        # # 2. 调用第一个 OCR 节点
-        # reco_1 = context.run_recognition("get刷新次数", image)
-        # text_1 = reco_1.best_result.text if reco_1 and reco_1.best_result else ""
+        # 1. 获取当前画面的缓存截图
+        image = context.tasker.controller.cached_image
+        if image is None:
+            # 如果没有缓存，主动请求一张新截图
+            image = context.tasker.controller.post_screencap().wait().get()
 
-        # # 正则提取数字
-        # pattern1 = r"(\d+)"
-        # match1 = re.search(pattern1, text_1)
-        # if match1:
-        #     free_refresh_count = int(match1.group(1))
+        # 2. 调用第一个 OCR 节点
+        reco_1 = context.run_recognition("get刷新次数", image)
+        text_1 = reco_1.best_result.text if reco_1 and reco_1.best_result else ""
 
-        # else:
-        #     free_refresh_count = 0
+        # 正则提取数字
+        pattern1 = r"(\d+)"
+        match1 = re.search(pattern1, text_1)
+        if match1:
+            free_refresh_count = int(match1.group(1))
 
-        # # 3. 调用第二个 OCR 节点
-        # reco_2 = context.run_recognition("get事务次数", image)
-        # text_2 = reco_2.best_result.text if reco_2 and reco_2.best_result else ""
+        else:
+            free_refresh_count = 0
 
-        # pattern2 = r"(\d+)/(\d+)"
-        # match2 = re.search(pattern2, text_2)
-        # if match2:
-        #     transaction_count = int(match2.group(2))
-        # else:
-        #     transaction_count = 0
+        # 3. 调用第二个 OCR 节点
+        reco_2 = context.run_recognition("get事务次数", image)
+        text_2 = reco_2.best_result.text if reco_2 and reco_2.best_result else ""
 
-        # # context.set_variable("free_refresh_count", free_refresh_count)
-        # # context.set_variable("transaction_count", transaction_count)
-        # print("transaction_count", transaction_count)
-        # print("free_refresh_count", free_refresh_count)
+        pattern2 = r"(\d+)/(\d+)"
+        match2 = re.search(pattern2, text_2)
+        if match2:
+            transaction_count = int(match2.group(2))
+        else:
+            transaction_count = 0
 
-        # if transaction_count > 5 and free_refresh_count <= 10:
-        #     return False
-        # else:
-        #     return True
+        # context.set_variable("free_refresh_count", free_refresh_count)
+        # context.set_variable("transaction_count", transaction_count)
+        print("transaction_count", transaction_count)
+        print("free_refresh_count", free_refresh_count)
+
+        if transaction_count > 5 and free_refresh_count <= 10:
+            return False
+        else:
+            return True
 
 
 # @AgentServer.custom_action("Update_Refresh_Count")
