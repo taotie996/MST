@@ -69,8 +69,8 @@ class CheckFreeRefreshCount(CustomAction):
 
         # context.set_variable("free_refresh_count", free_refresh_count)
         # context.set_variable("transaction_count", transaction_count)
-        print("transaction_count", transaction_count)
-        print("free_refresh_count", free_refresh_count)
+        # print("transaction_count", transaction_count)
+        # print("free_refresh_count", free_refresh_count)
 
         if transaction_count > 5 and free_refresh_count <= 10:
             return False
