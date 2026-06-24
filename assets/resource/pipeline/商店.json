@@ -3,16 +3,16 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1779272358318,
+            "lastSyncTime": 1782304690194,
             "isModifiedExternally": false,
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\商店.json",
             "savedViewport": {
-                "x": 1124,
-                "y": 1044,
-                "zoom": 0.99
+                "x": 970,
+                "y": 1443,
+                "zoom": 0.86
             },
             "filename": "商店",
-            "version": "v1.6.1"
+            "version": "v1.6.2"
         }
     },
     "$__mpe_external_ui_点击空白区域_商店": {
@@ -23,22 +23,38 @@
             }
         }
     },
-    "购买每日道具": {
+    "尝试购买_勤勉": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    250,
+                    543,
+                    706,
+                    35
+                ],
+                "expected": [
+                    "每日勤勉礼包"
+                ],
+                "only_rec": false
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": {
+            "待购买": "尝试购买_祷告"
+        },
         "next": [
-            "购买补给_入口"
+            "已购买_补给",
+            "[JumpBack]确认购买_补给"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1047,
-                "y": -598
+                "x": -28,
+                "y": -1090
             }
         }
-    },
-    "购买补给_入口": {
-        "next": [
-            "尝试购买_补给",
-            "购买勤勉_入口"
-        ]
     },
     "尝试购买_补给": {
         "recognition": {
@@ -53,20 +69,50 @@
                 "expected": [
                     "每日补给礼包"
                 ],
-                "only_rec": true
+                "only_rec": false
             }
         },
         "action": {
             "type": "Click"
         },
+        "anchor": {
+            "待购买": "尝试购买_勤勉"
+        },
         "next": [
-            "确认购买_补给",
-            "已购买_补给"
+            "已购买_补给",
+            "[JumpBack]确认购买_补给"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -390,
-                "y": -692
+                "x": -33,
+                "y": -1457
+            }
+        }
+    },
+    "已购买_补给": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    560,
+                    230,
+                    162,
+                    39
+                ],
+                "expected": [
+                    "无法购买当前商品"
+                ],
+                "only_rec": true
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "[Anchor]待购买"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 504,
+                "y": -1520
             }
         }
     },
@@ -98,89 +144,94 @@
             }
         },
         "post_delay": 1000,
-        "next": [
-            "关闭奖励_补给"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 434,
-                "y": -1029
+                "x": 665,
+                "y": -1035
             }
         }
     },
-    "关闭奖励_补给": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1120,
-                    100,
-                    50,
-                    50
-                ]
-            }
-        },
-        "post_delay": 1000,
+    "购买每日道具": {
         "next": [
             "购买补给_入口"
-        ]
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -891,
+                "y": -1214
+            }
+        }
     },
-    "已购买_补给": {
+    "购买补给_入口": {
+        "next": [
+            "尝试购买_补给"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -459,
+                "y": -1233
+            }
+        }
+    },
+    "进入商城": {
+        "next": [
+            "位于商城",
+            "[JumpBack]点击主界面商城按钮",
+            "[JumpBack]ui_返回主界面_切换界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2337,
+                "y": -709
+            }
+        }
+    },
+    "位于商城": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    560,
-                    230,
-                    162,
-                    39
+                    167,
+                    12,
+                    191,
+                    66
                 ],
                 "expected": [
-                    "无法购买当前商品"
+                    "商城"
                 ],
                 "only_rec": true
             }
         },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1120,
-                    100,
-                    50,
-                    50
-                ]
-            }
-        },
-        "post_delay": 1000,
         "next": [
-            "购买勤勉_入口"
+            "[Anchor]进入商城2级界面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 417,
-                "y": -300
+                "x": -1761,
+                "y": -746
             }
         }
     },
-    "购买勤勉_入口": {
-        "next": [
-            "尝试购买_勤勉",
-            "购买祷告_入口"
-        ]
+    "$__mpe_external_ui_返回主界面_切换界面_商店": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1848,
+                "y": -72
+            }
+        }
     },
-    "尝试购买_勤勉": {
+    "点击主界面商城按钮": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    250,
-                    543,
-                    706,
-                    35
+                    1200,
+                    666,
+                    69,
+                    30
                 ],
                 "expected": [
-                    "每日勤勉礼包"
+                    "商城"
                 ],
                 "only_rec": true
             }
@@ -188,102 +239,115 @@
         "action": {
             "type": "Click"
         },
-        "next": [
-            "确认购买_勤勉",
-            "已购买_勤勉"
-        ],
+        "post_delay": 1000,
         "$__mpe_code": {
             "position": {
-                "x": -395,
-                "y": -347
+                "x": -1809,
+                "y": -470
             }
         }
     },
-    "确认购买_勤勉": {
+    "进入商店-补给礼包": {
+        "anchor": {
+            "进入商城2级界面": "进入商店"
+        },
+        "next": [
+            "选择补给礼包",
+            "[JumpBack]进入商城"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -2699,
+                "y": -351
+            }
+        }
+    },
+    "选择补给礼包": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    590,
-                    159,
-                    106,
-                    48
+                    33,
+                    156,
+                    145,
+                    483
                 ],
                 "expected": [
-                    "购买"
-                ],
-                "only_rec": true
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    710,
-                    504,
-                    119,
-                    22
+                    "补给礼包"
                 ]
             }
         },
-        "post_delay": 1000,
-        "next": [
-            "关闭奖励_勤勉"
-        ]
-    },
-    "关闭奖励_勤勉": {
         "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1120,
-                    100,
-                    50,
-                    50
-                ]
-            }
+            "type": "Click"
         },
-        "post_delay": 1000,
-        "next": [
-            "购买勤勉_入口"
-        ]
+        "$__mpe_code": {
+            "position": {
+                "x": -2316,
+                "y": -105
+            }
+        }
     },
-    "已购买_勤勉": {
+    "$__mpe_anchor_进入商城2级界面_商店": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1423,
+                "y": -709
+            }
+        }
+    },
+    "进入商店": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    560,
-                    230,
-                    162,
-                    39
+                    6,
+                    80,
+                    1250,
+                    60
                 ],
                 "expected": [
-                    "无法购买当前商品"
-                ],
-                "only_rec": true
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1120,
-                    100,
-                    50,
-                    50
+                    "商店"
                 ]
             }
         },
-        "post_delay": 1000,
-        "next": [
-            "购买祷告_入口"
-        ]
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": -2275,
+                "y": 327
+            }
+        }
     },
-    "购买祷告_入口": {
-        "next": [
-            "尝试购买_祷告"
-        ]
+    "$__mpe_group_分组_商店": {
+        "$__mpe_code": {
+            "position": {
+                "x": -2865,
+                "y": -899
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "进入商城",
+                "位于商城",
+                "ui_返回主界面_切换界面",
+                "点击主界面商城按钮",
+                "进入商店-补给礼包",
+                "选择补给礼包",
+                "进入商城2级界面",
+                "进入商店"
+            ],
+            "width": 1879,
+            "height": 1575
+        }
+    },
+    "$__mpe_anchor_待购买_商店": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1119,
+                "y": -1457
+            }
+        }
     },
     "尝试购买_祷告": {
         "recognition": {
@@ -298,99 +362,24 @@
                 "expected": [
                     "每日祷告礼包"
                 ],
-                "only_rec": true
+                "only_rec": false
             }
         },
         "action": {
             "type": "Click"
         },
+        "anchor": {
+            "待购买": ""
+        },
         "next": [
-            "确认购买_祷告",
-            "已购买_祷告"
+            "已购买_补给",
+            "[JumpBack]确认购买_补给"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -403,
-                "y": 66
+                "x": -33,
+                "y": -692
             }
         }
-    },
-    "确认购买_祷告": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    590,
-                    159,
-                    106,
-                    48
-                ],
-                "expected": [
-                    "购买"
-                ],
-                "only_rec": true
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    710,
-                    504,
-                    119,
-                    22
-                ]
-            }
-        },
-        "post_delay": 1000,
-        "next": [
-            "关闭奖励_祷告"
-        ]
-    },
-    "关闭奖励_祷告": {
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1120,
-                    100,
-                    50,
-                    50
-                ]
-            }
-        },
-        "post_delay": 1000,
-        "next": [
-            "购买祷告_入口"
-        ]
-    },
-    "已购买_祷告": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    560,
-                    230,
-                    162,
-                    39
-                ],
-                "expected": [
-                    "无法购买当前商品"
-                ],
-                "only_rec": true
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    1120,
-                    100,
-                    50,
-                    50
-                ]
-            }
-        },
-        "post_delay": 1000
     }
 }
