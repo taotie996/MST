@@ -7,12 +7,20 @@
             "isModifiedExternally": false,
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\事务.json",
             "savedViewport": {
-                "x": -3257,
-                "y": -2441,
-                "zoom": 0.86
+                "x": -1126,
+                "y": -1093,
+                "zoom": 0.37
             },
             "filename": "事务",
             "version": "v1.6.2"
+        }
+    },
+    "$__mpe_anchor_星级槽位_事务": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7277,
+                "y": 4493
+            }
         }
     },
     "$__mpe_group_1-5星_事务": {
@@ -494,8 +502,9 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 1000,
         "next": [
-            "新建节点26"
+            "[Anchor]星级槽位"
         ],
         "$__mpe_code": {
             "position": {
