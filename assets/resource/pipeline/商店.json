@@ -3,23 +3,44 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1782304690194,
+            "lastSyncTime": 1782304706269,
             "isModifiedExternally": false,
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\商店.json",
             "savedViewport": {
-                "x": 970,
-                "y": 1443,
-                "zoom": 0.86
+                "x": 1229,
+                "y": 778,
+                "zoom": 0.75
             },
             "filename": "商店",
             "version": "v1.6.2"
         }
     },
+    "$__mpe_group_分组_商店": {
+        "$__mpe_code": {
+            "position": {
+                "x": -736,
+                "y": -256
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "进入商城",
+                "位于商城",
+                "ui_返回主界面_切换界面",
+                "点击主界面商城按钮",
+                "进入商店-补给礼包",
+                "选择补给礼包",
+                "进入商城2级界面",
+                "进入商店"
+            ],
+            "width": 1879,
+            "height": 1575
+        }
+    },
     "$__mpe_external_ui_点击空白区域_商店": {
         "$__mpe_code": {
             "position": {
-                "x": 1126,
-                "y": -985
+                "x": 675,
+                "y": -692
             }
         }
     },
@@ -47,7 +68,8 @@
         },
         "next": [
             "已购买_补给",
-            "[JumpBack]确认购买_补给"
+            "[JumpBack]确认购买_补给",
+            "[JumpBack]ui_点击空白区域"
         ],
         "$__mpe_code": {
             "position": {
@@ -80,7 +102,8 @@
         },
         "next": [
             "已购买_补给",
-            "[JumpBack]确认购买_补给"
+            "[JumpBack]确认购买_补给",
+            "[JumpBack]ui_点击空白区域"
         ],
         "$__mpe_code": {
             "position": {
@@ -146,19 +169,20 @@
         "post_delay": 1000,
         "$__mpe_code": {
             "position": {
-                "x": 665,
-                "y": -1035
+                "x": 656,
+                "y": -1127
             }
         }
     },
     "购买每日道具": {
         "next": [
-            "购买补给_入口"
+            "选择补给礼包",
+            "[JumpBack]进入商店-补给礼包"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -891,
-                "y": -1214
+                "x": -1532,
+                "y": -457
             }
         }
     },
@@ -181,8 +205,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2337,
-                "y": -709
+                "x": -172,
+                "y": 396
             }
         }
     },
@@ -207,16 +231,16 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -1761,
-                "y": -746
+                "x": 368,
+                "y": -102
             }
         }
     },
     "$__mpe_external_ui_返回主界面_切换界面_商店": {
         "$__mpe_code": {
             "position": {
-                "x": -1848,
-                "y": -72
+                "x": 281,
+                "y": 571
             }
         }
     },
@@ -242,8 +266,8 @@
         "post_delay": 1000,
         "$__mpe_code": {
             "position": {
-                "x": -1809,
-                "y": -470
+                "x": 320,
+                "y": 173
             }
         }
     },
@@ -257,8 +281,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2699,
-                "y": -351
+                "x": -570,
+                "y": 292
             }
         }
     },
@@ -280,18 +304,21 @@
         "action": {
             "type": "Click"
         },
+        "next": [
+            "购买补给_入口"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": -2316,
-                "y": -105
+                "x": -508,
+                "y": -164
             }
         }
     },
     "$__mpe_anchor_进入商城2级界面_商店": {
         "$__mpe_code": {
             "position": {
-                "x": -1423,
-                "y": -709
+                "x": 706,
+                "y": -66
             }
         }
     },
@@ -315,30 +342,9 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": -2275,
-                "y": 327
+                "x": -146,
+                "y": 970
             }
-        }
-    },
-    "$__mpe_group_分组_商店": {
-        "$__mpe_code": {
-            "position": {
-                "x": -2865,
-                "y": -899
-            },
-            "color": "blue",
-            "childrenLabels": [
-                "进入商城",
-                "位于商城",
-                "ui_返回主界面_切换界面",
-                "点击主界面商城按钮",
-                "进入商店-补给礼包",
-                "选择补给礼包",
-                "进入商城2级界面",
-                "进入商店"
-            ],
-            "width": 1879,
-            "height": 1575
         }
     },
     "$__mpe_anchor_待购买_商店": {
@@ -373,7 +379,8 @@
         },
         "next": [
             "已购买_补给",
-            "[JumpBack]确认购买_补给"
+            "[JumpBack]确认购买_补给",
+            "[JumpBack]ui_点击空白区域"
         ],
         "$__mpe_code": {
             "position": {
