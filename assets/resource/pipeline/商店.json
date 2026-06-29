@@ -3,13 +3,13 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1782304706269,
+            "lastSyncTime": 1782394436398,
             "isModifiedExternally": false,
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\商店.json",
             "savedViewport": {
-                "x": 1229,
-                "y": 778,
-                "zoom": 0.75
+                "x": 735,
+                "y": 1154,
+                "zoom": 0.65
             },
             "filename": "商店",
             "version": "v1.6.2"
@@ -39,8 +39,8 @@
     "$__mpe_external_ui_点击空白区域_商店": {
         "$__mpe_code": {
             "position": {
-                "x": 675,
-                "y": -692
+                "x": 1029,
+                "y": -1248
             }
         }
     },
@@ -68,8 +68,7 @@
         },
         "next": [
             "已购买_补给",
-            "[JumpBack]确认购买_补给",
-            "[JumpBack]ui_点击空白区域"
+            "[JumpBack]确认购买_补给"
         ],
         "$__mpe_code": {
             "position": {
@@ -102,12 +101,11 @@
         },
         "next": [
             "已购买_补给",
-            "[JumpBack]确认购买_补给",
-            "[JumpBack]ui_点击空白区域"
+            "[JumpBack]确认购买_补给"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -33,
+                "x": -28,
                 "y": -1457
             }
         }
@@ -134,8 +132,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 504,
-                "y": -1520
+                "x": 622,
+                "y": -1621
             }
         }
     },
@@ -166,11 +164,17 @@
                 ]
             }
         },
+        "anchor": {
+            "ui_点击空白_anchor_task": "待购买"
+        },
         "post_delay": 1000,
+        "next": [
+            "ui_点击空白区域"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 656,
-                "y": -1127
+                "x": 622,
+                "y": -1271
             }
         }
     },
@@ -192,8 +196,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": -459,
-                "y": -1233
+                "x": -590,
+                "y": -1162
             }
         }
     },
@@ -350,8 +354,8 @@
     "$__mpe_anchor_待购买_商店": {
         "$__mpe_code": {
             "position": {
-                "x": 1119,
-                "y": -1457
+                "x": 1561,
+                "y": -1386
             }
         }
     },
@@ -379,8 +383,7 @@
         },
         "next": [
             "已购买_补给",
-            "[JumpBack]确认购买_补给",
-            "[JumpBack]ui_点击空白区域"
+            "[JumpBack]确认购买_补给"
         ],
         "$__mpe_code": {
             "position": {

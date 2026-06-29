@@ -1,17 +1,26 @@
 {
     "$__mpe_config_家园": {
         "$__mpe_code": {
-            "prefix": "家园",
-            "lastSyncTime": 1777179346479,
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1782399099366,
             "isModifiedExternally": false,
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\家园.json",
             "savedViewport": {
-                "x": 1272,
-                "y": 294,
-                "zoom": 0.92
+                "x": 602,
+                "y": 562,
+                "zoom": 0.7
             },
             "filename": "家园",
-            "version": "v1.4.3"
+            "version": "v1.6.2"
+        }
+    },
+    "$__mpe_external_ui_返回主界面_切换界面_家园": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1681,
+                "y": 1361
+            }
         }
     },
     "$__mpe_group_种田_家园": {
@@ -21,38 +30,80 @@
                 "y": 67
             },
             "color": "blue",
-            "childrenLabels": [
-                "位于种植",
-                "开始收菜",
-                "开始种菜",
-                "收菜完成",
-                "点击种植",
-                "种植完毕",
-                "菜未完成",
-                "进入种植",
-                "选择种子"
-            ],
+            "childrenLabels": [],
             "width": 2266,
             "height": 985
         }
     },
-    "$__mpe_group_炼金炉_家园": {
+    "$__mpe_group_进入界面_家园": {
         "$__mpe_code": {
             "position": {
-                "x": -2054,
-                "y": 1157
+                "x": 260,
+                "y": 21
             },
             "color": "blue",
             "childrenLabels": [
-                "炼金炉领取",
-                "炼金点击领取",
-                "ui_点击空白区域"
+                "ui_返回主界面_切换界面",
+                "位于家园234",
+                "位于总览234",
+                "家园_家园_点击家园按钮_副本17",
+                "家园_家园_点击总览_副本18",
+                "进入总览234",
+                "进入家园2344",
+                "总览_a_下一步"
             ],
-            "width": 2304,
-            "height": 845
+            "width": 1871,
+            "height": 1707
         }
     },
-    "家园_位于种植": {
+    "位于家园234": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    167,
+                    12,
+                    191,
+                    66
+                ],
+                "expected": [
+                    "家园"
+                ],
+                "only_rec": true
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 1786,
+                "y": 553
+            }
+        }
+    },
+    "位于总览234": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    167,
+                    12,
+                    191,
+                    66
+                ],
+                "expected": "总览",
+                "only_rec": true
+            }
+        },
+        "next": [
+            "[Anchor]总览_a_下一步"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1106,
+                "y": 97
+            }
+        }
+    },
+    "家园_家园_位于种植": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -68,18 +119,18 @@
         },
         "home_doc": "种植界面",
         "next": [
-            "家园_种植完毕",
-            "[JumpBack]家园_点击种植",
-            "[JumpBack]家园_选择种子"
+            "家园_家园_种植完毕",
+            "[JumpBack]家园_家园_点击种植",
+            "[JumpBack]家园_家园_选择种子"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 1058,
-                "y": 93
+                "x": -1032,
+                "y": 160
             }
         }
     },
-    "家园_开始收菜": {
+    "家园_家园_开始收菜": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -99,25 +150,25 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 664,
-                "y": 326
+                "x": -1426,
+                "y": 393
             }
         }
     },
-    "家园_开始种菜": {
+    "家园_家园_开始种菜": {
         "next": [
-            "家园_菜未完成",
-            "[JumpBack]家园_开始收菜",
-            "家园_收菜完成"
+            "家园_家园_菜未完成",
+            "[JumpBack]家园_家园_开始收菜",
+            "家园_家园_收菜完成"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 260,
-                "y": 453
+                "x": -1830,
+                "y": 520
             }
         }
     },
-    "家园_收菜完成": {
+    "家园_家园_收菜完成": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -133,17 +184,71 @@
         },
         "inverse": true,
         "next": [
-            "家园_位于种植",
-            "[JumpBack]家园_进入种植"
+            "家园_家园_位于种植",
+            "[JumpBack]家园_家园_进入种植"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 665,
-                "y": 600
+                "x": -1425,
+                "y": 667
             }
         }
     },
-    "家园_点击种植": {
+    "家园_家园_点击家园按钮_副本17": {
+        "recognition": {
+            "type": "Or",
+            "param": {
+                "any_of": [
+                    "ui_进入家园_spine",
+                    "ui_进入家园_誓约",
+                    "ui_进入家园_live2d"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "位于家园234"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 1516,
+                "y": 926
+            }
+        }
+    },
+    "家园_家园_点击总览_副本18": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    44,
+                    247,
+                    45,
+                    31
+                ],
+                "expected": [
+                    "总览"
+                ],
+                "only_rec": true
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 1000,
+        "next": [
+            "位于总览234"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 914,
+                "y": 441
+            }
+        }
+    },
+    "家园_家园_点击种植": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -162,12 +267,12 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1647,
-                "y": 687
+                "x": -443,
+                "y": 754
             }
         }
     },
-    "家园_种植完毕": {
+    "家园_家园_种植完毕": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -195,12 +300,12 @@
         "repeat": 3,
         "$__mpe_code": {
             "position": {
-                "x": 1673,
-                "y": 55
+                "x": -417,
+                "y": 122
             }
         }
     },
-    "家园_菜未完成": {
+    "家园_家园_菜未完成": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -219,12 +324,25 @@
         "inverse": false,
         "$__mpe_code": {
             "position": {
-                "x": 671,
-                "y": 40
+                "x": -1419,
+                "y": 107
             }
         }
     },
-    "家园_进入种植": {
+    "进入总览234": {
+        "next": [
+            "位于总览234",
+            "[JumpBack]家园_家园_点击总览_副本18",
+            "[JumpBack]进入家园2344"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 462,
+                "y": 515
+            }
+        }
+    },
+    "家园_家园_进入种植": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -242,12 +360,12 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 1116,
-                "y": 556
+                "x": -974,
+                "y": 623
             }
         }
     },
-    "家园_选择种子": {
+    "家园_家园_选择种子": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -266,24 +384,70 @@
         "home_doc": "配置项,默认选择最左边的种子",
         "$__mpe_code": {
             "position": {
-                "x": 1652,
-                "y": 380
+                "x": -438,
+                "y": 447
             }
         }
     },
-    "家园_炼金炉领取": {
+    "进入家园2344": {
         "next": [
-            "ui_点击空白区域",
-            "[JumpBack]家园_炼金点击领取"
+            "位于家园234",
+            "家园_家园_点击家园按钮_副本17",
+            "[JumpBack]ui_返回主界面_切换界面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 142,
-                "y": 254
+                "x": 1015,
+                "y": 926
             }
         }
     },
-    "家园_炼金点击领取": {
+    "$__mpe_anchor_总览_a_下一步_家园": {
+        "$__mpe_code": {
+            "position": {
+                "x": 1582,
+                "y": 284
+            }
+        }
+    },
+    "$__mpe_group_炼金炉_家园": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1987,
+                "y": 1102
+            },
+            "color": "blue",
+            "childrenLabels": [
+                "ui_点击空白区域",
+                "炼金炉领取344",
+                "炼金点击领取",
+                "炼金点击领取_副本1",
+                "炼金炉领取2"
+            ],
+            "width": 2304,
+            "height": 845
+        }
+    },
+    "$__mpe_external_ui_点击空白区域_家园": {
+        "$__mpe_code": {
+            "position": {
+                "x": -1261,
+                "y": 1881
+            }
+        }
+    },
+    "炼金炉领取344": {
+        "next": [
+            "进入总览234"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1905,
+                "y": 1163
+            }
+        }
+    },
+    "炼金点击领取": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -294,25 +458,55 @@
                     52
                 ],
                 "expected": "领取",
-                "only_rec": true
+                "only_rec": false
             }
         },
         "inverse": false,
         "action": {
             "type": "Click"
         },
+        "next": [
+            "ui_点击空白区域"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 594,
-                "y": 325
+                "x": -1274,
+                "y": 1484
             }
         }
     },
-    "$__mpe_external_ui_点击空白区域_家园": {
+    "炼金点击领取_副本1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    523,
+                    187,
+                    77,
+                    52
+                ],
+                "expected": "领取",
+                "only_rec": false
+            }
+        },
+        "inverse": true,
         "$__mpe_code": {
             "position": {
-                "x": 600,
-                "y": 117
+                "x": -1272,
+                "y": 1187
+            }
+        }
+    },
+    "炼金炉领取2": {
+        "next": [
+            "炼金点击领取_副本1",
+            "炼金点击领取",
+            "[JumpBack]ui_点击空白区域"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": -1911,
+                "y": 1518
             }
         }
     }

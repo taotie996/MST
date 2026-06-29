@@ -2,56 +2,17 @@
     "$__mpe_config_界面": {
         "$__mpe_code": {
             "prefix": "ui",
-            "lastSyncTime": 1778062139794,
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1782397810431,
             "isModifiedExternally": false,
             "filePath": "F:\\Code\\MST\\assets\\resource\\pipeline\\界面.json",
             "savedViewport": {
-                "x": 1888,
-                "y": -1617,
-                "zoom": 0.7
+                "x": 2920,
+                "y": -1840,
+                "zoom": 0.65
             },
             "filename": "界面",
-            "version": "v1.5.2"
-        }
-    },
-    "$__mpe_anchor_ui_a_返回主界面_界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": 896,
-                "y": 1158
-            }
-        }
-    },
-    "$__mpe_anchor_ui_a_进入总览后_界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": 1381,
-                "y": 108
-            }
-        }
-    },
-    "$__mpe_anchor_ui_a_进入界面_界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": -1490,
-                "y": 3431
-            }
-        }
-    },
-    "$__mpe_anchor_主城_anchor_task_副本5_界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": 919,
-                "y": 659
-            }
-        }
-    },
-    "$__mpe_anchor_相伴_anchor_task_界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": 462,
-                "y": 722
-            }
+            "version": "v1.6.2"
         }
     },
     "$__mpe_group_2级界面返回_界面": {
@@ -73,8 +34,8 @@
     "$__mpe_group_主城界面_界面": {
         "$__mpe_code": {
             "position": {
-                "x": 872,
-                "y": 5114
+                "x": -517,
+                "y": 4787
             },
             "color": "blue",
             "childrenLabels": [
@@ -85,27 +46,6 @@
             ],
             "width": 1248,
             "height": 919
-        }
-    },
-    "$__mpe_group_家园界面_界面": {
-        "$__mpe_code": {
-            "position": {
-                "x": 947,
-                "y": 3623
-            },
-            "color": "blue",
-            "childrenLabels": [
-                "ui_a_返回主界面",
-                "ui_a_进入总览后",
-                "位于家园",
-                "位于总览",
-                "点击家园按钮",
-                "点击总览",
-                "进入家园",
-                "进入总览"
-            ],
-            "width": 2031,
-            "height": 1289
         }
     },
     "$__mpe_group_对话框_界面": {
@@ -131,6 +71,7 @@
             },
             "color": "blue",
             "childrenLabels": [
+                "点击空白_anchor_task",
                 "点击空白区域"
             ],
             "width": 878,
@@ -140,8 +81,8 @@
     "$__mpe_group_界面类型_界面": {
         "$__mpe_code": {
             "position": {
-                "x": -1154,
-                "y": 2248
+                "x": -1597,
+                "y": 2121
             },
             "color": "blue",
             "childrenLabels": [
@@ -163,12 +104,11 @@
     "$__mpe_group_相伴界面_界面": {
         "$__mpe_code": {
             "position": {
-                "x": -739,
-                "y": 4771
+                "x": -660,
+                "y": 3621
             },
             "color": "blue",
             "childrenLabels": [
-                "相伴_anchor_task",
                 "位于相伴",
                 "点击相伴按钮",
                 "进入相伴"
@@ -177,36 +117,19 @@
             "height": 919
         }
     },
-    "ui_override_购买": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    601,
-                    164,
-                    77,
-                    44
-                ],
-                "expected": "购买",
-                "only_rec": true
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target": [
-                    737,
-                    498,
-                    60,
-                    31
-                ]
-            }
-        },
-        "global_doc": "购买界面，点击购买",
+    "$__mpe_anchor_主城_anchor_task_副本5_界面": {
         "$__mpe_code": {
             "position": {
-                "x": 12,
-                "y": 890
+                "x": 438,
+                "y": 5136
+            }
+        }
+    },
+    "$__mpe_anchor_点击空白_anchor_task_界面": {
+        "$__mpe_code": {
+            "position": {
+                "x": -804,
+                "y": 1286
             }
         }
     },
@@ -298,8 +221,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 658,
-                "y": 121
+                "x": 141,
+                "y": 4908
             }
         }
     },
@@ -341,8 +264,8 @@
         "global_doc": "位于主界面(spine)",
         "$__mpe_code": {
             "position": {
-                "x": 31,
-                "y": 54
+                "x": -1566,
+                "y": 2175
             }
         }
     },
@@ -363,8 +286,8 @@
         "global_doc": "位于主界面(live2d)",
         "$__mpe_code": {
             "position": {
-                "x": 335,
-                "y": 62
+                "x": -1329,
+                "y": 2173
             }
         }
     },
@@ -384,55 +307,8 @@
         "global_doc": "位于主界面(誓约)",
         "$__mpe_code": {
             "position": {
-                "x": 648,
-                "y": 61
-            }
-        }
-    },
-    "ui_位于家园": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    167,
-                    12,
-                    191,
-                    66
-                ],
-                "expected": [
-                    "家园"
-                ],
-                "only_rec": true
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 1148,
-                "y": 572
-            }
-        }
-    },
-    "ui_位于总览": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    167,
-                    12,
-                    191,
-                    66
-                ],
-                "expected": "总览",
-                "only_rec": true
-            }
-        },
-        "next": [
-            "[Anchor]ui_a_进入总览后"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 873,
-                "y": 65
+                "x": -1095,
+                "y": 2184
             }
         }
     },
@@ -474,13 +350,10 @@
                 "only_rec": true
             }
         },
-        "next": [
-            "[Anchor]相伴_anchor_task"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": 653,
-                "y": 79
+                "x": -7,
+                "y": 3700
             }
         }
     },
@@ -504,8 +377,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 66,
-                "y": 391
+                "x": -1645,
+                "y": 4221
             }
         }
     },
@@ -524,8 +397,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 327,
-                "y": 69
+                "x": -885,
+                "y": 1700
             }
         }
     },
@@ -611,8 +484,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 342,
-                "y": 2178
+                "x": 237,
+                "y": 2294
             }
         }
     },
@@ -677,8 +550,8 @@
         "global_doc": "加载中（中下）",
         "$__mpe_code": {
             "position": {
-                "x": 342,
-                "y": 1838
+                "x": 191,
+                "y": 1835
             }
         }
     },
@@ -693,13 +566,10 @@
                 ]
             }
         },
-        "next": [
-            "[Anchor]ui_a_进入界面"
-        ],
         "$__mpe_code": {
             "position": {
-                "x": -1997,
-                "y": 3508
+                "x": -2200,
+                "y": 3449
             }
         }
     },
@@ -764,8 +634,8 @@
     "ui_待机": {
         "$__mpe_code": {
             "position": {
-                "x": 363,
-                "y": 381
+                "x": -1234,
+                "y": 2502
             }
         }
     },
@@ -878,30 +748,6 @@
             }
         }
     },
-    "ui_点击家园按钮": {
-        "recognition": {
-            "type": "Or",
-            "param": {
-                "any_of": [
-                    "ui_进入家园_spine",
-                    "ui_进入家园_誓约",
-                    "ui_进入家园_live2d"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "ui_位于家园"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 844,
-                "y": 822
-            }
-        }
-    },
     "ui_点击小镇按钮": {
         "recognition": {
             "type": "OCR",
@@ -923,8 +769,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 656,
-                "y": 375
+                "x": 139,
+                "y": 5162
             }
         }
     },
@@ -952,36 +798,6 @@
             }
         }
     },
-    "ui_点击总览": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    44,
-                    247,
-                    45,
-                    31
-                ],
-                "expected": [
-                    "总览"
-                ],
-                "only_rec": true
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "timeout": 1000,
-        "next": [
-            "ui_位于总览"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 494,
-                "y": 220
-            }
-        }
-    },
     "ui_点击相伴按钮": {
         "recognition": {
             "type": "Or",
@@ -1001,8 +817,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 324,
-                "y": 219
+                "x": -313,
+                "y": 3954
             }
         }
     },
@@ -1017,16 +833,19 @@
                     44
                 ],
                 "expected": "空白区域",
-                "only_rec": true
+                "only_rec": false
             }
         },
         "action": {
             "type": "Click"
         },
+        "next": [
+            "[Anchor]点击空白_anchor_task"
+        ],
         "$__mpe_code": {
             "position": {
-                "x": 53,
-                "y": 64
+                "x": -1165,
+                "y": 1257
             }
         }
     },
@@ -1049,8 +868,8 @@
         "global_doc": "通用左上方返回按钮",
         "$__mpe_code": {
             "position": {
-                "x": 67,
-                "y": 74
+                "x": -1644,
+                "y": 3904
             }
         }
     },
@@ -1068,8 +887,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 399,
-                "y": 413
+                "x": -1279,
+                "y": 4319
             }
         }
     },
@@ -1152,22 +971,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 33,
-                "y": 76
-            }
-        }
-    },
-    "ui_返回主界面": {
-        "anchor": {
-            "ui_a_进入界面": "ui_待机"
-        },
-        "next": [
-            "ui_返回主界面_切换界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": -2879,
-                "y": 3778
+                "x": -1179,
+                "y": 1707
             }
         }
     },
@@ -1175,12 +980,13 @@
         "next": [
             "ui_在主界面",
             "[JumpBack]ui_点击返回_普通界面",
-            "[JumpBack]ui_位于种植"
+            "[JumpBack]ui_位于种植",
+            "[JumpBack]ui_其他特殊退出"
         ],
         "$__mpe_code": {
             "position": {
-                "x": -2485,
-                "y": 3968
+                "x": -2916,
+                "y": 3677
             }
         }
     },
@@ -1215,30 +1021,12 @@
         },
         "next": [
             "ui_位于主城",
-            "[JumpBack]ui_点击小镇按钮",
-            "[Anchor][JumpBack]ui_a_返回主界面"
+            "[JumpBack]ui_点击小镇按钮"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 127,
-                "y": 198
-            }
-        }
-    },
-    "ui_进入家园": {
-        "anchor": {
-            "ui_a_返回主界面": "ui_返回主界面_切换界面",
-            "ui_a_进入界面": "ui_点击家园按钮"
-        },
-        "next": [
-            "ui_位于家园",
-            "[JumpBack]ui_点击家园按钮",
-            "[Anchor][JumpBack]ui_a_返回主界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 487,
-                "y": 571
+                "x": -390,
+                "y": 4985
             }
         }
     },
@@ -1263,8 +1051,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 697,
-                "y": 615
+                "x": -900,
+                "y": 2736
             }
         }
     },
@@ -1289,8 +1077,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 20,
-                "y": 545
+                "x": -1577,
+                "y": 2666
             }
         }
     },
@@ -1315,21 +1103,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 341,
-                "y": 545
-            }
-        }
-    },
-    "ui_进入总览": {
-        "next": [
-            "ui_位于总览",
-            "[JumpBack]ui_点击总览",
-            "[JumpBack]ui_进入家园"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 48,
-                "y": 88
+                "x": -1256,
+                "y": 2666
             }
         }
     },
@@ -1340,13 +1115,12 @@
         },
         "next": [
             "ui_位于相伴",
-            "[JumpBack]ui_点击相伴按钮",
-            "[Anchor][JumpBack]ui_a_返回主界面"
+            "[JumpBack]ui_点击相伴按钮"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 37,
-                "y": 109
+                "x": -623,
+                "y": 3730
             }
         }
     },
@@ -1370,8 +1144,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 348,
-                "y": 875
+                "x": -1249,
+                "y": 2996
             }
         }
     },
@@ -1395,8 +1169,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 40,
-                "y": 868
+                "x": -1557,
+                "y": 2989
             }
         }
     },
@@ -1419,8 +1193,8 @@
         "post_delay": 2000,
         "$__mpe_code": {
             "position": {
-                "x": 690,
-                "y": 895
+                "x": -907,
+                "y": 3016
             }
         }
     },
